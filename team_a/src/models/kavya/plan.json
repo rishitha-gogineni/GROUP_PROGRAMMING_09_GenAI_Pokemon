@@ -1,0 +1,27 @@
+{
+  "member": "Kavya Ayyappan",
+  "team": "A",
+  "status": "planned",
+  "models": [
+    {
+      "id": "A-K1",
+      "architecture": "Concatenated state-option MLP",
+      "module": "model_1.py",
+      "objective": "Matched imitation objective/data for both candidate scorers",
+      "planned_submission_day": 3,
+      "trained": false,
+      "submission_id": null
+    },
+    {
+      "id": "A-K2",
+      "architecture": "Separate state and option encoders with joint score head",
+      "module": "model_2.py",
+      "objective": "Matched imitation objective/data for both candidate scorers",
+      "planned_submission_day": 5,
+      "trained": false,
+      "submission_id": null
+    }
+  ],
+  "input_schema_version": "draft-v0",
+  "data_contract": null
+}

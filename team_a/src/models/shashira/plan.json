@@ -1,0 +1,27 @@
+{
+  "member": "Shashira Guntuka",
+  "team": "A",
+  "status": "planned",
+  "models": [
+    {
+      "id": "A-S1",
+      "architecture": "Ordinary candidate-value network",
+      "module": "model_1.py",
+      "objective": "First regress own-team heuristic scores; verified TD/DQN extension only if feasible",
+      "planned_submission_day": 4,
+      "trained": false,
+      "submission_id": null
+    },
+    {
+      "id": "A-S2",
+      "architecture": "Dueling-style state value and legal-candidate advantage network",
+      "module": "model_2.py",
+      "objective": "First regress own-team heuristic scores; verified TD/DQN extension only if feasible",
+      "planned_submission_day": 5,
+      "trained": false,
+      "submission_id": null
+    }
+  ],
+  "input_schema_version": "draft-v0",
+  "data_contract": null
+}

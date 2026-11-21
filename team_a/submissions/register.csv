@@ -1,0 +1,10 @@
+team,member,model_id,planned_day,commit,artifact_hash,submission_id,submitted_at,validation_status,rating,rating_observed_at,rating_uncertainty,evidence_path,error_log,notes
+A,Rishitha,A-BASE,2,,,,,planned,,,,,,
+A,Rishitha Gogineni,A-R1,3,,,,,planned,,,,,,
+A,Rishitha Gogineni,A-R2,4,,,,,planned,,,,,,
+A,Kavya Ayyappan,A-K1,3,,,,,planned,,,,,,
+A,Kavya Ayyappan,A-K2,5,,,,,planned,,,,,,
+A,Shashira Guntuka,A-S1,4,,,,,planned,,,,,,
+A,Shashira Guntuka,A-S2,5,,,,,planned,,,,,,
+A,Jiayi Liang,A-J1,4,,,,,planned,,,,,,
+A,Jiayi Liang,A-J2,5,,,,,planned,,,,,,

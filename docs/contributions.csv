@@ -1,0 +1,9 @@
+team,member,planned_responsibilities,model_1,model_2,completed_work,commit_or_pr,experiment_ids,kaggle_submission_ids,report_slides_work,status
+A,Rishitha Gogineni,"Simulator, baseline, response adapter, packages and Team A uploads",A-R1,A-R2,,,,,,planned
+A,Kavya Ayyappan,State/action features and Team A evaluation,A-K1,A-K2,,,,,,planned
+A,Shashira Guntuka,Value-style architecture pair and conditional DQN experiment,A-S1,A-S2,,,,,,planned
+A,Jiayi Liang,"Policies, rewards, outcome logging and combined slide assembly",A-J1,A-J2,,,,,,planned
+B,Chelsi Shulamit Elthuri,"Team B simulator, card data, baseline, packages and uploads",B-C1,B-C2,,,,,,planned
+B,Sadaf Fatima Syeda,"Team B evaluation, experiment tracking and report coordination",B-SA1,B-SA2,,,,,,planned
+B,Bhavyasree Kondi,Actor-critic architectures and conditional PPO experiment,B-B1,B-B2,,,,,,planned
+B,Srinidhi Jaya Revanth Srirangarajapally,"Replay/demonstration provenance, imitation, splits and citations",B-SR1,B-SR2,,,,,,planned

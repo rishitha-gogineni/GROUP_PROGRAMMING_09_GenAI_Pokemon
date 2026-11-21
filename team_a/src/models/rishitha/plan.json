@@ -1,0 +1,27 @@
+{
+  "member": "Rishitha Gogineni",
+  "team": "A",
+  "status": "planned",
+  "models": [
+    {
+      "id": "A-R1",
+      "architecture": "Linear contextual imitation scorer",
+      "module": "model_1.py",
+      "objective": "Masked candidate-set imitation cross-entropy on own-team demonstrations",
+      "planned_submission_day": 3,
+      "trained": false,
+      "submission_id": null
+    },
+    {
+      "id": "A-R2",
+      "architecture": "Small MLP imitation scorer",
+      "module": "model_2.py",
+      "objective": "Masked candidate-set imitation cross-entropy on own-team demonstrations",
+      "planned_submission_day": 4,
+      "trained": false,
+      "submission_id": null
+    }
+  ],
+  "input_schema_version": "draft-v0",
+  "data_contract": null
+}

@@ -1,0 +1,9 @@
+model_id,team,member,architecture,objective,status,commit,artifact_hash,experiment_id
+A-R1,A,Rishitha Gogineni,Linear contextual imitation scorer,Masked candidate-set imitation cross-entropy on own-team demonstrations,planned,,,
+A-R2,A,Rishitha Gogineni,Small MLP imitation scorer,Masked candidate-set imitation cross-entropy on own-team demonstrations,planned,,,
+A-K1,A,Kavya Ayyappan,Concatenated state-option MLP,Matched imitation objective/data for both candidate scorers,planned,,,
+A-K2,A,Kavya Ayyappan,Separate state and option encoders with joint score head,Matched imitation objective/data for both candidate scorers,planned,,,
+A-S1,A,Shashira Guntuka,Ordinary candidate-value network,First regress own-team heuristic scores; verified TD/DQN extension only if feasible,planned,,,
+A-S2,A,Shashira Guntuka,Dueling-style state value and legal-candidate advantage network,First regress own-team heuristic scores; verified TD/DQN extension only if feasible,planned,,,
+A-J1,A,Jiayi Liang,Linear contextual masked policy,Matched behavior-cloning training first; optional correctly implemented policy-gradient refinement,planned,,,
+A-J2,A,Jiayi Liang,Small MLP masked policy,Matched behavior-cloning training first; optional correctly implemented policy-gradient refinement,planned,,,

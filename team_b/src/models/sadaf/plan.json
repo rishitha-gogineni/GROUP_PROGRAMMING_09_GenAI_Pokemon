@@ -1,0 +1,27 @@
+{
+  "member": "Sadaf Fatima Syeda",
+  "team": "B",
+  "status": "planned",
+  "models": [
+    {
+      "id": "B-SA1",
+      "architecture": "Decision Tree regressor",
+      "module": "model_1.py",
+      "objective": "Regress same teacher-score targets on same state-option feature data",
+      "planned_submission_day": 3,
+      "trained": false,
+      "submission_id": null
+    },
+    {
+      "id": "B-SA2",
+      "architecture": "Random Forest regressor",
+      "module": "model_2.py",
+      "objective": "Regress same teacher-score targets on same state-option feature data",
+      "planned_submission_day": 5,
+      "trained": false,
+      "submission_id": null
+    }
+  ],
+  "input_schema_version": "draft-v0",
+  "data_contract": null
+}

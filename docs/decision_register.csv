@@ -1,0 +1,8 @@
+decision_id,topic,owner,status,decision_or_answer,source_or_evidence,date
+D01,Course cutoff and deliverable deadlines,Sadaf,pending,,,
+D02,Two or three architectures; accepted model families,Sadaf,pending,,,
+D03,Official upload requirement for each variant,Sadaf,pending,,,
+D04,Shared-repository competition permissions,Rishitha and Chelsi,pending,,,
+D05,"Quota, active slots, runtime and packaging",Rishitha and Chelsi,pending,,,
+D06,SDK runtime and measured match throughput,Rishitha and Chelsi,pending,,,
+D07,One shared repository for all eight members,Group 9,decided,Use team_a and team_b in one repository,User instruction in project discussion,2026-11-21

@@ -1,0 +1,3 @@
+# No dependencies installed or versions verified by this scaffold.
+# Rishitha: reproduce the current official SDK example, then pin tested versions.
+# Record Python/SDK/platform in configs/environment.json before training.

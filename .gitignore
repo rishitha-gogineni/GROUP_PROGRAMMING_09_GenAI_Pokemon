@@ -1,0 +1,42 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+kaggle.json
+.kaggle/
+*.pem
+*.key
+# Python / editors
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+# Local competition inputs and generated artifacts
+team_*/data/raw/*
+!team_*/data/raw/.gitkeep
+team_*/data/processed/*
+!team_*/data/processed/.gitkeep
+team_*/artifacts/*
+!team_*/artifacts/.gitkeep
+team_*/outputs/*
+!team_*/outputs/.gitkeep
+team_*/agent_package/deck.csv
+team_*/agent_package/*.pt
+team_*/agent_package/*.pth
+team_*/agent_package/*.pkl
+team_*/agent_package/*.joblib
+*.tar.gz
+*.zip
+*.log
+# Evidence is added deliberately after checking content and sharing permissions
+evidence/team_a/*
+!evidence/team_a/README.md
+evidence/team_b/*
+!evidence/team_b/README.md

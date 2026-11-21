@@ -1,0 +1,20 @@
+{
+  "status": "template",
+  "owner": null,
+  "model_id": null,
+  "schema_version": null,
+  "data_version": null,
+  "source": null,
+  "teacher_version": null,
+  "example_unit": "supported decision with candidate options, or state-option pair",
+  "supported_contexts": [],
+  "features": [],
+  "target_definition": null,
+  "objective": null,
+  "grouping_key": "match_id",
+  "train_game_ids": [],
+  "validation_game_ids": [],
+  "held_out_game_ids": [],
+  "input_visibility_audited": false,
+  "limitations": []
+}

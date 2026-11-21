@@ -1,0 +1,15 @@
+{
+  "status": "planning_only",
+  "owner": "Kavya",
+  "unit": "best_of_three_match",
+  "seed_control_verified": false,
+  "screening_matches": 10,
+  "finalist_matches_target": 50,
+  "seed_list": [],
+  "opponents": [],
+  "deck_ids_or_hashes": [],
+  "draw_policy": null,
+  "confidence_interval_method": null,
+  "max_decision_ms": null,
+  "notes": "Verify harness support, measure throughput and predeclare settings. Counts are budget targets, not completed runs or course mandates."
+}

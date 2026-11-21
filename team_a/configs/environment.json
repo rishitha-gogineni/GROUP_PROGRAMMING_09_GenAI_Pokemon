@@ -1,0 +1,12 @@
+{
+  "status": "unverified",
+  "owner": "Rishitha",
+  "python_version": null,
+  "platform": null,
+  "sdk_version": null,
+  "kaggle_environments_version": null,
+  "verified_example_command": null,
+  "complete_game_verified": false,
+  "seconds_per_match": null,
+  "notes": "Fill only after reproducing the current official example."
+}
