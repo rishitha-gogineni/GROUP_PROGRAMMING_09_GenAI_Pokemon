@@ -1,0 +1,135 @@
+[
+  {
+    "run_name": "initial_battle",
+    "python_seed": 42,
+    "status": "passed",
+    "finished": true,
+    "result_code": 0,
+    "steps": 34,
+    "seconds": 0.017,
+    "started_at_utc": "2026-11-21T21:41:40.589914+00:00",
+    "error_type": "",
+    "error_message": "",
+    "traceback_file": "",
+    "cleanup_error": "",
+    "last_attempt": {
+      "run_name": "initial_battle",
+      "step": 33,
+      "turn": 7,
+      "turn_band": "middle",
+      "acting_player": 0,
+      "selection_type": 1,
+      "selection_context": 7,
+      "min_choices": 3,
+      "max_choices": 3,
+      "option_count": 6,
+      "selected_option_indices": [
+        0,
+        3,
+        5
+      ],
+      "selection_accepted": true,
+      "coverage_key": "[\"middle\", 1, 7]"
+    },
+    "finished_at_utc": "2026-11-21T21:41:40.606573+00:00"
+  },
+  {
+    "run_name": "smoke_seed_10",
+    "python_seed": 10,
+    "status": "passed",
+    "finished": true,
+    "result_code": 1,
+    "steps": 31,
+    "seconds": 0.017,
+    "started_at_utc": "2026-11-21T21:41:56.987945+00:00",
+    "error_type": "",
+    "error_message": "",
+    "traceback_file": "",
+    "cleanup_error": "",
+    "last_attempt": {
+      "run_name": "smoke_seed_10",
+      "step": 30,
+      "turn": 8,
+      "turn_band": "middle",
+      "acting_player": 1,
+      "selection_type": 1,
+      "selection_context": 7,
+      "min_choices": 1,
+      "max_choices": 1,
+      "option_count": 6,
+      "selected_option_indices": [
+        2
+      ],
+      "selection_accepted": true,
+      "coverage_key": "[\"middle\", 1, 7]"
+    },
+    "finished_at_utc": "2026-11-21T21:41:57.004768+00:00"
+  },
+  {
+    "run_name": "smoke_seed_20",
+    "python_seed": 20,
+    "status": "passed",
+    "finished": true,
+    "result_code": 0,
+    "steps": 119,
+    "seconds": 0.069,
+    "started_at_utc": "2026-11-21T21:41:57.007990+00:00",
+    "error_type": "",
+    "error_message": "",
+    "traceback_file": "",
+    "cleanup_error": "",
+    "last_attempt": {
+      "run_name": "smoke_seed_20",
+      "step": 118,
+      "turn": 41,
+      "turn_band": "later",
+      "acting_player": 0,
+      "selection_type": 1,
+      "selection_context": 7,
+      "min_choices": 2,
+      "max_choices": 2,
+      "option_count": 2,
+      "selected_option_indices": [
+        0,
+        1
+      ],
+      "selection_accepted": true,
+      "coverage_key": "[\"later\", 1, 7]"
+    },
+    "finished_at_utc": "2026-11-21T21:41:57.076633+00:00"
+  },
+  {
+    "run_name": "smoke_seed_30",
+    "python_seed": 30,
+    "status": "passed",
+    "finished": true,
+    "result_code": 0,
+    "steps": 74,
+    "seconds": 0.042,
+    "started_at_utc": "2026-11-21T21:41:57.081085+00:00",
+    "error_type": "",
+    "error_message": "",
+    "traceback_file": "",
+    "cleanup_error": "",
+    "last_attempt": {
+      "run_name": "smoke_seed_30",
+      "step": 73,
+      "turn": 20,
+      "turn_band": "later",
+      "acting_player": 0,
+      "selection_type": 1,
+      "selection_context": 7,
+      "min_choices": 3,
+      "max_choices": 3,
+      "option_count": 3,
+      "selected_option_indices": [
+        1,
+        2,
+        0
+      ],
+      "selection_accepted": true,
+      "coverage_key": "[\"later\", 1, 7]"
+    },
+    "finished_at_utc": "2026-11-21T21:41:57.122726+00:00"
+  }
+]
