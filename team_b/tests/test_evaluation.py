@@ -35,3 +35,20 @@ def test_rejects_typo_column(log):
 def test_rejects_missing_required(log):
     with pytest.raises(ValueError, match="Missing required"):
         write_experiment({"member": "Sadaf"}, path=log)
+
+
+
+from team_b.src.evaluation import summarize_matches
+
+
+def test_summarize_matches_counts_and_win_rate():
+    s = summarize_matches(["win", "win", "loss", "draw", "win", "error"])
+    assert (s["wins"], s["losses"], s["draws"], s["crashes"]) == (3, 1, 1, 1)
+    assert s["matches"] == 5          # errors are not counted as completed matches
+    assert s["win_rate"] == 0.6
+    assert 0 <= s["interval_lower"] < 0.6 < s["interval_upper"] <= 1
+
+
+def test_summarize_matches_empty():
+    s = summarize_matches([])
+    assert s["matches"] == 0 and s["win_rate"] == 0.0

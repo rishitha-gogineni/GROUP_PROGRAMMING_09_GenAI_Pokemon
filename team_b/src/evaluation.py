@@ -55,3 +55,40 @@ def write_experiment(record: Mapping[str, object], path: Path = RESULTS_CSV) -> 
     with open(path, "a", newline="") as f:
         csv.DictWriter(f, fieldnames=columns).writerow(row)
     return row
+
+
+
+def wilson_interval(wins: int, n: int, z: float = 1.96) -> tuple[float, float]:
+    """95% confidence range for the true win rate (handbook 9.1)."""
+    if n == 0:
+        return 0.0, 1.0
+    p = wins / n
+    denom = 1 + z**2 / n
+    centre = (p + z**2 / (2 * n)) / denom
+    half = z * math.sqrt(p * (1 - p) / n + z**2 / (4 * n**2)) / denom
+    return round(max(0.0, centre - half), 4), round(min(1.0, centre + half), 4)
+
+
+def summarize_matches(outcomes: list[str]) -> dict:
+    """Add up a list of BO3 match results: "win", "loss", "draw" or "error".
+
+    The returned keys match the results.csv columns, so the output can go
+    straight into write_experiment().
+    """
+    wins = outcomes.count("win")
+    losses = outcomes.count("loss")
+    draws = outcomes.count("draw")
+    errors = outcomes.count("error")
+    completed = wins + losses + draws
+    low, high = wilson_interval(wins, completed)
+    return {
+        "matches": completed,
+        "wins": wins,
+        "losses": losses,
+        "draws": draws,
+        "crashes": errors,
+        "win_rate": round(wins / completed, 4) if completed else 0.0,
+        "interval_method": "wilson",
+        "interval_lower": low,
+        "interval_upper": high,
+    }
