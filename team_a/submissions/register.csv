@@ -1,5 +1,5 @@
 team,member,model_id,planned_day,commit,artifact_hash,submission_id,submitted_at,validation_status,rating,rating_observed_at,rating_uncertainty,evidence_path,error_log,notes
-A,Rishitha,A-BASE,2,,,,,planned,,,,,,
+A,Rishitha Gogineni,A-BASE,2,133ab18990f56982ab123f022a17da5bc9f7f199,c889d1b602458c63f6aad64e691acc47972517bdb3a9ccd93ea6b87635075c96,,,Complete,490.5,,,team_a/submissions/A-BASE,,"User-provided Kaggle screenshots dated 2026-11-21 show Complete: initialization 600.0, later snapshot 490.5. Rating history is in submissions/A-BASE/rating_observations.csv. Submission ID, exact timestamps and uncertainty are not visible; those fields remain blank. Local archive hash verified, remote hash unavailable. Individual-battle checks only."
 A,Rishitha Gogineni,A-R1,3,,,,,planned,,,,,,
 A,Rishitha Gogineni,A-R2,4,,,,,planned,,,,,,
 A,Kavya Ayyappan,A-K1,3,,,,,planned,,,,,,
