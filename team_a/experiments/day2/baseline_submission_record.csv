@@ -1,0 +1,2 @@
+team,member,model_id,run_id,artifact_sha256,local_status,submission_id,submitted_at_utc,kaggle_validation_status,initial_rating,rating_observed_at_utc,rating_uncertainty,notes
+GROUP_PROGRAMMING_09_a,Rishitha Gogineni,A-BASE,20261121T224116Z_1e244d62,c889d1b602458c63f6aad64e691acc47972517bdb3a9ccd93ea6b87635075c96,package_ready,,,not_submitted,,,,Random policy and official sample deck; individual-battle checks; not a trained model.

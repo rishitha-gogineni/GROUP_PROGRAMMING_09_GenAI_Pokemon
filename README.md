@@ -2,7 +2,7 @@
 
 DATA 266, Fall 2026. One shared repository for all eight members, two Kaggle submission tracks, one combined report and presentation.
 
-**Status: starter scaffold.** The simulator, feature encoders, baseline, models, training, evaluation and submission packaging still need implementation. Placeholder Python functions deliberately raise `NotImplementedError`; nothing here is a trained or Kaggle-ready agent.
+**Status:** Team A has integrated its tested Day 2 random baseline and individual-battle runner, with executed notebooks and Kaggle evidence. The recorded submission is Complete; its initialization rating was 600.0 and the later screenshot shows 490.5. See [Team A](team_a/README.md). Learned models, feature encoders and training still require implementation; other team-specific status is documented in the relevant README.
 
 ## Start here
 
@@ -39,7 +39,7 @@ Each team contains `src/`, `configs/`, `scripts/`, `tests/`, `data/`, `experimen
 
 No packages are installed by this scaffold. The starter interfaces use Python 3.10+ syntax; select a Python version compatible with the actual SDK before running or pinning dependencies. Each team records its verified runtime in `configs/environment.json` and its packages in `requirements.txt`.
 
-Training, evaluation and packaging scripts are explicit placeholders. There are no verified training or Kaggle submission commands yet. The first working baseline commit should add exact reproduction commands to the team's README.
+Team A's executed Day 2 notebook provides the tested baseline workflow; its portable checker and input requirements are documented in [Team A script instructions](team_a/scripts/README.md). Generic training, evaluation and packaging CLI templates still require implementation.
 
 ## Shared repository decision
 

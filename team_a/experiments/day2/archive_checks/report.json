@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "unit": "individual_battle",
+  "loader_check": "exec without __file__; last callable; configured agent path",
+  "contract_checks": [
+    {
+      "case": "initial_deck_from_unrelated_working_directory",
+      "passed": true
+    },
+    {
+      "case": "single",
+      "passed": true
+    },
+    {
+      "case": "multiple",
+      "passed": true
+    },
+    {
+      "case": "zero_options",
+      "passed": true
+    },
+    {
+      "case": "optional",
+      "passed": true
+    }
+  ],
+  "battles": [
+    {
+      "python_seed": 200,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 1,
+      "steps": 36,
+      "reverse_player": false,
+      "seconds": 0.013966,
+      "max_decision_ms": 0.037277,
+      "selection_types": [
+        0,
+        1,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 1
+    },
+    {
+      "python_seed": 201,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 1,
+      "steps": 31,
+      "reverse_player": true,
+      "seconds": 0.012438,
+      "max_decision_ms": 0.030352,
+      "selection_types": [
+        0,
+        1,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 2
+    }
+  ],
+  "error": null,
+  "scope": "Direct SDK and local loader checks; not the full Kaggle harness or a leaderboard evaluation."
+}

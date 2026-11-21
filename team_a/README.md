@@ -1,6 +1,6 @@
 # Team A - GROUP_PROGRAMMING_09_a
 
-Day 1 simulator setup has been run successfully in Colab. The reusable source modules and model files remain starter placeholders; a Kaggle-ready baseline has not been validated or submitted yet.
+The Day 2 random baseline and individual-battle runner are integrated. The saved Colab run passed all 12 battles and callback checks. Kaggle screenshots show **Complete**, initially **600.0**, then **490.5** in the later snapshot. Learned models, feature encoders and training remain in progress.
 
 | Member | Responsibility | Planned models |
 | --- | --- | --- |
@@ -9,65 +9,65 @@ Day 1 simulator setup has been run successfully in Colab. The reusable source mo
 | Shashira Guntuka | Value-style architecture pair and conditional DQN experiment | A-S1, A-S2 |
 | Jiayi Liang | Policies, rewards, outcome logging and combined slide assembly | A-J1, A-J2 |
 
-## Day 1 results - 21 November 2026
+## Day 2 baseline - 21 November 2026
 
-Rishitha ran the official sample SDK in a Colab CPU session. The inspection, initial random-versus-random battle and all three smoke tests passed without recorded Python or cleanup errors.
+| Check | Recorded result |
+| --- | --- |
+| Local callback-based battles | 10/10 passed |
+| Battles from a fresh archive extraction | 2/2 passed |
+| Callback contracts | Initial deck, single, multiple, optional and zero choices passed |
+| Invalid responses / engine rejections | 0 / 0 |
+| Tested archive | 892 bytes; main.py and deck.csv at the root |
+| Kaggle status | Complete in both screenshots |
+| Initialization rating | 600.0 |
+| Latest observed rating | 490.5 |
 
-| Battle | Python action-sampling seed | Selections | Recorded time (s) | Saved observation examples |
-| --- | ---: | ---: | ---: | ---: |
-| Initial battle | 42 | 34 | 0.017 | 17 |
-| Smoke test | 10 | 31 | 0.017 | 14 |
-| Smoke test | 20 | 119 | 0.069 | 26 |
-| Smoke test | 30 | 74 | 0.042 | 22 |
+The 600.0 value is the initialization snapshot; it is not evidence of competitive improvement. Both images show the same named submission. The screenshots do not expose its ID, exact timestamp, uncertainty or actual team name. Missing fields remain blank. The later score is a normal ladder update, not a validation error.
 
-The four battles saved 79 distinct observation examples across setup, early, middle and later turn bands. These selected examples and their handoff notes are available in [Kavya's handoff folder](experiments/day1/handoff_for_kavya/). The top-level `representative_sample_count` in `day1_status.json` is 17 because that field refers to the initial battle only. Receipt of the handoff by Kavya is not yet confirmed.
+- [Executed Day 2 notebook](notebooks/02_baseline_Day2.ipynb)
+- [Local checks and package manifest](experiments/day2/)
+- [Kaggle screenshots, record and rating history](submissions/A-BASE/)
+- [Submission register](submissions/register.csv)
 
-These are individual battles with the sample deck, not best-of-three results or official Kaggle scores. Timings include observation collection and file writes; four short tests do not establish training throughput or playing strength. Only Python action sampling is seeded; engine randomness is not verified as seeded. Full decision-type coverage and submission-loader compatibility remain to be checked.
+Original notebook JSON/CSV status files were saved before the manual upload and retain their not_submitted flags. The later screenshot record provides the subsequent Kaggle result. Code, execution counts and computational notebook outputs were preserved when the explanatory text was shortened.
 
-## Notebook and evidence
+## Integrated code
+
+- `src/baseline.py`: the tested random agent and deck loader, plus a repository-facing baseline_response alias. The teacher_option_scores function remains explicitly undefined because random actions do not provide heuristic-value targets.
+- `src/adapter.py`: a thin callback wrapper delegating to the baseline.
+- `src/simulator.py`: the tested run_battle/check_action implementation for individual battles, including cleanup and error recording.
+- `agent_package/main.py`: byte-identical standalone entry point from the tested package. It needs the local official deck.csv; it has no model/SDK runtime dependency.
+- `scripts/check_baseline.py`: portable checker with repository import paths. See [script instructions](scripts/README.md).
+
+The core runner and submitted policy match the Colab-tested source. Repository aliases and checker import-path changes were statically checked; no native simulator was rerun during integration. The runner does not implement BO3 control, complete replay/transition collection or reinforcement learning.
+
+## Reproduce the baseline
+
+1. Open the executed Day 2 notebook in a fresh Colab CPU session.
+2. Upload the official competition ZIP when prompted; the exact input hash is recorded in experiments/day2/environment.json.
+3. Run all cells. The notebook checks the callback, plays ten battles, verifies the archive and plays two more battles from its extraction.
+4. Download the results ZIP and executed notebook. Use its submission.tar.gz only after all local checks pass; coordinate any new upload with Team A.
+
+The recorded runtime was Python 3.13.18 on Linux x86_64. The SDK was loaded directly; kaggle-environments was not installed. The submission uses standard-library imports only. Python action sampling is seeded; native-engine randomness is not verified as seeded. These tests establish execution checks, not playing strength, full selection coverage or a BO3 benchmark.
+
+For a local Linux check, use the command in scripts/README.md with an unpacked agent folder and the official SDK root. The deck file and competition binaries stay local. Generic train.py, evaluate.py and package_agent.py still require implementation; packaging currently uses the notebook.
+
+## Day 1 setup and handoff
+
+The initial battle and three smoke tests passed. The four battles saved 79 examples: 17 initial, 14 with seed 10, 26 with seed 20 and 22 with seed 30. These cover setup, early, middle and later turn bands. Only the initial 17 appear in the top-level Day 1 sample count.
 
 - [Executed Day 1 notebook](notebooks/01_simulator_Day1.ipynb)
-- [Runtime, source archive and SDK file hashes](experiments/day1/environment.json)
-- [Three smoke-test results](experiments/day1/smoke_test_results.csv)
-- [All four battle results](experiments/day1/all_battle_results.json)
-- [Day 1 completion status](experiments/day1/day1_status.json)
-- [Observation examples and instructions for Kavya](experiments/day1/handoff_for_kavya/)
+- [Day 1 runtime and results](experiments/day1/)
+- [Kavya's 79 observation examples and reading instructions](experiments/day1/handoff_for_kavya/)
 
-The notebook text was shortened after execution. Executable code, execution counts and computational outputs were preserved; transient upload/download widgets were removed.
+The examples are random-action debugging/feature material, not expert demonstrations or complete training trajectories. Use current.yourIndex for the acting player. Kavya's receipt has not been independently confirmed.
 
-## Reproduce the Day 1 checks
+## Next work
 
-1. Open the notebook in a fresh Colab CPU session.
-2. Download the competition ZIP using an account that has accepted the competition rules; keep it local.
-3. Run cells in order and upload the ZIP when prompted. The recorded input filename and SHA-256 are in the environment record above.
-4. Download the results ZIP and the executed notebook before closing the session.
+- Rishitha: retain official submission evidence, capture the missing ID/time if available, and begin A-R1/A-R2 after agreeing on features and training targets. The accepted random baseline does not count as either learned architecture.
+- Kavya: define the versioned state/option encoding interface and controlled evaluation protocol.
+- Shashira and Jiayi: build against that interface; agree on rewards, transition fields and acting-player perspective before RL experiments. The current runner reports outcomes but does not yet collect a training trajectory.
 
-The recorded run used Python 3.13.18 on Linux x86_64 with the bundled `libcg.so`. It called the SDK directly; `kaggle-environments` was not installed in that run. No extra packages were installed by the notebook. Different engine randomness can produce different outcomes, even with the same Python seeds.
+Use data/README.md and configs/data_contract.template.json for data preparation. configs/environment.json records the actual Day 2 runtime; detailed manifests live under experiments/day2/. Record later experiments and submissions only when performed.
 
-## Next tasks
-
-- Rishitha: confirm the observation handoff, implement `src/simulator.py`, build the baseline in `src/baseline.py`, then verify the actual callback, package and official baseline submission.
-- Kavya: inspect the observation examples and define the state/action schema and controlled evaluation protocol.
-- Shashira and Jiayi: use the agreed interfaces to develop their assigned architecture pairs and training objectives.
-- Record model experiments and official submissions only when they actually occur. The model registry still lists planned models, and the submission register has no official IDs or ratings yet.
-
-## Data, configuration and scripts
-
-Use `data/README.md` and `configs/data_contract.template.json` to define sources, visibility, targets and grouped splits. `configs/environment.json` remains an unverified integration template; the actual Day 1 runtime is recorded in `experiments/day1/environment.json`. Pin dependencies only after the reusable runtime is verified.
-
-The `scripts/` train/evaluate/package entry points and `agent_package/main.py` are placeholders and must not be uploaded as a working agent. Exact commands for the reusable pipeline will be added when implemented.
-
-## Folder purposes
-
-- `notebooks/`: executed notebooks and their saved outputs.
-- `src/`: adapters, encoders, baseline, simulator and member models.
-- `configs/`: integration templates and planned data/evaluation settings.
-- `scripts/`: future training, evaluation and packaging entry points.
-- `tests/`: acceptance checks to implement against actual observations.
-- `data/`: local data and provenance instructions.
-- `artifacts/`, `outputs/`: ignored local checkpoints/results.
-- `experiments/`: model registry, measured records and Day 1 evidence.
-- `submissions/`: official-attempt metadata; archives remain local.
-- `agent_package/`: future self-contained runtime package.
-
-The 79 selected observation examples are included in the Day 1 handoff. Original competition downloads, SDK binaries, the deck file, complete local observation logs and archives remain outside Git.
+Competition archives, simulator binaries, the deck file and generated package remain local. The 79 selected Day 1 observations are included in their handoff folder. Team B code and other members' contribution entries are unchanged by this integration.

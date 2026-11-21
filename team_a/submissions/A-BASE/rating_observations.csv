@@ -1,0 +1,3 @@
+sequence,rating,phase,recorded_date_local,timezone,observed_at_utc,submission_id,evidence,notes
+1,600.0,initialization,2026-11-21,America/Los_Angeles,,,kaggle_submission_complete.png,"Initial screenshot; starting rating, not competitive improvement."
+2,490.5,later_snapshot,2026-11-21,America/Los_Angeles,,,kaggle_rating_490_5.png,Later screenshot of the same named Complete submission; exact timestamp and episode count not visible.
