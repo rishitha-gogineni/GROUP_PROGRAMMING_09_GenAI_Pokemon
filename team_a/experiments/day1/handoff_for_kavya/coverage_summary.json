@@ -1,0 +1,24 @@
+{
+  "run_id": "20261121T214059Z_351ac356",
+  "battles_reviewed": 4,
+  "battle_steps_total": 258,
+  "samples_total": 79,
+  "by_turn_band": {
+    "setup": 15,
+    "early": 18,
+    "middle": 34,
+    "later": 12
+  },
+  "by_selection_type": {
+    "9": 4,
+    "1": 50,
+    "0": 20,
+    "4": 4,
+    "8": 1
+  },
+  "sampled_actions_verified_legal": true,
+  "archive_hash_matches_local_dataset": true,
+  "executed_code_matches_revised_notebook": true,
+  "handoff_delivered_to_kavya": false,
+  "scope": "Representative random-action examples, not full trajectories or expert demonstrations. No BO3, submission-loader or official Kaggle rating validation."
+}

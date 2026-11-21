@@ -1,0 +1,103 @@
+{
+  "run_id": "20261121T214059Z_351ac356",
+  "started_at_utc": "2026-11-21T21:40:59.793859+00:00",
+  "python_version": "3.13.18 (main, Oct 26 2026, 15:28:15) [GCC 13.3.0]",
+  "system": "Linux",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "logical_cpu_count": 2,
+  "installed_package_versions": {
+    "kaggle-environments": null,
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "torch": "2.14.1+cpu"
+  },
+  "competition_url": "https://www.kaggle.com/competitions/the-pokemon-company-ptcg-ai-battle-challenge-playground",
+  "archive": {
+    "filename": "the-pokemon-company-ptcg-ai-battle-challenge-playground.zip",
+    "bytes": 2794645,
+    "sha256": "6fe557e77ca21b86dea9056d7f4531cbeb328abc1b25aecf9c3a4e2b7d5b2c87"
+  },
+  "sdk_files": [
+    {
+      "path": "cg/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cg/api.py",
+      "bytes": 26933,
+      "sha256": "593f1298e52a635f90f8f505a52113e9af114f444c293404e37906f18ee06ced"
+    },
+    {
+      "path": "cg/cg.dll",
+      "bytes": 1659392,
+      "sha256": "e084185a17fa1487ee5ffec5cff828d120278f03547838031e2d70bb2a8811fe"
+    },
+    {
+      "path": "cg/game.py",
+      "bytes": 2434,
+      "sha256": "2558b876af5990b8648ecd8030456bf34bd0f8e4a7251e32a2c074f848a897da"
+    },
+    {
+      "path": "cg/libcg-arm64.so",
+      "bytes": 1413168,
+      "sha256": "95628f0bd20ac5e6f1e142c88cd52c9dc7361f9c371b5599f63b27c110892545"
+    },
+    {
+      "path": "cg/libcg.dylib",
+      "bytes": 1345208,
+      "sha256": "da53cb331277cc8aa0a6181da28afeea28ae2f205372c234eca4a5c9cf3f4672"
+    },
+    {
+      "path": "cg/libcg.so",
+      "bytes": 1458504,
+      "sha256": "c699020e086eede189c445c7abf9d891a60005ceec6eb91dccd5bbdcd3c0de22"
+    },
+    {
+      "path": "cg/sim.py",
+      "bytes": 2385,
+      "sha256": "e83ca04300990267cd04385fb98ded670b517dfceb481a2bfa63ff433e2946ff"
+    },
+    {
+      "path": "cg/utils.py",
+      "bytes": 1970,
+      "sha256": "60f29665cee0a88525d6f0383bc45959a6262d16fe35ef380aece1e0ea13c49b"
+    }
+  ],
+  "sdk_imported": true,
+  "simulator_seed_verified": false,
+  "unit": "individual_battle",
+  "turn_band_definition": {
+    "setup": "turn <= 0",
+    "early": "turns 1-4",
+    "middle": "turns 5-12",
+    "later": "turn >= 13"
+  },
+  "sampling_note": "Turn bands are sampling labels, not inferred strategic game phases.",
+  "sdk_identity": "bundled sample SDK; file hashes identify the exact version",
+  "sample_agent_sha256": "cd434298ffc02788d8be9621e576687da7cdc1fe4be731e34ad686c6b9d8367a",
+  "deck_file_sha256": "42068a1803902756badcfd418f6f348b7901365a281d78af0692cbf2589f0799",
+  "native_library": "libcg.so",
+  "deck_entries": 60,
+  "test_configuration": {
+    "initial_python_seed": 42,
+    "smoke_python_seeds": [
+      10,
+      20,
+      30
+    ],
+    "max_steps": 10000,
+    "samples_per_turn_band": 16,
+    "max_examples_per_band_type_context": 2,
+    "checkpoint_every_steps": 100
+  },
+  "last_updated_at_utc": "2026-11-21T21:41:57.128169+00:00",
+  "initial_battle_seconds": 0.017,
+  "smoke_test_seconds": [
+    0.017,
+    0.069,
+    0.042
+  ],
+  "total_recorded_battle_seconds": 0.145
+}

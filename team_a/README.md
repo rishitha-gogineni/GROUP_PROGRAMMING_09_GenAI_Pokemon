@@ -20,7 +20,7 @@ Rishitha ran the official sample SDK in a Colab CPU session. The inspection, ini
 | Smoke test | 20 | 119 | 0.069 | 26 |
 | Smoke test | 30 | 74 | 0.042 | 22 |
 
-The four battles saved 79 distinct observation examples across setup, early, middle and later turn bands. The raw observations and combined handoff remain local. The top-level `representative_sample_count` in `day1_status.json` is 17 because that field refers to the initial battle only. Receipt of the handoff by Kavya is not yet confirmed.
+The four battles saved 79 distinct observation examples across setup, early, middle and later turn bands. These selected examples and their handoff notes are available in [Kavya's handoff folder](experiments/day1/handoff_for_kavya/). The top-level `representative_sample_count` in `day1_status.json` is 17 because that field refers to the initial battle only. Receipt of the handoff by Kavya is not yet confirmed.
 
 These are individual battles with the sample deck, not best-of-three results or official Kaggle scores. Timings include observation collection and file writes; four short tests do not establish training throughput or playing strength. Only Python action sampling is seeded; engine randomness is not verified as seeded. Full decision-type coverage and submission-loader compatibility remain to be checked.
 
@@ -31,6 +31,7 @@ These are individual battles with the sample deck, not best-of-three results or 
 - [Three smoke-test results](experiments/day1/smoke_test_results.csv)
 - [All four battle results](experiments/day1/all_battle_results.json)
 - [Day 1 completion status](experiments/day1/day1_status.json)
+- [Observation examples and instructions for Kavya](experiments/day1/handoff_for_kavya/)
 
 The notebook text was shortened after execution. Executable code, execution counts and computational outputs were preserved; transient upload/download widgets were removed.
 
@@ -69,4 +70,4 @@ The `scripts/` train/evaluate/package entry points and `agent_package/main.py` a
 - `submissions/`: official-attempt metadata; archives remain local.
 - `agent_package/`: future self-contained runtime package.
 
-Competition downloads, SDK binaries, deck contents, raw observation samples and local archives have not been added to Git.
+The 79 selected observation examples are included in the Day 1 handoff. Original competition downloads, SDK binaries, the deck file, complete local observation logs and archives remain outside Git.
