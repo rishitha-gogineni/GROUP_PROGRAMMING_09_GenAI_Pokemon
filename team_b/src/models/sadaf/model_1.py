@@ -48,6 +48,20 @@ class Model:
         scores = [float(s) for s in self.tree.predict(rows)]
         return [s if math.isfinite(s) else 0.0 for s in scores]
 
+    def score_rows(self, rows: Sequence[Sequence[float]]) -> list[float]:
+        """Scores for ready-made rows (used for offline metrics)."""
+        return [float(s) for s in self.tree.predict(rows)]
+
+    def describe(self) -> dict:
+        """Tree size, for the report (handbook Ch. 5: tree complexity)."""
+        if not self.is_trained:
+            return {"max_depth": self.tree.max_depth, "trained": False}
+        return {
+            "max_depth": self.tree.max_depth,
+            "actual_depth": int(self.tree.get_depth()),
+            "leaves": int(self.tree.get_n_leaves()),
+        }
+
     def save(self, path: Path) -> None:
         joblib.dump(self.tree, path)
 
