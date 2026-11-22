@@ -1,0 +1,12 @@
+{
+  "built": true,
+  "package_ready": true,
+  "kaggle_status": "not_submitted",
+  "sha256": "4cc134e6e96bc6878d7a0c90bb862a5be55c30dd9fc1f86ad9aef10fceb10c09",
+  "bytes": 12504,
+  "files": {
+    "main.py": "ac7664d10039163305a3d16f39365dd8aea94980c49508c70df85f111ff07911",
+    "deck.csv": "42068a1803902756badcfd418f6f348b7901365a281d78af0692cbf2589f0799"
+  },
+  "archive_checks_passed": true
+}

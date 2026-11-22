@@ -1,0 +1,10 @@
+{
+  "run_id": "20261122T052210Z_0c2ec591",
+  "model_id": "A-R2",
+  "parent_run_id": "20261122T002608Z_bd91a79d",
+  "training_passed": true,
+  "export_checks_passed": true,
+  "evaluation_passed": true,
+  "package_ready": true,
+  "kaggle_status": "not_submitted"
+}

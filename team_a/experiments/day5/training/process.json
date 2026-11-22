@@ -1,0 +1,19 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "error": null,
+  "command": [
+    "/usr/bin/python3",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/outputs/source/train_ar2.py",
+    "--parent",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/outputs/reference_ar1",
+    "--output",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/outputs/training",
+    "--hidden",
+    "32",
+    "--epochs",
+    "60",
+    "--seed",
+    "42"
+  ]
+}

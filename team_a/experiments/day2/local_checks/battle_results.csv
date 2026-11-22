@@ -1,0 +1,11 @@
+battle_id,python_seed,status,finished,result_code,steps,seconds,max_decision_ms,reverse_player,invalid_responses,engine_rejections,error_type,error_message,cleanup_error
+1,100,passed,True,0,36,0.010039,0.0293,False,0,0,,,
+2,101,passed,True,0,32,0.007815,0.022937,True,0,0,,,
+3,102,passed,True,1,119,0.033364,0.104044,False,0,0,,,
+4,103,passed,True,1,39,0.014793,0.037911,True,0,0,,,
+5,104,passed,True,1,22,0.008372,0.020215,False,0,0,,,
+6,105,passed,True,0,64,0.025155,0.127503,True,0,0,,,
+7,106,passed,True,1,60,0.014935,0.017632,False,0,0,,,
+8,107,passed,True,0,36,0.010617,0.02761,True,0,0,,,
+9,108,passed,True,0,30,0.007255,0.043174,False,0,0,,,
+10,109,passed,True,1,119,0.033095,0.016983,True,0,0,,,

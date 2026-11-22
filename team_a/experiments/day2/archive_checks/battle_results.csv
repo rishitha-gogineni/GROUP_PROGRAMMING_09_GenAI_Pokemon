@@ -1,0 +1,3 @@
+battle_id,python_seed,status,finished,result_code,steps,seconds,max_decision_ms,reverse_player,invalid_responses,engine_rejections,error_type,error_message,cleanup_error
+1,200,passed,True,1,36,0.013966,0.037277,False,0,0,,,
+2,201,passed,True,1,31,0.012438,0.030352,True,0,0,,,

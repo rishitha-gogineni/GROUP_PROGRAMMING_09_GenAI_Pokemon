@@ -1,0 +1,2 @@
+run_id,model_id,member,feature_schema,parent_run_id,hidden_units,activation,training_passed,selected_l2,selected_epoch,package_ready,package_sha256,kaggle_status,kaggle_submission_id,kaggle_rating,ar2_vs_random_win_rate,ar2_vs_heuristic_win_rate,ar2_vs_ar1_win_rate
+20261122T052210Z_0c2ec591,A-R2,Rishitha Gogineni,ar1-visible-v1,20261122T002608Z_bd91a79d,32,tanh,True,0.0001,60,True,c420603d62a97462f135f1b5579ed91dcfb573138960bdad138dd5af3b108c64,not_submitted,,,0.9,0.375,0.425

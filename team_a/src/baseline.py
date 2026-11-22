@@ -1,13 +1,52 @@
-"""Baseline teacher/full-response policy. NOT IMPLEMENTED."""
+"""Team A random baseline. Uses the official sample deck and maxCount policy."""
 
-from .contracts import Observation
-
-
-def baseline_response(observation: Observation) -> list[int]:
-    """Return a complete valid response, not a universal argmax/top-k."""
-    raise NotImplementedError("Implement and verify every supported SDK decision phase.")
+import os
+import random
 
 
-def teacher_option_scores(observation: Observation) -> list[float]:
-    """Document heuristic score targets; do not call them true action values."""
-    raise NotImplementedError("Define scores for the explicitly supported single-choice contexts.")
+def read_deck(configuration=None):
+    candidates = []
+    raw_path = (configuration or {}).get("__raw_path__")
+    if raw_path:
+        candidates.append(os.path.join(os.path.dirname(os.path.abspath(raw_path)), "deck.csv"))
+    module_path = globals().get("__file__")
+    if module_path:
+        candidates.append(os.path.join(os.path.dirname(os.path.abspath(module_path)), "deck.csv"))
+    candidates.extend(["/kaggle_simulations/agent/deck.csv", "deck.csv"])
+    for path in candidates:
+        if os.path.isfile(path):
+            with open(path, encoding="utf-8") as handle:
+                deck = [int(line.strip()) for line in handle if line.strip()]
+            if len(deck) != 60:
+                raise ValueError("deck.csv must contain exactly 60 card IDs.")
+            return deck
+    raise FileNotFoundError("deck.csv was not found beside the agent or in the Kaggle agent folder.")
+
+
+def baseline_response(observation, configuration=None):
+    """Use the package's local deck when no loader path is supplied."""
+    config = dict(configuration or {})
+    module_path = globals().get("__file__")
+    if "__raw_path__" not in config and module_path:
+        config["__raw_path__"] = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(module_path))),
+            "agent_package", "main.py",
+        )
+    return agent(observation, config)
+
+
+def teacher_option_scores(observation):
+    """Random actions do not supply meaningful heuristic-value targets."""
+    raise NotImplementedError("Define a teacher-score objective before fitting score regressors.")
+
+
+def agent(observation, configuration=None):
+    selection = observation.get("select")
+    if selection is None:
+        return read_deck(configuration)
+    options = selection["option"]
+    minimum = selection["minCount"]
+    maximum = selection["maxCount"]
+    if not (0 <= minimum <= maximum <= len(options)):
+        raise ValueError("Invalid option counts in the observation.")
+    return random.sample(range(len(options)), maximum)
