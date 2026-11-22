@@ -1,0 +1,26 @@
+{
+  "phase": "ar1_vs_heuristic",
+  "requested_battles": 40,
+  "recorded_battles": 40,
+  "valid_battles": 40,
+  "win": 25,
+  "loss": 15,
+  "draw": 0,
+  "error": 0,
+  "unknown_result": 0,
+  "win_rate": 0.625,
+  "score_rate": 0.625,
+  "win_rate_wilson_95": [
+    0.47032439137301096,
+    0.7577702083276673
+  ],
+  "local_checks_passed": true,
+  "unit": "individual_battle",
+  "demonstration_records": 0,
+  "note": "Rates use completed valid battles. Do not claim improvement if any game failed. The interval is an approximate binomial interval; it does not account for opponent/deck dependence or native RNG control.",
+  "policy_usage": {
+    "learned": 380,
+    "fallback": 292,
+    "deck": 41
+  }
+}

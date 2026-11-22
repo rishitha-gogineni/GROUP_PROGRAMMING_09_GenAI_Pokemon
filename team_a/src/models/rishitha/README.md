@@ -1,26 +1,30 @@
 # Rishitha Gogineni
 
-A-R1 is trained, evaluated and submitted. A-R2 remains planned. Simulator, baseline, package and Team A evidence responsibilities continue.
+Both assigned architectures are trained and locally evaluated. A-R1 has Kaggle screenshot evidence. A-R2's manual upload is user-reported; official status and rating remain unverified. Assigned report and presentation work remains.
 
-| Model | Status |
-| --- | --- |
-| A-R1 linear contextual scorer | Trained; Kaggle screenshot shows Complete at 828.8 |
-| A-R2 small MLP scorer | Pending |
+| Model | Architecture | Status |
+| --- | --- | --- |
+| A-R1 | Linear contextual scorer | Trained; supplied Kaggle image shows Complete at 828.8 |
+| A-R2 | MLP with 32 tanh hidden units | Trained; upload reported, hosted evidence pending |
 
-## Fitted A-R1
+## Fitted files and interfaces
 
-[ar1/main.py](ar1/main.py) is byte identical to the tested archive entry point. [ar1/model.json](ar1/model.json) contains its fitted weights and training only normalization. [ar1/features.py](ar1/features.py) preserves the exact ar1-visible-v1 feature definitions. The deployed policy learns MAIN decisions with one required option and at least two candidates; it uses the frozen heuristic elsewhere. The official deck stays local.
+[ar1/](ar1/) and [ar2/](ar2/) contain main.py, model.json and features.py. Each main.py and model.json matches its Colab-tested package exactly. Both use ar1-visible-v1 and the same saved normalization. The official deck stays local.
 
-[model_1.py](model_1.py) provides a repository loader and scorer. Model().score_observation(observation) handles a supported observation. Model().score_options([], candidates) accepts complete 375 element vectors from ar1.features.candidate_features(observation). The state argument is empty because state interactions are already included in every candidate vector. It rejects a nonempty state to avoid silently dropping it. The wrapper is statically checked only; use the exact ar1/main.py entry point or executed notebook for the Colab tested deployed policy.
+[model_1.py](model_1.py) and [model_2.py](model_2.py) provide loaders and scorers. Model().score_observation(observation) accepts a supported MAIN observation. Model().score_options([], candidates) accepts complete 375-element vectors from the corresponding features.candidate_features(observation). The state argument must be empty because every candidate vector already contains its state interactions. Scores remain in the current legal option order.
 
-This implementation is self contained and does not depend on another member's review or the general feature stub. It does not handle unsupported selections through the scorer interface; the deployed agent handles those through its heuristic fallback.
+These wrappers were checked statically only. The exact deployed main.py files were tested in Colab. The scorer interface rejects unsupported decisions; the full deployed agents use the frozen heuristic for those selections. Neither model depends on another member's files, review or the general feature stub.
 
-## Evidence
+## Reproducible comparison
 
-The [executed notebook](../../../notebooks/04_AR1_Linear_Scorer.ipynb), [source and results](../../../experiments/day4/), [feature contract](../../../experiments/day4/training/feature_contract.json), [dataset manifest](../../../experiments/day4/training/dataset_manifest.json) and [Kaggle screenshot](../../../submissions/A-R1/) preserve the run.
+A-R1 collection provided 300 games and 3,346 decisions. Removing 256 forced choices left 3,090 decisions grouped into 210/45/45 train, validation and test games with 2161/539/390 decisions. A-R2 reused these exact groups, features, normalization and targets. The objective distributes target probability equally among teacher maximum score legal options. Checkpoints are selected using validation loss.
 
-Fresh collection used 300 games and saved 3,346 decisions. After removing 256 forced choices, game groups were split 210/45/45 and decision counts 2161/539/390. Targets are uniform over highest scoring teacher actions. Three regularization settings were tried; validation selected L2 0.0 and epoch 14. Held out teacher top set agreement was 98.72 percent. New battle results were 40/40 against random and 19/40 against heuristic. All four archive tests passed with zero invalid responses or engine rejections.
+A-R1 selected L2 0.0 and epoch 14. A-R2 selected L2 0.0001 and epoch 60 within a 60-epoch budget. Test teacher top-set agreement improved from 98.72 to 99.49 percent, while exact choice agreement fell from 96.15 to 95.13 percent. A-R2 won 36/40 against random, 15/40 against heuristic and 17/40 against A-R1 in the new evaluation. It did not establish a gameplay improvement. Both agents include the same heuristic fallback.
 
-## Next model
+The same test groups were used for the planned architecture comparison and are not a new unseen benchmark. Models have different learning rates, as recorded. Fixed seeds do not establish controlled native engine randomness. Keep the original day4 and new day5 battle results distinct.
 
-Build A-R2 using the same feature schema and saved game splits. Keep the target, loss, preprocessing and evaluation controls matched. Record its actual results and any ineffective approach. Preserve the A-R1 comparison rather than claiming that teacher imitation established stronger play. The planned day numbers in plan.json are the original schedule, not completion timestamps.
+## Evidence and remaining tasks
+
+[A-R1 notebook](../../../notebooks/04_AR1_Linear_Scorer.ipynb), [A-R2 notebook](../../../notebooks/05_AR2_MLP_Scorer.ipynb), [A-R1 records](../../../experiments/day4/), [A-R2 records](../../../experiments/day5/), [shared manifest](../../../experiments/day5/training/dataset_manifest.json), [A-R1 Kaggle evidence](../../../submissions/A-R1/) and [A-R2 upload record](../../../submissions/A-R2/) preserve the completed work.
+
+Retain the weaker MLP comparisons as a lesson that improved imitation did not establish stronger play. Add official A-R2 acceptance and rating evidence when available. Complete the assigned report sections and slides, present the work and help with final group checks. Planned day numbers in plan.json are the original schedule, not completion timestamps.

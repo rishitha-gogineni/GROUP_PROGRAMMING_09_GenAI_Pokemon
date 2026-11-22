@@ -1,0 +1,15 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "error": null,
+  "command": [
+    "/usr/bin/python3",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/outputs/source/check_export.py",
+    "--agent",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/ar2_agent",
+    "--training",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/outputs/reference_ar1/training",
+    "--output",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/outputs/export_checks/report.json"
+  ]
+}

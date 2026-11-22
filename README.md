@@ -2,7 +2,7 @@
 
 DATA 266, Fall 2026. One shared repository for all eight members, two Kaggle submission tracks, one combined report and presentation.
 
-**Status:** Team A has integrated four executed Colab notebooks, from simulator setup through the fitted A-R1 linear scorer. The latest supplied Kaggle screenshot shows all three submissions Complete: A-R1 828.8, heuristic 257.6 and random 11.5. These are rating snapshots. A-R2 and the other learned architectures remain pending unless their own team evidence says otherwise. See [Team A](team_a/README.md) for source, weights, data splits and results.
+**Status:** Team A has integrated five executed Colab notebooks, including fitted A-R1 linear and A-R2 MLP scorers. Both models are trained and locally evaluated. A-R2 upload is user-reported; official acceptance and rating remain unverified. The last supplied screenshot shows A-R1 Complete at 828.8, heuristic 257.6 and random 11.5. These are rating snapshots. Other members' progress remains as documented. See [Team A](team_a/README.md) for source, weights, paired results and remaining work.
 
 ## Start here
 
@@ -39,7 +39,7 @@ Each team contains `src/`, `configs/`, `scripts/`, `tests/`, `data/`, `experimen
 
 No packages are installed by this scaffold. The starter interfaces use Python 3.10+ syntax; select a Python version compatible with the actual SDK before running or pinning dependencies. Each team records its verified runtime in `configs/environment.json` and its packages in `requirements.txt`.
 
-Team A's executed notebooks provide the tested baseline and A-R1 Colab workflows; its portable checker and input requirements are documented in [Team A script instructions](team_a/scripts/README.md). Generic training, evaluation and packaging CLI templates still require implementation.
+Team A's executed notebooks provide the tested baseline, A-R1 and A-R2 Colab workflows; its portable checker and input requirements are documented in [Team A script instructions](team_a/scripts/README.md). Generic training, evaluation and packaging CLI templates still require implementation.
 
 ## Shared repository decision
 

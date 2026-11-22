@@ -1,1 +1,1 @@
-"""Rishitha Gogineni: fitted A-R1 scorer and planned A-R2 MLP."""
+"""Rishitha Gogineni: fitted A-R1 linear scorer and A-R2 MLP."""

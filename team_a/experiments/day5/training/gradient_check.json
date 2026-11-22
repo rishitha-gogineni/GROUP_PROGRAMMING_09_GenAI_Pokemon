@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "parameter": "W1",
+      "index": [
+        338,
+        1
+      ],
+      "absolute_error": 8.119466210487758e-11
+    },
+    {
+      "parameter": "W1",
+      "index": [
+        343,
+        1
+      ],
+      "absolute_error": 5.276123982156378e-11
+    },
+    {
+      "parameter": "W1",
+      "index": [
+        36,
+        1
+      ],
+      "absolute_error": 2.1852408771394494e-11
+    },
+    {
+      "parameter": "W1",
+      "index": [
+        35,
+        1
+      ],
+      "absolute_error": 2.5278001913875414e-11
+    },
+    {
+      "parameter": "b1",
+      "index": [
+        3
+      ],
+      "absolute_error": 1.0154905995957142e-11
+    },
+    {
+      "parameter": "b1",
+      "index": [
+        0
+      ],
+      "absolute_error": 2.469301152441261e-11
+    },
+    {
+      "parameter": "b1",
+      "index": [
+        2
+      ],
+      "absolute_error": 2.8936644747012963e-12
+    },
+    {
+      "parameter": "b1",
+      "index": [
+        1
+      ],
+      "absolute_error": 2.5723451146930643e-12
+    },
+    {
+      "parameter": "w2",
+      "index": [
+        1
+      ],
+      "absolute_error": 3.46540851570154e-11
+    },
+    {
+      "parameter": "w2",
+      "index": [
+        2
+      ],
+      "absolute_error": 4.308886580872695e-12
+    },
+    {
+      "parameter": "w2",
+      "index": [
+        0
+      ],
+      "absolute_error": 9.050094007534426e-12
+    },
+    {
+      "parameter": "w2",
+      "index": [
+        3
+      ],
+      "absolute_error": 5.327321916936967e-12
+    }
+  ],
+  "source": "First three training decisions only",
+  "maximum_absolute_error": 8.119466210487758e-11
+}

@@ -1,0 +1,82 @@
+{
+  "model_id": "A-R2",
+  "fitting_passed": true,
+  "selected_l2": 0.0001,
+  "selected_epoch": 60,
+  "hidden_units": 32,
+  "activation": "tanh",
+  "learning_rate": 0.003,
+  "parameter_count": 12064,
+  "training_seconds": 20.139865317000044,
+  "splits": {
+    "train": {
+      "decisions": 2161,
+      "cross_entropy": 0.6529056599656492,
+      "teacher_top_set_accuracy": 1.0,
+      "exact_choice_accuracy": 0.9648310967144841,
+      "uniform_choice_top_set_accuracy": 0.4159364202380473,
+      "uniform_cross_entropy": 1.627348729280816
+    },
+    "validation": {
+      "decisions": 539,
+      "cross_entropy": 0.6645817848377334,
+      "teacher_top_set_accuracy": 1.0,
+      "exact_choice_accuracy": 0.9647495361781077,
+      "uniform_choice_top_set_accuracy": 0.4189331864478978,
+      "uniform_cross_entropy": 1.6232754672453173
+    },
+    "held_out": {
+      "decisions": 390,
+      "cross_entropy": 0.67886367801615,
+      "teacher_top_set_accuracy": 0.9948717948717949,
+      "exact_choice_accuracy": 0.9512820512820512,
+      "uniform_choice_top_set_accuracy": 0.4195460252110775,
+      "uniform_cross_entropy": 1.596080502512623
+    }
+  },
+  "ar1_same_splits": {
+    "train": {
+      "decisions": 2161,
+      "cross_entropy": 0.7203472803914267,
+      "teacher_top_set_accuracy": 0.982415548357242,
+      "exact_choice_accuracy": 0.9527996298010181,
+      "uniform_choice_top_set_accuracy": 0.4159364202380473,
+      "uniform_cross_entropy": 1.627348729280816
+    },
+    "validation": {
+      "decisions": 539,
+      "cross_entropy": 0.7157373279595364,
+      "teacher_top_set_accuracy": 0.9833024118738405,
+      "exact_choice_accuracy": 0.9536178107606679,
+      "uniform_choice_top_set_accuracy": 0.4189331864478978,
+      "uniform_cross_entropy": 1.6232754672453173
+    },
+    "held_out": {
+      "decisions": 390,
+      "cross_entropy": 0.715785742643279,
+      "teacher_top_set_accuracy": 0.9871794871794872,
+      "exact_choice_accuracy": 0.9615384615384616,
+      "uniform_choice_top_set_accuracy": 0.4195460252110775,
+      "uniform_cross_entropy": 1.596080502512623
+    }
+  },
+  "configurations": [
+    {
+      "l2": 0.0,
+      "best_epoch": 60,
+      "validation_cross_entropy": 0.6646526127169092
+    },
+    {
+      "l2": 0.0001,
+      "best_epoch": 60,
+      "validation_cross_entropy": 0.6645817848377334
+    },
+    {
+      "l2": 0.001,
+      "best_epoch": 57,
+      "validation_cross_entropy": 0.6712213545567053
+    }
+  ],
+  "model_sha256": "e84cb09280a385f5de84030186bb92700f98d63c56fbb4e2db48114f61c34d62",
+  "notes": "Checkpoint and regularization selection used validation only. Shared A-R1 test groups are a planned architecture comparison, not a new unseen test set. Teacher agreement does not establish stronger gameplay. A-R1 used learning rate 0.03; A-R2 uses 0.003, with the same Adam family, batch size, seed, maximum epochs, patience and regularization grid."
+}
