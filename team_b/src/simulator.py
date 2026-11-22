@@ -24,7 +24,7 @@ from dataclasses import asdict, dataclass, field
 from typing import Callable
 
 from . import engine
-from .adapter import random_valid_response, validation_error
+from .adapter import checked_response, random_valid_response
 
 Agent = Callable[[dict], list]
 RESULT_LOG = 23
@@ -66,9 +66,7 @@ def play_game(agent0: Agent, agent1: Agent, deck0: list[int], deck1: list[int],
             p = obs["current"]["yourIndex"]
             d0 = time.perf_counter()
             try:
-                response = agents[p](obs)
-                response = [int(i) for i in response]
-                bad = validation_error(obs, response)
+                response, bad = checked_response(obs, agents[p](obs))
             except Exception as exc:
                 bad = f"{type(exc).__name__}: {exc}"
             rec.decision_ms[p] += (time.perf_counter() - d0) * 1000.0
@@ -94,7 +92,12 @@ def play_game(agent0: Agent, agent1: Agent, deck0: list[int], deck1: list[int],
 
 def decide_match(game_winners_for_a: list[str], wins_needed: int = 2) -> str:
     """Match outcome for agent A from per-game outcomes ('W', 'L', 'D', 'X' aborted).
-    First to `wins_needed` wins; otherwise more wins after all games; else draw."""
+
+    Any aborted game makes the series incomplete -> 'E' (error); error matches are
+    excluded from win rate. Otherwise first to `wins_needed` wins, then more wins
+    after all games, else draw."""
+    if "X" in game_winners_for_a:
+        return "E"
     wins = game_winners_for_a.count("W")
     losses = game_winners_for_a.count("L")
     if wins >= wins_needed:
@@ -125,6 +128,8 @@ def run_match(agent_a: Agent, agent_b: Agent, deck_a: list[int], deck_b: list[in
             outcome = "X"
         outcomes.append(outcome)
         games.append({"a_seat": a_seat, "outcome_for_a": outcome, **asdict(rec)})
+        if outcome == "X":  # series is incomplete; stop and report it as an error
+            break
         if outcomes.count("W") >= needed or outcomes.count("L") >= needed:
             break
     return {"result_for_a": decide_match(outcomes, needed), "games": games}
@@ -151,10 +156,14 @@ def wilson_interval(successes: int, n: int, z: float = 1.96) -> tuple[float, flo
 
 
 def summarise(match_results: list[dict]) -> dict:
-    n = len(match_results)
+    """Win rate and Wilson interval use only completed matches (W/L/D);
+    error matches ('E', an aborted game in the series) are counted separately."""
+    n_total = len(match_results)
     wins = sum(r["result_for_a"] == "W" for r in match_results)
     losses = sum(r["result_for_a"] == "L" for r in match_results)
-    draws = n - wins - losses
+    draws = sum(r["result_for_a"] == "D" for r in match_results)
+    errors = n_total - wins - losses - draws
+    n = wins + losses + draws
     games = [g for r in match_results for g in r["games"]]
     a_invalid = sum(g["invalid"][g["a_seat"]] for g in games)
     b_invalid = sum(g["invalid"][1 - g["a_seat"]] for g in games)
@@ -162,7 +171,9 @@ def summarise(match_results: list[dict]) -> dict:
     a_dec = sum(g["decisions"][g["a_seat"]] for g in games)
     lo, hi = wilson_interval(wins, n)
     return {
-        "matches": n,
+        "matches": n,  # completed matches used for win_rate
+        "matches_played": n_total,
+        "error_matches": errors,
         "wins": wins,
         "losses": losses,
         "draws": draws,

@@ -34,6 +34,17 @@ class AdapterTests(unittest.TestCase):
         self.assertIsNotNone(validation_error(obs, [4]))         # out of range
         self.assertIsNotNone(validation_error(obs, [-1]))
         self.assertIsNotNone(validation_error(obs, (0,)))        # not a list
+        self.assertIsNotNone(validation_error(obs, [1.75]))      # float is not truncated
+        self.assertIsNotNone(validation_error(obs, [1.0]))
+        self.assertIsNotNone(validation_error(obs, [True]))
+        self.assertIsNotNone(validation_error(obs, ["1"]))
+
+    def test_checked_response_validates_before_converting(self):
+        obs = fake_obs(4, 1, 1)
+        self.assertEqual(adapter.checked_response(obs, [2]), ([2], None))
+        resp, reason = adapter.checked_response(obs, [1.75])
+        self.assertIsNone(resp)
+        self.assertIsNotNone(reason)
 
     def test_optional_selection_allows_empty(self):
         self.assertIsNone(validation_error(fake_obs(3, 0, 1), []))
@@ -65,6 +76,10 @@ class AdapterTests(unittest.TestCase):
         self.assertIsNone(validation_error(obs, wrapped(obs)))
         self.assertEqual(wrapped.stats["fallbacks"], 1)
 
+        wrapped = adapter.safe_agent(lambda o: [1.75], deck)         # float index
+        self.assertIsNone(validation_error(obs, wrapped(obs)))
+        self.assertEqual(wrapped.stats["fallbacks"], 1)
+
 
 class MatchLogicTests(unittest.TestCase):
     def test_best_of_three_decisions(self):
@@ -74,7 +89,35 @@ class MatchLogicTests(unittest.TestCase):
         self.assertEqual(d(["W", "D", "D"]), "W")
         self.assertEqual(d(["D", "D", "D"]), "D")
         self.assertEqual(d(["W", "L", "D"]), "D")
-        self.assertEqual(d(["W", "X", "L"]), "D")
+        self.assertEqual(d(["W", "X", "L"]), "E")   # aborted game -> error
+        self.assertEqual(d(["W", "X", "X"]), "E")   # one win + two aborted is NOT a win
+
+    def test_error_matches_excluded_from_win_rate(self):
+        def match(result):
+            return {"result_for_a": result, "games": []}
+        s = simulator.summarise([match("W"), match("L"), match("E"), match("E")])
+        self.assertEqual(s["matches"], 2)
+        self.assertEqual(s["matches_played"], 4)
+        self.assertEqual(s["error_matches"], 2)
+        self.assertEqual(s["win_rate"], 0.5)
+        self.assertEqual(s["draws"], 0)
+
+    def test_run_match_stops_on_aborted_game(self):
+        calls = []
+        real = simulator.play_game
+
+        def fake_play_game(*_args, **_kw):
+            calls.append(1)
+            winner = 0 if len(calls) == 1 else -1     # game 1 won by seat 0, game 2 aborted
+            return simulator.GameRecord(winner, None, 0, 0, 0.0)
+
+        simulator.play_game = fake_play_game
+        try:
+            result = simulator.run_match(None, None, [], [], a_starts_as=0)
+        finally:
+            simulator.play_game = real
+        self.assertEqual(result["result_for_a"], "E")
+        self.assertEqual(len(calls), 2)
 
     def test_wilson_interval(self):
         lo, hi = simulator.wilson_interval(50, 100)
