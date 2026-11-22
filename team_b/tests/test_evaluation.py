@@ -15,15 +15,16 @@ def log(tmp_path):
 
 
 def test_appends_row_and_computes_win_rate(log):
+    before = len(list(csv.DictReader(open(log))))   # log may already hold real rows
     write_experiment(
         {"member": "Sadaf", "experiment_id": "T1", "model_id": "B-SA1",
          "status": "smoke", "matches": 10, "wins": 6, "losses": 4, "draws": 0},
         path=log,
     )
     rows = list(csv.DictReader(open(log)))
-    assert len(rows) == 1
-    assert rows[0]["team"] == "B"
-    assert rows[0]["win_rate"] == "0.6"
+    assert len(rows) == before + 1                   # exactly one new row
+    assert rows[-1]["team"] == "B"
+    assert rows[-1]["win_rate"] == "0.6"
 
 
 def test_rejects_typo_column(log):
