@@ -60,6 +60,10 @@ class Model:
         scores = [float(s) for s in self.forest.predict(rows)]
         return [s if math.isfinite(s) else 0.0 for s in scores]
 
+    def score_rows(self, rows: Sequence[Sequence[float]]) -> list[float]:
+        """Scores for ready-made rows (used for offline metrics)."""
+        return [float(s) for s in self.forest.predict(rows)]
+
     def describe(self) -> dict:
         """Ensemble size, depth and feature importance (handbook Ch. 5, step 5)."""
         return {
