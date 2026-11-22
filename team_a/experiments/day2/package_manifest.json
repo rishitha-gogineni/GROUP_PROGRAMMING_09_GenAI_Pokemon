@@ -1,0 +1,15 @@
+{
+  "built": true,
+  "local_package_ready": true,
+  "kaggle_validation_status": "not_submitted",
+  "members": [
+    "main.py",
+    "deck.csv"
+  ],
+  "bytes": 892,
+  "sha256": "c889d1b602458c63f6aad64e691acc47972517bdb3a9ccd93ea6b87635075c96",
+  "files": {
+    "main.py": "9f447d9252f659659df0748c11734a188ce8e306a517a8ec842f1a79d950a4ff",
+    "deck.csv": "42068a1803902756badcfd418f6f348b7901365a281d78af0692cbf2589f0799"
+  }
+}

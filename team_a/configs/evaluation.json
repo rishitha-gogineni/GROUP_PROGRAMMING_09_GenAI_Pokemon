@@ -1,15 +1,114 @@
 {
-  "status": "planning_only",
-  "owner": "Kavya",
-  "unit": "best_of_three_match",
-  "seed_control_verified": false,
-  "screening_matches": 10,
-  "finalist_matches_target": 50,
-  "seed_list": [],
-  "opponents": [],
-  "deck_ids_or_hashes": [],
-  "draw_policy": null,
-  "confidence_interval_method": null,
-  "max_decision_ms": null,
-  "notes": "Verify harness support, measure throughput and predeclare settings. Counts are budget targets, not completed runs or course mandates."
+  "schema_version": "team-a-evaluation-v1",
+  "status": "runnable",
+  "owner": "Team A",
+  "unit": "individual_battle",
+  "games": 40,
+  "seeds": [
+    60000,
+    60001,
+    60002,
+    60003,
+    60004,
+    60005,
+    60006,
+    60007,
+    60008,
+    60009,
+    60010,
+    60011,
+    60012,
+    60013,
+    60014,
+    60015,
+    60016,
+    60017,
+    60018,
+    60019,
+    60020,
+    60021,
+    60022,
+    60023,
+    60024,
+    60025,
+    60026,
+    60027,
+    60028,
+    60029,
+    60030,
+    60031,
+    60032,
+    60033,
+    60034,
+    60035,
+    60036,
+    60037,
+    60038,
+    60039
+  ],
+  "max_steps": 10000,
+  "process_timeout_seconds": 1200,
+  "seat_schedule": "alternate",
+  "reverse_player_schedule": "toggle_every_two",
+  "python_action_sampling_seeded": true,
+  "native_engine_seed_verified": false,
+  "draw_score": 0.5,
+  "confidence_interval": {
+    "method": "wilson_95_binary_win",
+    "notes": "Binary wins among valid completed battles; draws are non-wins. Not an interval for score_rate. No adjustment for game dependence."
+  },
+  "deck": {
+    "name": "Official sample deck from the recorded competition ZIP",
+    "require_same": true,
+    "expected_sha256": "42068a1803902756badcfd418f6f348b7901365a281d78af0692cbf2589f0799"
+  },
+  "official_zip_sha256": "6fe557e77ca21b86dea9056d7f4531cbeb328abc1b25aecf9c3a4e2b7d5b2c87",
+  "sdk_expected_sha256": {
+    "cg/api.py": "593f1298e52a635f90f8f505a52113e9af114f444c293404e37906f18ee06ced",
+    "cg/game.py": "2558b876af5990b8648ecd8030456bf34bd0f8e4a7251e32a2c074f848a897da",
+    "cg/sim.py": "e83ca04300990267cd04385fb98ded670b517dfceb481a2bfa63ff433e2946ff"
+  },
+  "agents": {
+    "random": {
+      "entrypoint": "team_a/agent_package/main.py",
+      "assets": []
+    },
+    "heuristic": {
+      "entrypoint": "team_a/src/heuristic.py",
+      "assets": []
+    },
+    "ar1": {
+      "entrypoint": "team_a/src/models/rishitha/ar1/main.py",
+      "assets": [
+        "model.json"
+      ]
+    },
+    "ar2": {
+      "entrypoint": "team_a/src/models/rishitha/ar2/main.py",
+      "assets": [
+        "model.json"
+      ]
+    }
+  },
+  "package_validation": {
+    "games_per_opponent": 2,
+    "seed_base": 90000,
+    "opponents": [
+      "random",
+      "heuristic",
+      "ar1"
+    ]
+  },
+  "recorded_runtime": {
+    "python": "3.13.18",
+    "system": "Linux",
+    "machine": "x86_64",
+    "numpy_training": "2.4.6",
+    "matplotlib_plotting": "3.10.0"
+  },
+  "source_runs": [
+    "20261122T002608Z_bd91a79d",
+    "20261122T052210Z_0c2ec591"
+  ],
+  "notes": "Defaults reproduce the recorded individual-battle protocol, not a completed new run or the full Kaggle match harness. Same Python seeds do not establish controlled native randomness. New output directories are required. Archive tests establish local execution only."
 }

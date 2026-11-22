@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "requested_battles": 2,
+  "run_id": "20261122T052210Z_0c2ec591",
+  "phase": "archive_vs_heuristic",
+  "unit": "individual_battle",
+  "contract_checks": [
+    {
+      "case": "deck_callback_without___file__",
+      "passed": true
+    },
+    {
+      "case": "single",
+      "passed": true
+    },
+    {
+      "case": "multiple",
+      "passed": true
+    },
+    {
+      "case": "zero",
+      "passed": true
+    },
+    {
+      "case": "optional",
+      "passed": true
+    }
+  ],
+  "battles": [
+    {
+      "python_seed": 70100,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 0,
+      "steps": 21,
+      "reverse_player": false,
+      "seconds": 0.025177,
+      "max_decision_ms": 8.809162,
+      "selection_types": [
+        0,
+        1,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "policy_usage": {
+        "learned": 7,
+        "fallback": 12,
+        "deck": 2
+      },
+      "game_id": "20261122T052210Z_0c2ec591:archive_vs_heuristic:0001",
+      "battle_id": 1,
+      "candidate_seat": 0,
+      "outcome": "win",
+      "demo_records": 0,
+      "supported_decisions_seen": 0,
+      "demo_cap_reached": false,
+      "demo_file": ""
+    },
+    {
+      "python_seed": 70101,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 1,
+      "steps": 56,
+      "reverse_player": false,
+      "seconds": 0.044805,
+      "max_decision_ms": 4.135431,
+      "selection_types": [
+        0,
+        1,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "policy_usage": {
+        "learned": 26,
+        "fallback": 21,
+        "deck": 3
+      },
+      "game_id": "20261122T052210Z_0c2ec591:archive_vs_heuristic:0002",
+      "battle_id": 2,
+      "candidate_seat": 1,
+      "outcome": "win",
+      "demo_records": 0,
+      "supported_decisions_seen": 0,
+      "demo_cap_reached": false,
+      "demo_file": ""
+    }
+  ],
+  "current_game_id": "20261122T052210Z_0c2ec591:archive_vs_heuristic:0002",
+  "demonstrations_enabled": false,
+  "error": null
+}

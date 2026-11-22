@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "tested_decisions": {
+    "train": 100,
+    "validation": 100,
+    "held_out": 100
+  },
+  "maximum_score_difference": 8.881784197001252e-15,
+  "deck_callback_without_file": true,
+  "policy_usage": {
+    "learned": 300,
+    "fallback": 0,
+    "deck": 1
+  },
+  "note": "Parity checks use saved observations after fitting. They do not select or refit the model."
+}

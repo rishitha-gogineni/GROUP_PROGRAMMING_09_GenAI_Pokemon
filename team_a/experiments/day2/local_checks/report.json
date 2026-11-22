@@ -1,0 +1,275 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "unit": "individual_battle",
+  "loader_check": "exec without __file__; last callable; configured agent path",
+  "contract_checks": [
+    {
+      "case": "initial_deck_from_unrelated_working_directory",
+      "passed": true
+    },
+    {
+      "case": "single",
+      "passed": true
+    },
+    {
+      "case": "multiple",
+      "passed": true
+    },
+    {
+      "case": "zero_options",
+      "passed": true
+    },
+    {
+      "case": "optional",
+      "passed": true
+    }
+  ],
+  "battles": [
+    {
+      "python_seed": 100,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 0,
+      "steps": 36,
+      "reverse_player": false,
+      "seconds": 0.010039,
+      "max_decision_ms": 0.0293,
+      "selection_types": [
+        0,
+        1,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 1
+    },
+    {
+      "python_seed": 101,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 0,
+      "steps": 32,
+      "reverse_player": true,
+      "seconds": 0.007815,
+      "max_decision_ms": 0.022937,
+      "selection_types": [
+        0,
+        1,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 2
+    },
+    {
+      "python_seed": 102,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 1,
+      "steps": 119,
+      "reverse_player": false,
+      "seconds": 0.033364,
+      "max_decision_ms": 0.104044,
+      "selection_types": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 3
+    },
+    {
+      "python_seed": 103,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 1,
+      "steps": 39,
+      "reverse_player": true,
+      "seconds": 0.014793,
+      "max_decision_ms": 0.037911,
+      "selection_types": [
+        0,
+        1,
+        4,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 4
+    },
+    {
+      "python_seed": 104,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 1,
+      "steps": 22,
+      "reverse_player": false,
+      "seconds": 0.008372,
+      "max_decision_ms": 0.020215,
+      "selection_types": [
+        0,
+        1,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 5
+    },
+    {
+      "python_seed": 105,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 0,
+      "steps": 64,
+      "reverse_player": true,
+      "seconds": 0.025155,
+      "max_decision_ms": 0.127503,
+      "selection_types": [
+        0,
+        1,
+        4,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 6
+    },
+    {
+      "python_seed": 106,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 1,
+      "steps": 60,
+      "reverse_player": false,
+      "seconds": 0.014935,
+      "max_decision_ms": 0.017632,
+      "selection_types": [
+        0,
+        1,
+        4,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 7
+    },
+    {
+      "python_seed": 107,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 0,
+      "steps": 36,
+      "reverse_player": true,
+      "seconds": 0.010617,
+      "max_decision_ms": 0.02761,
+      "selection_types": [
+        0,
+        1,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 8
+    },
+    {
+      "python_seed": 108,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 0,
+      "steps": 30,
+      "reverse_player": false,
+      "seconds": 0.007255,
+      "max_decision_ms": 0.043174,
+      "selection_types": [
+        0,
+        1,
+        4,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 9
+    },
+    {
+      "python_seed": 109,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 1,
+      "steps": 119,
+      "reverse_player": true,
+      "seconds": 0.033095,
+      "max_decision_ms": 0.016983,
+      "selection_types": [
+        0,
+        1,
+        4,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "battle_id": 10
+    }
+  ],
+  "error": null,
+  "scope": "Direct SDK and local loader checks; not the full Kaggle harness or a leaderboard evaluation."
+}

@@ -1,0 +1,81 @@
+Starting 20261121T232326Z_2121ee87:evaluation:0001
+Finished 1/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0002
+Finished 2/30: loss; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0003
+Finished 3/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0004
+Finished 4/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0005
+Finished 5/30: loss; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0006
+Finished 6/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0007
+Finished 7/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0008
+Finished 8/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0009
+Finished 9/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0010
+Finished 10/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0011
+Finished 11/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0012
+Finished 12/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0013
+Finished 13/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0014
+Finished 14/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0015
+Finished 15/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0016
+Finished 16/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0017
+Finished 17/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0018
+Finished 18/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0019
+Finished 19/30: loss; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0020
+Finished 20/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0021
+Finished 21/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0022
+Finished 22/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0023
+Finished 23/30: loss; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0024
+Finished 24/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0025
+Finished 25/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0026
+Finished 26/30: loss; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0027
+Finished 27/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0028
+Finished 28/30: loss; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0029
+Finished 29/30: win; status=passed; samples=0
+Starting 20261121T232326Z_2121ee87:evaluation:0030
+Finished 30/30: win; status=passed; samples=0
+{
+  "phase": "evaluation",
+  "requested_battles": 30,
+  "recorded_battles": 30,
+  "valid_battles": 30,
+  "win": 24,
+  "loss": 6,
+  "draw": 0,
+  "error": 0,
+  "unknown_result": 0,
+  "win_rate": 0.8,
+  "score_rate": 0.8,
+  "win_rate_wilson_95": [
+    0.6269430358685175,
+    0.9049489282271013
+  ],
+  "local_checks_passed": true,
+  "unit": "individual_battle",
+  "demonstration_records": 0,
+  "note": "Rates use completed valid battles. Do not claim improvement if any game failed. The interval is an approximate binomial interval; it does not account for opponent/deck dependence or native RNG control."
+}

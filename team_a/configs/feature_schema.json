@@ -1,0 +1,28 @@
+{
+  "schema_version": "ar1-visible-v1",
+  "dimension": 375,
+  "entrypoint": "team_a.src.features.encode_observation",
+  "encoder_source": "team_a/src/models/rishitha/ar1/features.py",
+  "feature_names": "FEATURE_NAMES in team_a.src.features, in exact candidate vector order",
+  "supported_selection": {
+    "type": 0,
+    "minCount": 1,
+    "maxCount": 1,
+    "minimum_options": 2
+  },
+  "state_argument": "Empty list; state interactions are already in every candidate vector",
+  "candidate_order": "Unchanged current select.option order; option_indices maps rows to legal indices",
+  "normalization": "Fixed feature scaling is in the encoder. Fitted mean and scale stay inside each trained model.json.",
+  "excluded_inputs": [
+    "teacher_scores",
+    "chosen labels",
+    "game_id",
+    "result",
+    "logs",
+    "serial",
+    "opaque search payload",
+    "opponent hidden card identities"
+  ],
+  "unsupported_decisions": "The common encoder raises ValueError. Full deployed agents use their own valid fallback.",
+  "scope": "Reference encoder for supported MAIN decisions, not a universal encoding for every project architecture."
+}

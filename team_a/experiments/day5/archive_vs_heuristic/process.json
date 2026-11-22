@@ -1,0 +1,25 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "error": null,
+  "command": [
+    "/usr/bin/python3",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/outputs/source/evaluate_policy.py",
+    "--sdk-dir",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/official_sample",
+    "--random-dir",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/heuristic_agent",
+    "--heuristic-dir",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/unpacked_submission",
+    "--output-dir",
+    "/content/ptcg_ar2/20261122T052210Z_0c2ec591/outputs/archive_vs_heuristic",
+    "--run-id",
+    "20261122T052210Z_0c2ec591",
+    "--phase",
+    "archive_vs_heuristic",
+    "--games",
+    "2",
+    "--seed-start",
+    "70100"
+  ]
+}
