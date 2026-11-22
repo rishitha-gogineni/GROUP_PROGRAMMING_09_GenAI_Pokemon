@@ -12,10 +12,11 @@ from __future__ import annotations
 
 import random
 
-from team_b.src import baseline as B
-from team_b.src import simulator
-from team_b.src.adapter import top_k
-from team_b.src.card_features import card_vector
+# Relative imports so this file also works inside the Kaggle package,
+# where team_b/src is copied as "teamb" (see team_b/scripts/package_agent.py).
+from ... import baseline as B
+from ...adapter import top_k
+from ...card_features import card_vector
 
 SCHEMA_VERSION = "sadaf-v1"
 N_OPTION_TYPES = 17   # cg OptionType 0..16
@@ -113,6 +114,7 @@ def collect(n_games: int, deck: list[int], seed: int = 0) -> dict:
     for g in range(n_games):
         state["game"] = g
         a, b = (B.heuristic_response, rand) if g % 2 == 0 else (rand, B.heuristic_response)
+        from ... import simulator  # only needed for training, not inside the agent
         simulator.play_game(a, b, deck, deck, recorder=recorder)
     return data
 
