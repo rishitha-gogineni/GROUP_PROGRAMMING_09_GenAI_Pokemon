@@ -1,3 +1,4 @@
-# No dependencies installed or versions verified by this scaffold.
-# Chelsi: reproduce the current official SDK example, then pin tested versions.
-# Record Python/SDK/platform in configs/environment.json before training.
+# Team B runtime: Python standard library only (verified with Python 3.13.5).
+# The engine is the official `cg` package + native library from the Kaggle data page,
+# placed in team_b/data/raw/cg (git-ignored). See team_b/README.md.
+# Model training (B-C1/B-C2 etc.) will add pinned numpy/torch versions here when used.

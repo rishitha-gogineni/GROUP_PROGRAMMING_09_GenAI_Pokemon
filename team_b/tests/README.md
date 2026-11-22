@@ -11,4 +11,4 @@ Use genuine SDK observations and actual runtime behavior.
 - Candidate score shapes and feature/checkpoint schema compatibility.
 - Official package layout and validated runtime paths.
 
-No test suite has been implemented or executed by this scaffold.
+Implemented in `test_baseline_pipeline.py`; run `python3 -m unittest discover -s team_b/tests -t . -v` from the repository root. Engine tests skip when `team_b/data/raw/cg` is missing.
