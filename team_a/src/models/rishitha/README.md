@@ -13,7 +13,7 @@ Both assigned architectures are trained and locally evaluated. A-R1 has Kaggle s
 
 [model_1.py](model_1.py) and [model_2.py](model_2.py) provide loaders and scorers. Model().score_observation(observation) accepts a supported MAIN observation. Model().score_options([], candidates) accepts complete 375-element vectors from the corresponding features.candidate_features(observation). The state argument must be empty because every candidate vector already contains its state interactions. Scores remain in the current legal option order.
 
-These wrappers were checked statically only. The exact deployed main.py files were tested in Colab. The scorer interface rejects unsupported decisions; the full deployed agents use the frozen heuristic for those selections. Neither model depends on another member's files, review or the general feature stub.
+Both wrappers passed the shared feature-interface checks on three saved observations using standard-library inference. The exact deployed main.py files were tested in Colab. The scorer interface rejects unsupported decisions; the full deployed agents use the frozen heuristic for those selections. Neither model depends on another member's files, review or the general feature stub.
 
 ## Reproducible comparison
 

@@ -39,7 +39,7 @@ Each team contains `src/`, `configs/`, `scripts/`, `tests/`, `data/`, `experimen
 
 No packages are installed by this scaffold. The starter interfaces use Python 3.10+ syntax; select a Python version compatible with the actual SDK before running or pinning dependencies. Each team records its verified runtime in `configs/environment.json` and its packages in `requirements.txt`.
 
-Team A's executed notebooks provide the tested baseline, A-R1 and A-R2 Colab workflows; its portable checker and input requirements are documented in [Team A script instructions](team_a/scripts/README.md). Generic training, evaluation and packaging CLI templates still require implementation.
+Team A's executed notebooks provide the tested baseline, A-R1 and A-R2 Colab workflows; its portable checker and input requirements are documented in [Team A script instructions](team_a/scripts/README.md). Shared Team A evaluation and packaging commands are implemented and documented. The generic train.py remains a placeholder; model fitting uses the executed notebooks.
 
 ## Shared repository decision
 

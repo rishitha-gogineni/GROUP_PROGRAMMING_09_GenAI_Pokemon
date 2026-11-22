@@ -17,7 +17,7 @@ The simulator, random baseline, heuristic, A-R1 linear scorer and A-R2 MLP are i
 4. [A-R1 linear scorer](notebooks/04_AR1_Linear_Scorer.ipynb): fresh collection, linear fitting and submission checks.
 5. [A-R2 small MLP](notebooks/05_AR2_MLP_Scorer.ipynb): matched data, MLP fitting, paired model analysis and archive checks.
 
-Notebook prose uses simple lab notes. Code, execution counts, figures and computational outputs are preserved. Colab browser controls were removed from the saved display. No training, model inference or native simulator code was rerun during integration.
+Notebook prose uses simple lab notes. Code, execution counts, figures and computational outputs are preserved. Colab browser controls were removed from the saved display. The saved notebook computations were not rerun. Shared-tool tests exercised standard-library inference on three saved observations and temporary synthetic SDK fixtures; no native engine or training was run.
 
 ## Matched model comparison
 
@@ -60,13 +60,13 @@ Both deployed agents use the learned scorer only for MAIN selections requiring o
 ## Source, weights and evidence
 
 * [A-R1 model](src/models/rishitha/ar1/) and [A-R2 model](src/models/rishitha/ar2/) contain the exact tested entry points, fitted JSON weights and feature definitions.
-* [Repository scorers](src/models/rishitha/README.md) document the model_1.py and model_2.py interfaces. These thin wrappers were checked statically; the deployed entry points match Colab byte for byte.
+* [Repository scorers](src/models/rishitha/README.md) document the model_1.py and model_2.py interfaces. The wrappers passed feature-interface checks on three saved observations; the deployed entry points still match Colab byte for byte.
 * [Day 4 records](experiments/day4/) preserve A-R1 collection, source, fitting and original evaluation.
 * [Day 5 records](experiments/day5/) preserve the MLP source, checkpoints, gradient checks, comparison CSVs, figures, battle logs and original parent data.
 * [Shared game manifest](experiments/day5/training/dataset_manifest.json), [feature contract](experiments/day5/training/feature_contract.json) and [model metrics](experiments/day5/training/metrics.json) define the matched comparison.
 * [A-R1 Kaggle evidence](submissions/A-R1/) has the supplied screenshot. [A-R2 upload record](submissions/A-R2/) records the submitter's report, with hosted status and rating pending evidence.
 
-These workflows are self contained and require no other member's files or review. The general feature stub, accepted random entry point, baseline adapter and existing A-R1 source remain unchanged. Other members' actual progress is not changed by this integration.
+These workflows are self contained and require no other member's files or review. The shared feature entry point delegates to the frozen encoder. The accepted random entry point, baseline adapter and existing model code and weights remain unchanged. Other members' actual progress is not changed by this integration.
 
 ## Reproduce and package
 
@@ -74,7 +74,7 @@ Run the executed notebooks in fresh Colab CPU sessions. A-R1 needs the official 
 
 A-R2 checks gradients using training examples, trains three regularization settings, verifies the exported policy and runs the six comparisons above. It packages main.py, model.json and deck.csv only after all required checks pass, then tests a fresh extraction against three opponents. The tested A-R2 archive is 75,537 bytes. Local checks establish execution, not hosted acceptance or strength across other decks.
 
-Official competition inputs, SDK binaries, decks and generated archives remain local. Selected experiment outputs and fitted JSON weights are deliberately included in Git. Generic CLI templates remain incomplete; use the notebook workflows. Additional repository wrappers have not been executed locally.
+Official competition inputs, SDK binaries, decks and generated archives remain local. Selected experiment outputs and fitted JSON weights are deliberately included in Git. Shared evaluation and packaging commands are implemented; only the generic train.py remains a placeholder. The new commands were checked with synthetic fixtures, not a new native SDK run.
 
 ## Submission history and remaining work
 
@@ -85,3 +85,9 @@ Missing IDs, absolute timestamps, uncertainty and actual Kaggle team name remain
 Rishitha's two planned models are trained and evaluated. Remaining work includes A-R2 hosted result evidence, the final paired analysis, assigned report sections and presentation preparation. See the [model registry](experiments/model_registry.csv), [experiment log](experiments/results.csv), [submission register](submissions/register.csv) and [contribution table](../docs/contributions.csv).
 
 Earlier records remain under [Day 1](experiments/day1/), [Day 2](experiments/day2/) and [Day 3](experiments/day3/). The 79 Day 1 observations are debugging examples, not expert demonstrations or complete reinforcement learning trajectories.
+
+## Shared Team A tools
+
+[src/features.py](src/features.py) provides the tested encoder's public entry point and explicit supported context. [scripts/evaluate.py](scripts/evaluate.py) compares configured or custom standalone agents. [scripts/package_agent.py](scripts/package_agent.py) checks a fresh archive before publishing a ready submission. [configs/evaluation.json](configs/evaluation.json) records individual battles, opponents, deck/source hashes, seed schedules, draw handling and native RNG limits. [requirements.txt](requirements.txt) pins the recorded NumPy and Matplotlib training versions.
+
+Use the [shared command instructions](scripts/README.md) for exact examples. Eleven standard-library tests passed, including both fitted model interfaces and temporary packaging/evaluation fixtures. No package was installed and no native engine or training was run. These tests validate shared-tool plumbing, not new Pokemon playing strength. Earlier models, executed notebooks and historical results are unchanged.

@@ -1,11 +1,11 @@
-"""evaluate entry point placeholder; not a functioning project command."""
+"""Team A shared evaluation command. Run from any working directory."""
+
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from team_a.src.evaluation import main
 
 
-def main() -> None:
-    raise SystemExit(
-        "evaluate is not implemented. Follow this team's README and current SDK example."
-    )
-
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    raise SystemExit(main())

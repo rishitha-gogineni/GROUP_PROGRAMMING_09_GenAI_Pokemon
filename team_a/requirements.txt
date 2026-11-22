@@ -1,5 +1,7 @@
-# Submitted random baseline: Python standard library only.
-# Verified in Colab with Python 3.13.18, Linux x86_64 and the official bundled SDK.
-# Direct-SDK checks require the downloaded cg package on the supplied SDK path.
-# No pip installation or kaggle-environments dependency was needed in the recorded run.
-# Learned-model dependencies remain to be selected and pinned by their owners.
+# Training and plotting versions recorded in the executed Colab runs.
+# Python 3.13.18 on Linux x86_64. This file does not install anything itself.
+numpy==2.4.6
+matplotlib==3.10.0
+# Deployed random, heuristic, A-R1 and A-R2 agents use the standard library.
+# SDK bindings and native binaries come from the official local competition ZIP.
+# Add dependencies for other models when those models are actually implemented.
