@@ -1,0 +1,5 @@
+sequence,rating,phase,recorded_date_local,timezone,observed_at_utc,submission_id,evidence,notes
+1,600.0,initialization,2026-11-21,America/Los_Angeles,,,kaggle_submission_complete.png,"Initial screenshot; starting rating, not competitive improvement."
+2,490.5,later_snapshot,2026-11-21,America/Los_Angeles,,,kaggle_rating_490_5.png,Later screenshot of the same named Complete submission; exact timestamp and episode count not visible.
+3,103.0,day3_comparison_snapshot,2026-11-21,America/Los_Angeles,,,../A-HEUR-01/kaggle_heuristic_489_7_random_103_0.png,Complete in the same screenshot as the heuristic at 489.7; exact timestamp unavailable.
+4,11.5,ar1_comparison_snapshot,2026-11-21,America/Los_Angeles,,,../A-R1/kaggle_ar1_828_8_heuristic_257_6_random_11_5.png,Complete in the A-R1 comparison image; exact observation timestamp unavailable.

@@ -1,0 +1,622 @@
+Starting 20261122T002608Z_bd91a79d:collection:0001
+Finished 1/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0002
+Finished 2/300: loss; status=passed; samples=19
+Starting 20261122T002608Z_bd91a79d:collection:0003
+Finished 3/300: win; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0004
+Finished 4/300: win; status=passed; samples=32
+Starting 20261122T002608Z_bd91a79d:collection:0005
+Finished 5/300: win; status=passed; samples=15
+Starting 20261122T002608Z_bd91a79d:collection:0006
+Finished 6/300: win; status=passed; samples=26
+Starting 20261122T002608Z_bd91a79d:collection:0007
+Finished 7/300: loss; status=passed; samples=19
+Starting 20261122T002608Z_bd91a79d:collection:0008
+Finished 8/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0009
+Finished 9/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0010
+Finished 10/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0011
+Finished 11/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0012
+Finished 12/300: win; status=passed; samples=19
+Starting 20261122T002608Z_bd91a79d:collection:0013
+Finished 13/300: loss; status=passed; samples=19
+Starting 20261122T002608Z_bd91a79d:collection:0014
+Finished 14/300: win; status=passed; samples=20
+Starting 20261122T002608Z_bd91a79d:collection:0015
+Finished 15/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0016
+Finished 16/300: loss; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0017
+Finished 17/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0018
+Finished 18/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0019
+Finished 19/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0020
+Finished 20/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0021
+Finished 21/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0022
+Finished 22/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0023
+Finished 23/300: win; status=passed; samples=23
+Starting 20261122T002608Z_bd91a79d:collection:0024
+Finished 24/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0025
+Finished 25/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0026
+Finished 26/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0027
+Finished 27/300: loss; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0028
+Finished 28/300: win; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0029
+Finished 29/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0030
+Finished 30/300: win; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0031
+Finished 31/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0032
+Finished 32/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0033
+Finished 33/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0034
+Finished 34/300: loss; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0035
+Finished 35/300: win; status=passed; samples=5
+Starting 20261122T002608Z_bd91a79d:collection:0036
+Finished 36/300: win; status=passed; samples=21
+Starting 20261122T002608Z_bd91a79d:collection:0037
+Finished 37/300: win; status=passed; samples=15
+Starting 20261122T002608Z_bd91a79d:collection:0038
+Finished 38/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0039
+Finished 39/300: win; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0040
+Finished 40/300: win; status=passed; samples=35
+Starting 20261122T002608Z_bd91a79d:collection:0041
+Finished 41/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0042
+Finished 42/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0043
+Finished 43/300: win; status=passed; samples=23
+Starting 20261122T002608Z_bd91a79d:collection:0044
+Finished 44/300: win; status=passed; samples=20
+Starting 20261122T002608Z_bd91a79d:collection:0045
+Finished 45/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0046
+Finished 46/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0047
+Finished 47/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0048
+Finished 48/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0049
+Finished 49/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0050
+Finished 50/300: win; status=passed; samples=5
+Starting 20261122T002608Z_bd91a79d:collection:0051
+Finished 51/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0052
+Finished 52/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0053
+Finished 53/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0054
+Finished 54/300: win; status=passed; samples=22
+Starting 20261122T002608Z_bd91a79d:collection:0055
+Finished 55/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0056
+Finished 56/300: loss; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0057
+Finished 57/300: loss; status=passed; samples=18
+Starting 20261122T002608Z_bd91a79d:collection:0058
+Finished 58/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0059
+Finished 59/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0060
+Finished 60/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0061
+Finished 61/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0062
+Finished 62/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0063
+Finished 63/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0064
+Finished 64/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0065
+Finished 65/300: win; status=passed; samples=19
+Starting 20261122T002608Z_bd91a79d:collection:0066
+Finished 66/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0067
+Finished 67/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0068
+Finished 68/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0069
+Finished 69/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0070
+Finished 70/300: win; status=passed; samples=16
+Starting 20261122T002608Z_bd91a79d:collection:0071
+Finished 71/300: win; status=passed; samples=26
+Starting 20261122T002608Z_bd91a79d:collection:0072
+Finished 72/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0073
+Finished 73/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0074
+Finished 74/300: win; status=passed; samples=29
+Starting 20261122T002608Z_bd91a79d:collection:0075
+Finished 75/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0076
+Finished 76/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0077
+Finished 77/300: win; status=passed; samples=19
+Starting 20261122T002608Z_bd91a79d:collection:0078
+Finished 78/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0079
+Finished 79/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0080
+Finished 80/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0081
+Finished 81/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0082
+Finished 82/300: loss; status=passed; samples=19
+Starting 20261122T002608Z_bd91a79d:collection:0083
+Finished 83/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0084
+Finished 84/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0085
+Finished 85/300: loss; status=passed; samples=23
+Starting 20261122T002608Z_bd91a79d:collection:0086
+Finished 86/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0087
+Finished 87/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0088
+Finished 88/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0089
+Finished 89/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0090
+Finished 90/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0091
+Finished 91/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0092
+Finished 92/300: win; status=passed; samples=24
+Starting 20261122T002608Z_bd91a79d:collection:0093
+Finished 93/300: win; status=passed; samples=20
+Starting 20261122T002608Z_bd91a79d:collection:0094
+Finished 94/300: loss; status=passed; samples=26
+Starting 20261122T002608Z_bd91a79d:collection:0095
+Finished 95/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0096
+Finished 96/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0097
+Finished 97/300: loss; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0098
+Finished 98/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0099
+Finished 99/300: win; status=passed; samples=18
+Starting 20261122T002608Z_bd91a79d:collection:0100
+Finished 100/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0101
+Finished 101/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0102
+Finished 102/300: win; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0103
+Finished 103/300: win; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0104
+Finished 104/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0105
+Finished 105/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0106
+Finished 106/300: win; status=passed; samples=16
+Starting 20261122T002608Z_bd91a79d:collection:0107
+Finished 107/300: win; status=passed; samples=15
+Starting 20261122T002608Z_bd91a79d:collection:0108
+Finished 108/300: loss; status=passed; samples=14
+Starting 20261122T002608Z_bd91a79d:collection:0109
+Finished 109/300: win; status=passed; samples=14
+Starting 20261122T002608Z_bd91a79d:collection:0110
+Finished 110/300: win; status=passed; samples=15
+Starting 20261122T002608Z_bd91a79d:collection:0111
+Finished 111/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0112
+Finished 112/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0113
+Finished 113/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0114
+Finished 114/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0115
+Finished 115/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0116
+Finished 116/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0117
+Finished 117/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0118
+Finished 118/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0119
+Finished 119/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0120
+Finished 120/300: win; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0121
+Finished 121/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0122
+Finished 122/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0123
+Finished 123/300: win; status=passed; samples=17
+Starting 20261122T002608Z_bd91a79d:collection:0124
+Finished 124/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0125
+Finished 125/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0126
+Finished 126/300: win; status=passed; samples=16
+Starting 20261122T002608Z_bd91a79d:collection:0127
+Finished 127/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0128
+Finished 128/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0129
+Finished 129/300: win; status=passed; samples=15
+Starting 20261122T002608Z_bd91a79d:collection:0130
+Finished 130/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0131
+Finished 131/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0132
+Finished 132/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0133
+Finished 133/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0134
+Finished 134/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0135
+Finished 135/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0136
+Finished 136/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0137
+Finished 137/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0138
+Finished 138/300: win; status=passed; samples=24
+Starting 20261122T002608Z_bd91a79d:collection:0139
+Finished 139/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0140
+Finished 140/300: win; status=passed; samples=5
+Starting 20261122T002608Z_bd91a79d:collection:0141
+Finished 141/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0142
+Finished 142/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0143
+Finished 143/300: win; status=passed; samples=20
+Starting 20261122T002608Z_bd91a79d:collection:0144
+Finished 144/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0145
+Finished 145/300: loss; status=passed; samples=29
+Starting 20261122T002608Z_bd91a79d:collection:0146
+Finished 146/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0147
+Finished 147/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0148
+Finished 148/300: win; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0149
+Finished 149/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0150
+Finished 150/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0151
+Finished 151/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0152
+Finished 152/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0153
+Finished 153/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0154
+Finished 154/300: win; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0155
+Finished 155/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0156
+Finished 156/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0157
+Finished 157/300: win; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0158
+Finished 158/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0159
+Finished 159/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0160
+Finished 160/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0161
+Finished 161/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0162
+Finished 162/300: loss; status=passed; samples=20
+Starting 20261122T002608Z_bd91a79d:collection:0163
+Finished 163/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0164
+Finished 164/300: win; status=passed; samples=27
+Starting 20261122T002608Z_bd91a79d:collection:0165
+Finished 165/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0166
+Finished 166/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0167
+Finished 167/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0168
+Finished 168/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0169
+Finished 169/300: loss; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0170
+Finished 170/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0171
+Finished 171/300: win; status=passed; samples=16
+Starting 20261122T002608Z_bd91a79d:collection:0172
+Finished 172/300: win; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0173
+Finished 173/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0174
+Finished 174/300: win; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0175
+Finished 175/300: win; status=passed; samples=14
+Starting 20261122T002608Z_bd91a79d:collection:0176
+Finished 176/300: win; status=passed; samples=5
+Starting 20261122T002608Z_bd91a79d:collection:0177
+Finished 177/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0178
+Finished 178/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0179
+Finished 179/300: win; status=passed; samples=23
+Starting 20261122T002608Z_bd91a79d:collection:0180
+Finished 180/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0181
+Finished 181/300: loss; status=passed; samples=18
+Starting 20261122T002608Z_bd91a79d:collection:0182
+Finished 182/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0183
+Finished 183/300: win; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0184
+Finished 184/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0185
+Finished 185/300: win; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0186
+Finished 186/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0187
+Finished 187/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0188
+Finished 188/300: win; status=passed; samples=15
+Starting 20261122T002608Z_bd91a79d:collection:0189
+Finished 189/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0190
+Finished 190/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0191
+Finished 191/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0192
+Finished 192/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0193
+Finished 193/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0194
+Finished 194/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0195
+Finished 195/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0196
+Finished 196/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0197
+Finished 197/300: loss; status=passed; samples=20
+Starting 20261122T002608Z_bd91a79d:collection:0198
+Finished 198/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0199
+Finished 199/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0200
+Finished 200/300: win; status=passed; samples=16
+Starting 20261122T002608Z_bd91a79d:collection:0201
+Finished 201/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0202
+Finished 202/300: loss; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0203
+Finished 203/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0204
+Finished 204/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0205
+Finished 205/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0206
+Finished 206/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0207
+Finished 207/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0208
+Finished 208/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0209
+Finished 209/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0210
+Finished 210/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0211
+Finished 211/300: loss; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0212
+Finished 212/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0213
+Finished 213/300: win; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0214
+Finished 214/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0215
+Finished 215/300: win; status=passed; samples=5
+Starting 20261122T002608Z_bd91a79d:collection:0216
+Finished 216/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0217
+Finished 217/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0218
+Finished 218/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0219
+Finished 219/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0220
+Finished 220/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0221
+Finished 221/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0222
+Finished 222/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0223
+Finished 223/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0224
+Finished 224/300: loss; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0225
+Finished 225/300: loss; status=passed; samples=15
+Starting 20261122T002608Z_bd91a79d:collection:0226
+Finished 226/300: loss; status=passed; samples=29
+Starting 20261122T002608Z_bd91a79d:collection:0227
+Finished 227/300: win; status=passed; samples=27
+Starting 20261122T002608Z_bd91a79d:collection:0228
+Finished 228/300: loss; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0229
+Finished 229/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0230
+Finished 230/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0231
+Finished 231/300: loss; status=passed; samples=5
+Starting 20261122T002608Z_bd91a79d:collection:0232
+Finished 232/300: loss; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0233
+Finished 233/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0234
+Finished 234/300: loss; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0235
+Finished 235/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0236
+Finished 236/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0237
+Finished 237/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0238
+Finished 238/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0239
+Finished 239/300: win; status=passed; samples=23
+Starting 20261122T002608Z_bd91a79d:collection:0240
+Finished 240/300: win; status=passed; samples=14
+Starting 20261122T002608Z_bd91a79d:collection:0241
+Finished 241/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0242
+Finished 242/300: win; status=passed; samples=16
+Starting 20261122T002608Z_bd91a79d:collection:0243
+Finished 243/300: loss; status=passed; samples=26
+Starting 20261122T002608Z_bd91a79d:collection:0244
+Finished 244/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0245
+Finished 245/300: loss; status=passed; samples=23
+Starting 20261122T002608Z_bd91a79d:collection:0246
+Finished 246/300: win; status=passed; samples=14
+Starting 20261122T002608Z_bd91a79d:collection:0247
+Finished 247/300: loss; status=passed; samples=17
+Starting 20261122T002608Z_bd91a79d:collection:0248
+Finished 248/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0249
+Finished 249/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0250
+Finished 250/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0251
+Finished 251/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0252
+Finished 252/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0253
+Finished 253/300: win; status=passed; samples=15
+Starting 20261122T002608Z_bd91a79d:collection:0254
+Finished 254/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0255
+Finished 255/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0256
+Finished 256/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0257
+Finished 257/300: win; status=passed; samples=25
+Starting 20261122T002608Z_bd91a79d:collection:0258
+Finished 258/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0259
+Finished 259/300: win; status=passed; samples=12
+Starting 20261122T002608Z_bd91a79d:collection:0260
+Finished 260/300: win; status=passed; samples=28
+Starting 20261122T002608Z_bd91a79d:collection:0261
+Finished 261/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0262
+Finished 262/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0263
+Finished 263/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0264
+Finished 264/300: loss; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0265
+Finished 265/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0266
+Finished 266/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0267
+Finished 267/300: win; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0268
+Finished 268/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0269
+Finished 269/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0270
+Finished 270/300: win; status=passed; samples=24
+Starting 20261122T002608Z_bd91a79d:collection:0271
+Finished 271/300: win; status=passed; samples=23
+Starting 20261122T002608Z_bd91a79d:collection:0272
+Finished 272/300: win; status=passed; samples=22
+Starting 20261122T002608Z_bd91a79d:collection:0273
+Finished 273/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0274
+Finished 274/300: loss; status=passed; samples=3
+Starting 20261122T002608Z_bd91a79d:collection:0275
+Finished 275/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0276
+Finished 276/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0277
+Finished 277/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0278
+Finished 278/300: win; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0279
+Finished 279/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0280
+Finished 280/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0281
+Finished 281/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0282
+Finished 282/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0283
+Finished 283/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0284
+Finished 284/300: win; status=passed; samples=16
+Starting 20261122T002608Z_bd91a79d:collection:0285
+Finished 285/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0286
+Finished 286/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0287
+Finished 287/300: win; status=passed; samples=10
+Starting 20261122T002608Z_bd91a79d:collection:0288
+Finished 288/300: win; status=passed; samples=11
+Starting 20261122T002608Z_bd91a79d:collection:0289
+Finished 289/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0290
+Finished 290/300: loss; status=passed; samples=13
+Starting 20261122T002608Z_bd91a79d:collection:0291
+Finished 291/300: win; status=passed; samples=16
+Starting 20261122T002608Z_bd91a79d:collection:0292
+Finished 292/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0293
+Finished 293/300: win; status=passed; samples=9
+Starting 20261122T002608Z_bd91a79d:collection:0294
+Finished 294/300: win; status=passed; samples=21
+Starting 20261122T002608Z_bd91a79d:collection:0295
+Finished 295/300: loss; status=passed; samples=6
+Starting 20261122T002608Z_bd91a79d:collection:0296
+Finished 296/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0297
+Finished 297/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0298
+Finished 298/300: win; status=passed; samples=8
+Starting 20261122T002608Z_bd91a79d:collection:0299
+Finished 299/300: win; status=passed; samples=7
+Starting 20261122T002608Z_bd91a79d:collection:0300
+Finished 300/300: loss; status=passed; samples=9
+{
+  "phase": "collection",
+  "requested_battles": 300,
+  "recorded_battles": 300,
+  "valid_battles": 300,
+  "win": 265,
+  "loss": 35,
+  "draw": 0,
+  "error": 0,
+  "unknown_result": 0,
+  "win_rate": 0.8833333333333333,
+  "score_rate": 0.8833333333333333,
+  "win_rate_wilson_95": [
+    0.8420668566758442,
+    0.9149068653853369
+  ],
+  "local_checks_passed": true,
+  "unit": "individual_battle",
+  "demonstration_records": 3346,
+  "note": "Rates use completed valid battles. Do not claim improvement if any game failed. The interval is an approximate binomial interval; it does not account for opponent/deck dependence or native RNG control.",
+  "policy_usage": {}
+}

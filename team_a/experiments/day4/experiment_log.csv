@@ -1,0 +1,2 @@
+run_id,model_id,member,feature_schema,training_passed,selected_l2,selected_epoch,collection_games,collection_records,ar1_vs_random_win_rate,ar1_vs_heuristic_win_rate,package_ready,package_sha256,kaggle_status,kaggle_submission_id,kaggle_rating
+20261122T002608Z_bd91a79d,A-R1,Rishitha Gogineni,ar1-visible-v1,True,0.0,14,300,3346,1.0,0.475,True,97971f8d74f76180fea2632b168425c7259908497573ea2622ebbae8097cb6d3,not_submitted,,

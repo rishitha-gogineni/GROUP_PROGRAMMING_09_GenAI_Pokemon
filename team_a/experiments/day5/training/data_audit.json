@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "schema_version": "ar1-visible-v1",
+  "game_groups_reused_without_changes": true,
+  "same_ar1_normalization": true,
+  "game_groups_disjoint": true,
+  "active_training_features": 140,
+  "splits": {
+    "train": {
+      "games": 210,
+      "rows": 2161
+    },
+    "validation": {
+      "games": 45,
+      "rows": 539
+    },
+    "held_out": {
+      "games": 45,
+      "rows": 390
+    }
+  },
+  "note": "Existing A-R1 test groups are reused for the planned architecture comparison. This is not a new unseen test set."
+}

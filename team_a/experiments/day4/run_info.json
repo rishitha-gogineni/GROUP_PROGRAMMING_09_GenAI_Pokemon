@@ -1,0 +1,68 @@
+{
+  "model_id": "A-R1",
+  "run_id": "20261122T002608Z_bd91a79d",
+  "python": "3.13.18 (main, Oct 26 2026, 15:28:15) [GCC 13.3.0]",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "matplotlib": "3.10.0",
+  "unit": "individual_battle",
+  "native_engine_seed_verified": false,
+  "requested_collection_games": 300,
+  "evaluation_battles_per_comparison": 40,
+  "max_epochs": 60,
+  "collection_seed_start": 30000,
+  "evaluation_seed_start": 40000,
+  "archive_seed_start": 50000,
+  "teacher_source_run": "20261121T232326Z_2121ee87",
+  "feature_schema": "ar1-visible-v1",
+  "input_zip_sha256": "6fe557e77ca21b86dea9056d7f4531cbeb328abc1b25aecf9c3a4e2b7d5b2c87",
+  "deck_sha256": "42068a1803902756badcfd418f6f348b7901365a281d78af0692cbf2589f0799",
+  "sdk_files": [
+    {
+      "path": "cg/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cg/api.py",
+      "sha256": "593f1298e52a635f90f8f505a52113e9af114f444c293404e37906f18ee06ced"
+    },
+    {
+      "path": "cg/cg.dll",
+      "sha256": "e084185a17fa1487ee5ffec5cff828d120278f03547838031e2d70bb2a8811fe"
+    },
+    {
+      "path": "cg/game.py",
+      "sha256": "2558b876af5990b8648ecd8030456bf34bd0f8e4a7251e32a2c074f848a897da"
+    },
+    {
+      "path": "cg/libcg-arm64.so",
+      "sha256": "95628f0bd20ac5e6f1e142c88cd52c9dc7361f9c371b5599f63b27c110892545"
+    },
+    {
+      "path": "cg/libcg.dylib",
+      "sha256": "da53cb331277cc8aa0a6181da28afeea28ae2f205372c234eca4a5c9cf3f4672"
+    },
+    {
+      "path": "cg/libcg.so",
+      "sha256": "c699020e086eede189c445c7abf9d891a60005ceec6eb91dccd5bbdcd3c0de22"
+    },
+    {
+      "path": "cg/sim.py",
+      "sha256": "e83ca04300990267cd04385fb98ded670b517dfceb481a2bfa63ff433e2946ff"
+    },
+    {
+      "path": "cg/utils.py",
+      "sha256": "60f29665cee0a88525d6f0383bc45959a6262d16fe35ef380aece1e0ea13c49b"
+    }
+  ],
+  "source_hashes": {
+    "ar1_features.py": "43a27980b809956721e21627a54fd9f96932106e503bc233af90634dffc86157",
+    "train_ar1.py": "6b720b2a55423d2791cb957f036f99aca5525926179d22a40ba8cb04bdbac7c3",
+    "evaluate_policy.py": "d8ea2e4ad8cd7298d6455437a9a8c94c1be1a4542b32cc7eb25800f89f723faf",
+    "heuristic_runner.py": "5c8c2021456ab45145697deaa8b5011466cc6a5669f368d93d49c140ddbfb0c5",
+    "check_export.py": "e3554a1ea83b059af8560446ed7ef8a7b4825493175a1714e6f30db06696efd9",
+    "ar1_main.py": "ed0ec1c36566d69d11818b63406960ee7288bf2a1b72a1db8bf29ab9525bbaaf",
+    "heuristic_frozen.py": "ac7664d10039163305a3d16f39365dd8aea94980c49508c70df85f111ff07911",
+    "random_frozen.py": "9f447d9252f659659df0748c11734a188ce8e306a517a8ec842f1a79d950a4ff"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "run_id": "20261121T224116Z_1e244d62",
+  "local_checks_passed": true,
+  "archive_roundtrip_checks_passed": true,
+  "local_package_ready": true,
+  "kaggle_submitted": false,
+  "kaggle_accepted": false,
+  "official_rating": null,
+  "note": "These flags record local checks only. Update official evidence after manual submission."
+}

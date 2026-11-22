@@ -1,0 +1,154 @@
+{
+  "schema_version": "heuristic-main-v1",
+  "teacher_id": "A-HEUR-01",
+  "teacher_kind": "handcrafted_rules_not_expert",
+  "heuristic_sha256": "ac7664d10039163305a3d16f39365dd8aea94980c49508c70df85f111ff07911",
+  "metadata_source": "loaded_from_official_sdk",
+  "supported_context": "single-choice MAIN only",
+  "split_seed": 2026,
+  "grouping_key": "game_id",
+  "train": [
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0012",
+      "path": "demonstrations/records/game_0012.jsonl",
+      "rows": 11
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0008",
+      "path": "demonstrations/records/game_0008.jsonl",
+      "rows": 8
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0019",
+      "path": "demonstrations/records/game_0019.jsonl",
+      "rows": 7
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0007",
+      "path": "demonstrations/records/game_0007.jsonl",
+      "rows": 13
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0009",
+      "path": "demonstrations/records/game_0009.jsonl",
+      "rows": 9
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0013",
+      "path": "demonstrations/records/game_0013.jsonl",
+      "rows": 7
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0010",
+      "path": "demonstrations/records/game_0010.jsonl",
+      "rows": 8
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0016",
+      "path": "demonstrations/records/game_0016.jsonl",
+      "rows": 8
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0015",
+      "path": "demonstrations/records/game_0015.jsonl",
+      "rows": 11
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0020",
+      "path": "demonstrations/records/game_0020.jsonl",
+      "rows": 7
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0018",
+      "path": "demonstrations/records/game_0018.jsonl",
+      "rows": 7
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0017",
+      "path": "demonstrations/records/game_0017.jsonl",
+      "rows": 8
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0011",
+      "path": "demonstrations/records/game_0011.jsonl",
+      "rows": 14
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0004",
+      "path": "demonstrations/records/game_0004.jsonl",
+      "rows": 9
+    }
+  ],
+  "validation": [
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0002",
+      "path": "demonstrations/records/game_0002.jsonl",
+      "rows": 14
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0014",
+      "path": "demonstrations/records/game_0014.jsonl",
+      "rows": 8
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0005",
+      "path": "demonstrations/records/game_0005.jsonl",
+      "rows": 6
+    }
+  ],
+  "held_out": [
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0006",
+      "path": "demonstrations/records/game_0006.jsonl",
+      "rows": 6
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0003",
+      "path": "demonstrations/records/game_0003.jsonl",
+      "rows": 8
+    },
+    {
+      "game_id": "20261121T232326Z_2121ee87:demonstrations:0001",
+      "path": "demonstrations/records/game_0001.jsonl",
+      "rows": 7
+    }
+  ],
+  "eligible_games": 20,
+  "eligible_rows": 176,
+  "split_ready": true,
+  "collection_passed": true,
+  "excluded_game_ids": [],
+  "evaluation_games_excluded_from_training": [
+    "20261121T232326Z_2121ee87:evaluation:0001",
+    "20261121T232326Z_2121ee87:evaluation:0002",
+    "20261121T232326Z_2121ee87:evaluation:0003",
+    "20261121T232326Z_2121ee87:evaluation:0004",
+    "20261121T232326Z_2121ee87:evaluation:0005",
+    "20261121T232326Z_2121ee87:evaluation:0006",
+    "20261121T232326Z_2121ee87:evaluation:0007",
+    "20261121T232326Z_2121ee87:evaluation:0008",
+    "20261121T232326Z_2121ee87:evaluation:0009",
+    "20261121T232326Z_2121ee87:evaluation:0010",
+    "20261121T232326Z_2121ee87:evaluation:0011",
+    "20261121T232326Z_2121ee87:evaluation:0012",
+    "20261121T232326Z_2121ee87:evaluation:0013",
+    "20261121T232326Z_2121ee87:evaluation:0014",
+    "20261121T232326Z_2121ee87:evaluation:0015",
+    "20261121T232326Z_2121ee87:evaluation:0016",
+    "20261121T232326Z_2121ee87:evaluation:0017",
+    "20261121T232326Z_2121ee87:evaluation:0018",
+    "20261121T232326Z_2121ee87:evaluation:0019",
+    "20261121T232326Z_2121ee87:evaluation:0020",
+    "20261121T232326Z_2121ee87:evaluation:0021",
+    "20261121T232326Z_2121ee87:evaluation:0022",
+    "20261121T232326Z_2121ee87:evaluation:0023",
+    "20261121T232326Z_2121ee87:evaluation:0024",
+    "20261121T232326Z_2121ee87:evaluation:0025",
+    "20261121T232326Z_2121ee87:evaluation:0026",
+    "20261121T232326Z_2121ee87:evaluation:0027",
+    "20261121T232326Z_2121ee87:evaluation:0028",
+    "20261121T232326Z_2121ee87:evaluation:0029",
+    "20261121T232326Z_2121ee87:evaluation:0030"
+  ],
+  "notes": "Fit preprocessing on training games only. Preserve held-out games; do not tune against them. Labels reproduce this teacher, not optimal play. Rows are decision examples, not complete RL transitions."
+}

@@ -1,0 +1,17 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "error": null,
+  "command": [
+    "/usr/bin/python3",
+    "/content/ptcg_ar1/20261122T002608Z_bd91a79d/outputs/source/train_ar1.py",
+    "--collection",
+    "/content/ptcg_ar1/20261122T002608Z_bd91a79d/outputs/collection",
+    "--output",
+    "/content/ptcg_ar1/20261122T002608Z_bd91a79d/outputs/training",
+    "--epochs",
+    "60",
+    "--seed",
+    "42"
+  ]
+}

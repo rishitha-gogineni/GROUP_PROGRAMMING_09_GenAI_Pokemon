@@ -1,0 +1,7 @@
+comparison,checks_passed,battles,wins,losses,draws,errors,win_rate
+heuristic_vs_random,True,40,37,3,0,0,0.925
+ar1_vs_random,True,40,37,3,0,0,0.925
+ar1_vs_heuristic,True,40,25,15,0,0,0.625
+ar2_vs_random,True,40,36,4,0,0,0.9
+ar2_vs_heuristic,True,40,15,25,0,0,0.375
+ar2_vs_ar1,True,40,17,23,0,0,0.425

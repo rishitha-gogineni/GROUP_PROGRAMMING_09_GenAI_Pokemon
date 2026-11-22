@@ -1,0 +1,106 @@
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0001
+Finished 1/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0002
+Finished 2/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0003
+Finished 3/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0004
+Finished 4/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0005
+Finished 5/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0006
+Finished 6/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0007
+Finished 7/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0008
+Finished 8/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0009
+Finished 9/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0010
+Finished 10/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0011
+Finished 11/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0012
+Finished 12/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0013
+Finished 13/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0014
+Finished 14/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0015
+Finished 15/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0016
+Finished 16/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0017
+Finished 17/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0018
+Finished 18/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0019
+Finished 19/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0020
+Finished 20/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0021
+Finished 21/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0022
+Finished 22/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0023
+Finished 23/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0024
+Finished 24/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0025
+Finished 25/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0026
+Finished 26/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0027
+Finished 27/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0028
+Finished 28/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0029
+Finished 29/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0030
+Finished 30/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0031
+Finished 31/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0032
+Finished 32/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0033
+Finished 33/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0034
+Finished 34/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0035
+Finished 35/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0036
+Finished 36/40: win; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0037
+Finished 37/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0038
+Finished 38/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0039
+Finished 39/40: loss; status=passed; samples=0
+Starting 20261122T052210Z_0c2ec591:ar1_vs_heuristic:0040
+Finished 40/40: win; status=passed; samples=0
+{
+  "phase": "ar1_vs_heuristic",
+  "requested_battles": 40,
+  "recorded_battles": 40,
+  "valid_battles": 40,
+  "win": 25,
+  "loss": 15,
+  "draw": 0,
+  "error": 0,
+  "unknown_result": 0,
+  "win_rate": 0.625,
+  "score_rate": 0.625,
+  "win_rate_wilson_95": [
+    0.47032439137301096,
+    0.7577702083276673
+  ],
+  "local_checks_passed": true,
+  "unit": "individual_battle",
+  "demonstration_records": 0,
+  "note": "Rates use completed valid battles. Do not claim improvement if any game failed. The interval is an approximate binomial interval; it does not account for opponent/deck dependence or native RNG control.",
+  "policy_usage": {
+    "learned": 380,
+    "fallback": 292,
+    "deck": 41
+  }
+}

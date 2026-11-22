@@ -1,0 +1,10 @@
+{
+  "model_id": "A-HEUR-01",
+  "run_id": "20261121T232326Z_2121ee87",
+  "evaluation_passed": true,
+  "demonstrations_passed": true,
+  "archive_checks_passed": true,
+  "package_ready": true,
+  "kaggle_status": "not_submitted",
+  "dataset_split_ready": true
+}

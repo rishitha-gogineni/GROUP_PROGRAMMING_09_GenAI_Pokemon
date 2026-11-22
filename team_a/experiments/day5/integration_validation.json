@@ -1,0 +1,15 @@
+{
+  "run_id": "20261122T052210Z_0c2ec591",
+  "parent_run_id": "20261122T002608Z_bd91a79d",
+  "source_zip": "AR2_20261122T052210Z_0c2ec591_outputs.zip",
+  "source_zip_sha256": "78843f2c01b72fcbd7feaba241da2a5dedfb59cba9f7cd3b583a130830775b48",
+  "original_exports_preserved_byte_for_byte": true,
+  "deployed_main_and_weights_match_package": true,
+  "separate_upload_archive_matches_tested_package": true,
+  "same_ar1_data_features_normalization_and_groups": true,
+  "notebook_code_counts_plots_and_numerical_outputs_preserved": true,
+  "local_model_inference_training_or_simulator_execution": false,
+  "repository_wrapper": "model_2.py is a thin standard-library loader/scorer, statically checked only. ar2/main.py and model.json are byte-identical to the Colab-tested package.",
+  "kaggle_evidence": "Manual upload reported by the user; official status and rating unavailable.",
+  "scope": "JSON/CSV reconciliation, hashes, source identity and Python syntax. No notebook cells or native code were rerun."
+}
