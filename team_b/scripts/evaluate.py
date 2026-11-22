@@ -98,7 +98,7 @@ def main() -> None:
         with open(RESULTS_CSV, newline="") as f:
             header = next(csv.reader(f))
         with open(RESULTS_CSV, "a", newline="") as f:
-            csv.DictWriter(f, fieldnames=header).writerow(row)
+            csv.DictWriter(f, fieldnames=header, lineterminator="\n").writerow(row)
         print(f"recorded {exp_id} in {RESULTS_CSV.relative_to(TEAM_B.parent)}")
 
 
