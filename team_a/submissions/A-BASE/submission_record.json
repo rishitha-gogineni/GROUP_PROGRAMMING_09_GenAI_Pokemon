@@ -14,8 +14,8 @@
   "kaggle_submission_filename_shown": "Group9_TeamA_Day2_random_baseline_submission.tar.gz",
   "kaggle_description_shown": "Team A — Random Baseline Submission",
   "kaggle_status_shown": "Complete",
-  "observed_skill_rating": 103.0,
-  "evidence": "../A-HEUR-01/kaggle_heuristic_489_7_random_103_0.png",
+  "observed_skill_rating": 11.5,
+  "evidence": "../A-R1/kaggle_ar1_828_8_heuristic_257_6_random_11_5.png",
   "evidence_kind": "user_provided_Kaggle_screenshot",
   "recorded_date_local": "2026-11-21",
   "timezone": "America/Los_Angeles",
@@ -23,10 +23,10 @@
   "submitted_at_utc": null,
   "rating_observed_at_utc": null,
   "rating_uncertainty": null,
-  "notes": "Three user-provided screenshots show the same named random submission as Complete, first 600.0, then 490.5, then 103.0 in the Day 3 comparison image. They do not expose the actual team name, submission ID, rating uncertainty or absolute observation timestamps. The original run outputs retain their pre-upload flags. Local archive hash verified; remote archive hash unavailable.",
+  "notes": "Three user-provided screenshots show the same named random submission as Complete, first 600.0, then 490.5, then 103.0 in the Day 3 comparison image. They do not expose the actual team name, submission ID, rating uncertainty or absolute observation timestamps. The original run outputs retain their pre-upload flags. Local archive hash verified; remote archive hash unavailable. The later A-R1 comparison screenshot shows this same named submission Complete at 11.5, alongside A-R1 at 828.8. Earlier evidence is retained; absolute observation time remains unknown.",
   "initial_observed_skill_rating": 600.0,
   "initial_rating_note": "Competition initialization; not evidence of competitive improvement.",
-  "latest_observed_skill_rating": 103.0,
+  "latest_observed_skill_rating": 11.5,
   "initial_evidence": "kaggle_submission_complete.png",
   "rating_observations_file": "rating_observations.csv"
 }

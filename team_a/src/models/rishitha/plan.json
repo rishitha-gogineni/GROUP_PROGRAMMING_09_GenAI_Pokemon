@@ -1,16 +1,23 @@
 {
   "member": "Rishitha Gogineni",
   "team": "A",
-  "status": "planned",
+  "status": "in_progress",
   "models": [
     {
       "id": "A-R1",
       "architecture": "Linear contextual imitation scorer",
       "module": "model_1.py",
-      "objective": "Masked candidate-set imitation cross-entropy on own-team demonstrations",
+      "objective": "Legal candidate cross entropy with uniform targets over teacher maximum score options",
       "planned_submission_day": 3,
-      "trained": false,
-      "submission_id": null
+      "trained": true,
+      "submission_id": null,
+      "status": "trained_submitted",
+      "kaggle_status": "Complete",
+      "run_id": "20261122T002608Z_bd91a79d",
+      "model_sha256": "ff58cc8edfc730d4f3529568a880c1d49cd05b1ea4588875b14a0a57a11ebd4c",
+      "package_sha256": "97971f8d74f76180fea2632b168425c7259908497573ea2622ebbae8097cb6d3",
+      "rating_snapshot": 828.8,
+      "input_schema_version": "ar1-visible-v1"
     },
     {
       "id": "A-R2",
@@ -22,6 +29,6 @@
       "submission_id": null
     }
   ],
-  "input_schema_version": "draft-v0",
-  "data_contract": null
+  "input_schema_version": "ar1-visible-v1",
+  "data_contract": "team_a/experiments/day4/training/feature_contract.json"
 }

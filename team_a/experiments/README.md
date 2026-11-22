@@ -1,5 +1,7 @@
 # Experiment records
 
-results.csv records measured experiments. The Day 3 heuristic entry reports individual battle results, with the matches field left blank because no complete hosted match harness was run. The per battle CSV, configuration, source and evidence are under day3/. model_registry.csv remains the planned learned architecture inventory; the heuristic does not complete either of Rishitha's learned models.
+results.csv records measured runs. Day 3 preserves the first heuristic comparison. Day 4 adds the heuristic control, A-R1 against random, and A-R1 against heuristic as separate rows. Each reports individual battles; matches stays blank because the full hosted match harness was not run.
 
-Preserve configuration, data and schema versions, artifact hashes, controls, uncertainty and the distinction between evaluation and collection games. Separate individual battle results from full match results. Record failed approaches when they are actually tried; a planned experiment is not a failed run.
+model_registry.csv records A-R1 as trained and submitted, with its fitted JSON hash and run ID. The remaining learned architectures stay planned unless their own evidence is added. The handcrafted heuristic is separate from these learned architecture requirements.
+
+Preserve data and schema versions, source hashes, controls, uncertainty and the separation of collection, validation, test and battle evaluation. Failed or ineffective approaches need actual evidence. Planned experiments are not failures. A-R1's 19/40 against the heuristic does not establish an improvement despite high teacher agreement and a higher displayed Kaggle snapshot.

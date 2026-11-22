@@ -41,9 +41,9 @@
   "package_bytes": 12504,
   "kaggle_submission_filename_shown": "Group9_TeamA_heuristic_submission.tar.gz",
   "kaggle_status_shown": "Complete",
-  "observed_skill_rating": 489.7,
+  "observed_skill_rating": 257.6,
   "random_baseline_rating_in_same_snapshot": 103.0,
-  "evidence": "kaggle_heuristic_489_7_random_103_0.png",
+  "evidence": "../A-R1/kaggle_ar1_828_8_heuristic_257_6_random_11_5.png",
   "evidence_kind": "user_provided_Kaggle_screenshot",
   "recorded_date_local": "2026-11-21",
   "timezone": "America/Los_Angeles",
@@ -51,5 +51,6 @@
   "submitted_at_utc": null,
   "rating_observed_at_utc": null,
   "rating_uncertainty": null,
-  "notes": "Manual upload occurred after the Colab run. Original Colab status files retain their pre-upload not_submitted flags. Ratings are snapshots. The image does not show the submission ID, absolute observation time, uncertainty or actual Kaggle team name. Local archive hash verified; uploaded archive hash cannot be verified from the image. Local evaluation is against one random opponent with the sample deck, not the hosted match harness. No learned model was trained."
+  "notes": "Manual upload occurred after the Colab run. Original Colab status files retain their pre-upload not_submitted flags. Ratings are snapshots. The image does not show the submission ID, absolute observation time, uncertainty or actual Kaggle team name. Local archive hash verified; uploaded archive hash cannot be verified from the image. Local evaluation is against one random opponent with the sample deck, not the hosted match harness. No learned model was trained. The later A-R1 comparison screenshot shows this same named submission Complete at 257.6, alongside A-R1 at 828.8. Earlier evidence is retained; absolute observation time remains unknown.",
+  "latest_observed_skill_rating": 257.6
 }

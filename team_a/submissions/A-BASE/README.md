@@ -1,9 +1,7 @@
 # A-BASE random baseline
 
-Three supplied Kaggle screenshots mark the same named random submission Complete. They show 600.0 at initialization, then 490.5, then 103.0 in the image supplied after the Day 3 heuristic upload. The last image also shows the heuristic at 489.7. These are successive rating snapshots for the same random policy, not three model versions.
+The supplied screenshots mark the same named random submission Complete, with ratings observed in this order: initialization 600.0, then 490.5, 103.0 and 11.5. The latest image also shows A-R1 at 828.8 and the heuristic at 257.6. These are changing rating snapshots, not new random policy versions.
 
-[Submission record](submission_record.json), [rating history](rating_observations.csv), [initial 600.0 image](kaggle_submission_complete.png), [490.5 image](kaggle_rating_490_5.png), [latest comparison image](../A-HEUR-01/kaggle_heuristic_489_7_random_103_0.png) and [local Day 2 checks](../../experiments/day2/).
+[Submission record](submission_record.json), [rating history](rating_observations.csv), [initial image](kaggle_submission_complete.png), [490.5 image](kaggle_rating_490_5.png), [Day 3 comparison](../A-HEUR-01/kaggle_heuristic_489_7_random_103_0.png), [latest comparison](../A-R1/kaggle_ar1_828_8_heuristic_257_6_random_11_5.png) and [local Day 2 checks](../../experiments/day2/).
 
-The screenshots do not show submission IDs, rating uncertainty, absolute observation times or the exact team name. GROUP_PROGRAMMING_09_a is the intended team. The verified local package hash remains unchanged; a remote hash cannot be read from the images.
-
-The archive and deck remain local. agent_package/main.py matches the tested archive entry point. Original Colab status files retain their preupload not_submitted flags; the later screenshots document the subsequent Kaggle result.
+Submission IDs, rating uncertainty, absolute observation times and the actual team name are not visible. The local package hash is unchanged and verified; screenshots cannot verify uploaded bytes. The archive and deck remain local. Original Colab status files retain their preupload flags.

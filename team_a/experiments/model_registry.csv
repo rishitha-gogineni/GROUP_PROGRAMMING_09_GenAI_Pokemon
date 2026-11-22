@@ -1,5 +1,5 @@
 model_id,team,member,architecture,objective,status,commit,artifact_hash,experiment_id
-A-R1,A,Rishitha Gogineni,Linear contextual imitation scorer,Masked candidate-set imitation cross-entropy on own-team demonstrations,planned,,,
+A-R1,A,Rishitha Gogineni,Linear contextual imitation scorer,Legal candidate cross entropy with uniform targets over teacher maximum score options,trained_submitted,,ff58cc8edfc730d4f3529568a880c1d49cd05b1ea4588875b14a0a57a11ebd4c,20261122T002608Z_bd91a79d
 A-R2,A,Rishitha Gogineni,Small MLP imitation scorer,Masked candidate-set imitation cross-entropy on own-team demonstrations,planned,,,
 A-K1,A,Kavya Ayyappan,Concatenated state-option MLP,Matched imitation objective/data for both candidate scorers,planned,,,
 A-K2,A,Kavya Ayyappan,Separate state and option encoders with joint score head,Matched imitation objective/data for both candidate scorers,planned,,,

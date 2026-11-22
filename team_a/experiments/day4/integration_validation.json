@@ -1,0 +1,19 @@
+{
+  "run_id": "20261122T002608Z_bd91a79d",
+  "source_zip": "AR1_20261122T002608Z_bd91a79d_outputs.zip",
+  "source_zip_sha256": "36d7c1095efd79873f8ae1703ec2571d32302af19555ff93de4559ebd9c98f5b",
+  "original_exports_preserved_byte_for_byte": true,
+  "deployed_main_matches_package": true,
+  "model_json_matches_package": true,
+  "separately_downloaded_package_matches": true,
+  "frozen_random_and_heuristic_unchanged": true,
+  "data_game_splits_disjoint": true,
+  "training_decisions": 2161,
+  "validation_decisions": 539,
+  "held_out_decisions": 390,
+  "notebook_code_counts_and_computational_outputs_preserved": true,
+  "saved_figures_preserved": true,
+  "local_notebook_or_simulator_execution": false,
+  "repository_wrapper": "model_1.py is a thin loader/scorer for the recorded feature schema; statically checked only. The deployed ar1/main.py is byte-identical to the Colab-tested archive entry point.",
+  "validation_scope": "JSON and CSV reconciliation, Python syntax, source identity, package hashes and screenshot transcription. No native simulator or training code executed locally."
+}
