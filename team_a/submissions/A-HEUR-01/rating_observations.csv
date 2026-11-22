@@ -1,0 +1,2 @@
+sequence,rating,phase,recorded_date_local,timezone,observed_at_utc,submission_id,evidence,notes
+1,489.7,post_submission_snapshot,2026-11-21,America/Los_Angeles,,,kaggle_heuristic_489_7_random_103_0.png,Complete in supplied screenshot; random baseline is 103.0 in the same image.

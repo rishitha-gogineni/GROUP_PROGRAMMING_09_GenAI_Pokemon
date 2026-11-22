@@ -1,0 +1,35 @@
+{
+  "run_id": "20261121T232326Z_2121ee87",
+  "source_zip": "Heuristic_20261121T232326Z_2121ee87_outputs.zip",
+  "source_zip_sha256": "590b39ee999db97d17852fb1d15fc02ce6d129108d9c2d7f92ec5d04c4be2cd4",
+  "source_files_preserved_byte_for_byte": true,
+  "frozen_random_matches_day2": true,
+  "demonstration_counts_reconciled": true,
+  "game_splits_disjoint": true,
+  "evaluation_games_excluded_from_dataset": true,
+  "package_hash_verified": true,
+  "notebooks": [
+    {
+      "notebook": "01_simulator_Day1.ipynb",
+      "code_and_execution_counts_preserved": true,
+      "computational_outputs_preserved": true,
+      "local_simulator_rerun": false
+    },
+    {
+      "notebook": "02_baseline_Day2.ipynb",
+      "code_and_execution_counts_preserved": true,
+      "computational_outputs_preserved": true,
+      "local_simulator_rerun": false
+    },
+    {
+      "notebook": "03_heuristic_baseline.ipynb",
+      "code_and_execution_counts_preserved": true,
+      "computational_outputs_preserved": true,
+      "local_simulator_rerun": false
+    }
+  ],
+  "user_executed_in_colab": true,
+  "local_simulator_execution": false,
+  "repository_runtime_validation": "Static syntax and source identity checks only. Use the executed Colab notebook to reproduce the native SDK checks.",
+  "presentation_changes": "Plain notebook prose. No decorative emojis or prose dashes. Functional code, identifiers, filenames, URLs, execution counts and computational outputs preserved. Colab HTML and JavaScript controls removed."
+}

@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "requested_battles": 2,
+  "run_id": "20261121T232326Z_2121ee87",
+  "phase": "archive_checks",
+  "unit": "individual_battle",
+  "contract_checks": [
+    {
+      "case": "deck_callback_without___file__",
+      "passed": true
+    },
+    {
+      "case": "single",
+      "passed": true
+    },
+    {
+      "case": "multiple",
+      "passed": true
+    },
+    {
+      "case": "zero",
+      "passed": true
+    },
+    {
+      "case": "optional",
+      "passed": true
+    }
+  ],
+  "battles": [
+    {
+      "python_seed": 11000,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 0,
+      "steps": 17,
+      "reverse_player": false,
+      "seconds": 0.00475,
+      "max_decision_ms": 0.027585,
+      "selection_types": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "game_id": "20261121T232326Z_2121ee87:archive_checks:0001",
+      "battle_id": 1,
+      "heuristic_seat": 0,
+      "outcome": "win",
+      "demo_records": 0,
+      "supported_decisions_seen": 0,
+      "demo_cap_reached": false,
+      "demo_file": ""
+    },
+    {
+      "python_seed": 11001,
+      "unit": "individual_battle",
+      "status": "passed",
+      "finished": true,
+      "result_code": 1,
+      "steps": 21,
+      "reverse_player": false,
+      "seconds": 0.006695,
+      "max_decision_ms": 0.039282,
+      "selection_types": [
+        0,
+        1,
+        8,
+        9
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "error_type": "",
+      "error_message": "",
+      "traceback": "",
+      "cleanup_error": "",
+      "game_id": "20261121T232326Z_2121ee87:archive_checks:0002",
+      "battle_id": 2,
+      "heuristic_seat": 1,
+      "outcome": "win",
+      "demo_records": 0,
+      "supported_decisions_seen": 0,
+      "demo_cap_reached": false,
+      "demo_file": ""
+    }
+  ],
+  "current_game_id": "20261121T232326Z_2121ee87:archive_checks:0002",
+  "demonstrations_enabled": false,
+  "error": null
+}

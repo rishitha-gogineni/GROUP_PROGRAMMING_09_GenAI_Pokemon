@@ -22,3 +22,9 @@ Implement both modules behind the team's candidate-scoring contract. Specify sup
 For linear models include state-option interaction features when needed; an additive state-only constant cannot change the option ranking. For actor-critic/value models name the actual training objective: supervised warm starts are not automatically PPO/DQN. Compare the deployed policies as well as fitting metrics.
 
 Update the model registry, measured experiment log, official submission register and actual contributions. Supply architecture diagrams/configs, artifacts and reproducible commands. These files are placeholders; no implementation, training or performance is claimed.
+
+## Completed setup and heuristic work
+
+Day 1 and Day 2 setup and baseline work are complete. Day 3 added A-HEUR-01, with 24 wins in 30 local evaluation battles, 176 demonstration decisions from 20 separate games, and a completed Kaggle upload shown at 489.7 in the supplied screenshot. The dataset manifest is in team_a/experiments/day3/ and preserves separate game groups for training, validation and the final check.
+
+The heuristic is a rule based teacher. A-R1 and A-R2 are still planned and have not been trained or submitted. The original day assignments above are the proposal schedule, not a claim of completed model work. Agree on the feature contract with Kavya and collect more demonstrations before evaluating the learned models.
