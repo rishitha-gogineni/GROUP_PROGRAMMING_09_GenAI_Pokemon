@@ -32,5 +32,6 @@
     "team_a/configs/feature_schema.json": "017153f7b129129d04074d9171cfcfc0ea58d1f420a773f455129520d0e7b523",
     "team_a/requirements.txt": "254431bba5ec68249541b4b1b60ea5be0144d36c602e8b43beebb4f3b55e2e69"
   },
-  "notes": "No actual new Pokemon game results were generated. Existing Colab records are unchanged. Native validation of the new CLI wiring remains to be run in the verified SDK environment."
+  "notes": "No actual new Pokemon game results were generated. Existing Colab records are unchanged. Native validation of the new CLI wiring remains to be run in the verified SDK environment.",
+  "source_commit": "c8d6439df55a74eb0e223dd2aa522d7a038d1fd5"
 }
