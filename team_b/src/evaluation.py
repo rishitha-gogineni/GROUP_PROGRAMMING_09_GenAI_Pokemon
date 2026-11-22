@@ -53,7 +53,7 @@ def write_experiment(record: Mapping[str, object], path: Path = RESULTS_CSV) -> 
             raise ValueError(f"{c} must be a finite number, got {row[c]}")
 
     with open(path, "a", newline="") as f:
-        csv.DictWriter(f, fieldnames=columns).writerow(row)
+        csv.DictWriter(f, fieldnames=columns, lineterminator="\n").writerow(row)
     return row
 
 
