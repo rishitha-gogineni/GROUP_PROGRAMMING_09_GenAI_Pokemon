@@ -1,7 +1,7 @@
 {
   "member": "Sadaf Fatima Syeda",
   "team": "B",
-  "status": "planned",
+  "status": "trained_evaluated_local",
   "models": [
     {
       "id": "B-SA1",
@@ -9,8 +9,11 @@
       "module": "model_1.py",
       "objective": "Regress same teacher-score targets on same state-option feature data",
       "planned_submission_day": 3,
-      "trained": false,
-      "submission_id": null
+      "trained": true,
+      "submission_id": null,
+      "experiment_id": "B-20261122-132818-B-SA1",
+      "evidence": "team_b/experiments/sadaf/B-20261122-132818-B-SA1.json",
+      "kaggle_package": "team_b/outputs/B-SA1.tar.gz (built + smoke-tested, not yet uploaded)"
     },
     {
       "id": "B-SA2",
@@ -18,10 +21,13 @@
       "module": "model_2.py",
       "objective": "Regress same teacher-score targets on same state-option feature data",
       "planned_submission_day": 5,
-      "trained": false,
-      "submission_id": null
+      "trained": true,
+      "submission_id": null,
+      "experiment_id": "B-20261122-132923-B-SA2",
+      "evidence": "team_b/experiments/sadaf/B-20261122-132923-B-SA2.json",
+      "kaggle_package": "team_b/outputs/B-SA2.tar.gz (built + smoke-tested, not yet uploaded)"
     }
   ],
-  "input_schema_version": "draft-v0",
-  "data_contract": null
+  "input_schema_version": "sadaf-v1",
+  "data_contract": "team_b/src/models/sadaf/pipeline.py (encode_state 68 + encode_option 59 = 127 features)"
 }
