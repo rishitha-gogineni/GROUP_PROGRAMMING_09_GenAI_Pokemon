@@ -1,7 +1,8 @@
 """Team B evaluation tools (owner: Sadaf).
 
-Step 1: a safe helper for adding one row to experiments/results.csv.
-More evaluation code (running matches, win rates) will be added later.
+- write_experiment(record): add one row to experiments/results.csv safely.
+- summarize_matches(outcomes): W/L/D/error counts, win rate and Wilson 95% CI.
+- outcomes_from_series(summary): turn simulator.run_series() output into outcomes.
 """
 
 import csv
@@ -14,6 +15,9 @@ TEAM_B_DIR = Path(__file__).resolve().parents[1]
 RESULTS_CSV = TEAM_B_DIR / "experiments" / "results.csv"
 
 REQUIRED = ("member", "experiment_id", "model_id", "status")
+
+# simulator.run_match() result codes -> outcome words ("E" = aborted series).
+RESULT_CODES = {"W": "win", "L": "loss", "D": "draw", "E": "error"}
 
 
 def read_columns(path: Path = RESULTS_CSV) -> list[str]:
@@ -45,7 +49,8 @@ def write_experiment(record: Mapping[str, object], path: Path = RESULTS_CSV) -> 
     row["date"] = row["date"] or _dt.date.today().isoformat()
     row["team"] = row["team"] or "B"
 
-    if row["win_rate"] == "" and row["matches"] not in ("", 0) and row["wins"] != "":
+    # Works whether numbers arrive as int or text ("0", "10"); never divides by 0.
+    if row["win_rate"] == "" and row["wins"] != "" and int(row["matches"] or 0) > 0:
         row["win_rate"] = round(int(row["wins"]) / int(row["matches"]), 4)
 
     for c in ("win_rate", "mean_decision_ms"):
@@ -69,8 +74,14 @@ def wilson_interval(wins: int, n: int, z: float = 1.96) -> tuple[float, float]:
     return round(max(0.0, centre - half), 4), round(min(1.0, centre + half), 4)
 
 
+def outcomes_from_series(summary: dict) -> list[str]:
+    """simulator.run_series(...) summary -> ["win", "loss", "draw", "error", ...]."""
+    return [RESULT_CODES[m["result_for_a"]] for m in summary["match_results"]]
+
+
 def summarize_matches(outcomes: list[str]) -> dict:
     """Add up a list of BO3 match results: "win", "loss", "draw" or "error".
+    Errors (aborted series) are counted but excluded from the win rate.
 
     The returned keys match the results.csv columns, so the output can go
     straight into write_experiment().
@@ -88,7 +99,7 @@ def summarize_matches(outcomes: list[str]) -> dict:
         "draws": draws,
         "crashes": errors,
         "win_rate": round(wins / completed, 4) if completed else 0.0,
-        "interval_method": "wilson",
+        "interval_method": "wilson95",
         "interval_lower": low,
         "interval_upper": high,
     }
