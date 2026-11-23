@@ -22,13 +22,13 @@ from pathlib import Path
 from team_b.src import baseline as B
 from team_b.src import simulator
 from team_b.src.adapter import read_deck, safe_agent
+from team_b.src.evaluation import outcomes_from_series, summarize_matches, write_experiment
 from team_b.src.models.sadaf import pipeline as P
 
 TEAM_B = Path(__file__).resolve().parents[3]
 DECK = TEAM_B / "data" / "raw" / "deck_sample.csv"
 ARTIFACTS = TEAM_B / "artifacts" / "sadaf"         # git-ignored (handbook 13.8)
 EVIDENCE = TEAM_B / "experiments" / "sadaf"        # small JSON summaries, committed
-OUTCOME = {"W": "win", "L": "loss", "D": "draw"}
 
 
 def load_model_class(name: str):
@@ -45,16 +45,6 @@ def git_commit() -> str:
                                        stderr=subprocess.DEVNULL).strip()
     except Exception:
         return ""
-
-
-def match_outcomes(summary: dict) -> list[str]:
-    """BO3 results for our agent. A match with an aborted game counts as 'error'
-    and is left out of the win rate (Revanth's review point on incomplete series)."""
-    out = []
-    for m in summary["match_results"]:
-        aborted = any(g["outcome_for_a"] == "X" for g in m["games"])
-        out.append("error" if aborted else OUTCOME[m["result_for_a"]])
-    return out
 
 
 def main() -> None:
@@ -104,7 +94,7 @@ def main() -> None:
         agent = safe_agent(P.make_policy(model), deck)
         t0 = time.time()
         summary = simulator.run_series(agent, opponent, deck, deck, matches=args.matches, seed=args.seed)
-        outcomes = match_outcomes(summary)
+        outcomes = outcomes_from_series(summary)  # W/L/D/E -> win/loss/draw/error
         counts = {k: outcomes.count(k) for k in ("win", "loss", "draw", "error")}
         done = counts["win"] + counts["loss"] + counts["draw"]
         lo, hi = simulator.wilson_interval(counts["win"], done)
@@ -143,7 +133,6 @@ def main() -> None:
 
     # 7. Optional: one results.csv row per opponent (uses Sadaf's write_experiment).
     if args.record:
-        from team_b.src.evaluation import summarize_matches, write_experiment
         for name, r in results.items():
             write_experiment({
                 "member": "Sadaf Fatima Syeda", "experiment_id": f"{experiment_id}-vs-{name}",

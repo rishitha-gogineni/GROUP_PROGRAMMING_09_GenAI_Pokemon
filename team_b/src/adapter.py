@@ -9,6 +9,7 @@ Official response rules (sample_submission/main.py):
 
 from __future__ import annotations
 
+import numbers
 import random
 from pathlib import Path
 from typing import Callable, Sequence
@@ -33,10 +34,15 @@ def is_deck_phase(observation: Observation) -> bool:
 
 
 def validation_error(observation: Observation, response: Sequence[int]) -> str | None:
-    """Return a reason string if `response` is not a legal selection, else None."""
+    """Return a reason string if `response` is not a legal selection, else None.
+
+    Checks the policy's ORIGINAL output: only true integers are accepted (Python
+    int or an integer type such as numpy.int64). Floats like 1.75 or 1.0, bools
+    and strings are rejected rather than silently truncated by int()."""
     select = observation["select"]
     n = len(select["option"])
-    if not isinstance(response, list) or not all(isinstance(i, int) and not isinstance(i, bool) for i in response):
+    if not isinstance(response, list) or not all(
+            isinstance(i, numbers.Integral) and not isinstance(i, bool) for i in response):
         return "response must be list[int]"
     if len(set(response)) != len(response):
         return "duplicate indices"
@@ -45,6 +51,15 @@ def validation_error(observation: Observation, response: Sequence[int]) -> str |
     if not (select["minCount"] <= len(response) <= select["maxCount"]):
         return f"count {len(response)} not in [{select['minCount']}, {select['maxCount']}]"
     return None
+
+
+def checked_response(observation: Observation, response) -> tuple[list[int] | None, str | None]:
+    """Validate the raw response first, then convert indices to plain int.
+    Returns (response, None) if legal, else (None, reason)."""
+    reason = validation_error(observation, response)
+    if reason is not None:
+        return None, reason
+    return [int(i) for i in response], None
 
 
 def random_valid_response(observation: Observation, rng: random.Random | None = None) -> list[int]:
@@ -72,8 +87,7 @@ def safe_agent(policy: Policy, deck: list[int]) -> Policy:
             return list(deck)
         stats["decisions"] += 1
         try:
-            response = [int(i) for i in policy(observation)]
-            reason = validation_error(observation, response)
+            response, reason = checked_response(observation, policy(observation))
         except Exception as exc:  # keep playing; record the failure
             response, reason = None, f"{type(exc).__name__}: {exc}"
         if reason is None:
