@@ -1,5 +1,5 @@
 team,member,model_id,planned_day,commit,artifact_hash,submission_id,submitted_at,validation_status,rating,rating_observed_at,rating_uncertainty,evidence_path,error_log,notes
-B,Chelsi,B-BASE,2,,,,,planned,,,,,,
+B,Chelsi Shulamit Elthuri,B-BASE,2,c3b5bb4,sha256:633d89ae92d780df39df4a5a02d5336f9922ba934c6a38f43ea0d90d050661b9,,2026-11-22T18:57Z (approx.),complete,600.0,2026-11-22T18:59Z,,evidence/team_b/baseline/,,"heuristic-v1 + sample deck; Kaggle user Chelsi512; 600.0 is the initial rating shown 2 min after upload, not a settled score; submission ID to be filled from Kaggle"
 B,Chelsi Shulamit Elthuri,B-C1,3,,,,,planned,,,,,,
 B,Chelsi Shulamit Elthuri,B-C2,4,,,,,planned,,,,,,
 B,Sadaf Fatima Syeda,B-SA1,3,,,,,planned,,,,,,
