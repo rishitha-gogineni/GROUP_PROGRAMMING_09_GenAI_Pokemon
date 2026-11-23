@@ -1,7 +1,7 @@
 {
   "member": "Jiayi Liang",
   "team": "A",
-  "status": "planned",
+  "status": "inference_implemented_training_pending",
   "models": [
     {
       "id": "A-J1",
@@ -22,6 +22,6 @@
       "submission_id": null
     }
   ],
-  "input_schema_version": "draft-v0",
+  "input_schema_version": "ar1-visible-v1",
   "data_contract": null
 }
