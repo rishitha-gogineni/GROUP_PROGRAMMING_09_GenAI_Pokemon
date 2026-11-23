@@ -1,0 +1,5 @@
+model,opponent,wins,losses,draws,errors,win_rate,ci_low,ci_high,ms_per_decision,fit_seconds,test_top1,evidence
+B-SA1,baseline,56,44,0,0,0.56,0.4623,0.6533,0.0558,0.13,0.9317,B-20261122-132818-B-SA1.json
+B-SA1,random,98,2,0,0,0.98,0.93,0.9945,0.0566,0.13,0.9317,B-20261122-132818-B-SA1.json
+B-SA2,baseline,45,55,0,0,0.45,0.3561,0.5476,1.0644,3.98,0.9227,B-20261122-132923-B-SA2.json
+B-SA2,random,99,1,0,0,0.99,0.9455,0.9982,1.0669,3.98,0.9227,B-20261122-132923-B-SA2.json
