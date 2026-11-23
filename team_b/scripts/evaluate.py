@@ -93,7 +93,8 @@ def main() -> None:
             "mean_decision_ms": round(summary["mean_decision_ms_a"], 4),
             "fallback_fraction": round(summary["invalid_responses_a"] / decisions, 6) if decisions else "",
             "kaggle_submission_id": "", "status": "measured_local",
-            "notes": args.notes or f"vs {args.opponent}; local cabt engine; engine RNG not seedable",
+            "notes": (args.notes or f"vs {args.opponent}; local cabt engine; engine RNG not seedable")
+                     + (f"; {summary['error_matches']} error matches excluded" if summary["error_matches"] else ""),
         }
         with open(RESULTS_CSV, newline="") as f:
             header = next(csv.reader(f))
