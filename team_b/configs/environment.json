@@ -1,12 +1,15 @@
 {
-  "status": "unverified",
+  "status": "verified_local",
   "owner": "Chelsi",
-  "python_version": null,
-  "platform": null,
-  "sdk_version": null,
+  "python_version": "3.13.5",
+  "platform": "macOS (Darwin 25.6.0) arm64; Kaggle target: Linux x86_64, 2 vCPU",
+  "sdk_version": "Official cabt engine from the Kaggle data page (ptcg_engine_playground 'ptcgProgram 22' source; sample_submission/cg Python wrapper)",
   "kaggle_environments_version": null,
-  "verified_example_command": null,
-  "complete_game_verified": false,
-  "seconds_per_match": null,
-  "notes": "Fill only after reproducing the current official example."
+  "verified_example_command": "python3 -m unittest discover -s team_b/tests -t . -v",
+  "complete_game_verified": true,
+  "seconds_per_match": 0.007,
+  "notes": "Local runner calls cg.game directly (no kaggle-environments needed). macOS uses libcg.dylib compiled from the official C++ source (see team_b/README.md); Linux uses the official libcg.so. One battle_start() = one game, so simulator.run_match builds best-of-three. seconds_per_match measured for heuristic vs random on the sample deck.",
+  "engine_cards": 1431,
+  "local_battle_is_single_game": true,
+  "engine_rng_seedable": false
 }

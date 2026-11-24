@@ -1,8 +1,8 @@
 model_id,team,member,architecture,objective,status,commit,artifact_hash,experiment_id
 B-C1,B,Chelsi Shulamit Elthuri,Linear contextual card-action scorer,Regress documented own-team heuristic scores with matched data and targets,planned,,,
 B-C2,B,Chelsi Shulamit Elthuri,Small card-action MLP,Regress documented own-team heuristic scores with matched data and targets,planned,,,
-B-SA1,B,Sadaf Fatima Syeda,Decision Tree regressor,Regress same teacher-score targets on same state-option feature data,planned,,,
-B-SA2,B,Sadaf Fatima Syeda,Random Forest regressor,Regress same teacher-score targets on same state-option feature data,planned,,,
+B-SA1,B,Sadaf Fatima Syeda,Decision Tree regressor,Regress same teacher-score targets on same state-option feature data,trained_evaluated_local,2aedd30,37da347ac6b7,B-20261122-132818-B-SA1
+B-SA2,B,Sadaf Fatima Syeda,Random Forest regressor,Regress same teacher-score targets on same state-option feature data,trained_evaluated_local,94048e8,d1416f728027,B-20261122-132923-B-SA2
 B-B1,B,Bhavyasree Kondi,Shared actor-critic backbone,Actor imitation warm start plus documented critic fitting; genuine on-policy PPO only if feasible,planned,,,
 B-B2,B,Bhavyasree Kondi,Separate actor and critic networks,Actor imitation warm start plus documented critic fitting; genuine on-policy PPO only if feasible,planned,,,
 B-SR1,B,Srinidhi Jaya Revanth Srirangarajapally,Linear contextual behavior-cloning policy,"Masked cross-entropy on demonstrator selections, held out by complete game/match",planned,,,

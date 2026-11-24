@@ -2,6 +2,22 @@
 
 The simulator, random baseline, heuristic, A-R1 linear scorer and A-R2 MLP are integrated. Both of Rishitha's assigned model architectures are trained and locally evaluated. A-R2's manual Kaggle upload is reported by the submitter; its hosted status and rating are not yet evidenced. The last supplied screenshot shows A-R1 Complete at 828.8, heuristic at 257.6 and random at 11.5. These remain rating snapshots, not live scores.
 
+## Common Colab evaluation
+
+Use [06_Common_Agent_Evaluation.ipynb](notebooks/06_Common_Agent_Evaluation.ipynb) for the common comparison between both teams. This copy is preset to `GROUP_PROGRAMMING_09_a`. The agent label comes from your uploaded archive filename. No code edits are needed.
+
+1. Download the notebook from GitHub and open it in Google Colab.
+2. Use a fresh CPU session and select **Runtime > Run all**.
+3. At the first upload prompt, upload `the-pokemon-company-ptcg-ai-battle-challenge-playground.zip` from the official competition download used for this project.
+4. At the second prompt, upload your own agent submission `.tar.gz`. It must contain `main.py`, `deck.csv` and all required assets at the archive root. Use the official sample deck for this benchmark.
+5. Let all comparisons finish. Download `comparison_summary.csv`, `comparison_summary.json` and the private results ZIP. Also save the executed notebook using **File > Download > Download .ipynb**.
+
+Keep all evaluation settings unchanged. Each agent faces the same three simple reference policies for 40 matches each, with at most three games per match. Compare only completed runs with the same protocol fingerprint, and review runtime differences. Earlier individual game results and other evaluation commands use different protocols.
+
+Share the comparison CSV and JSON as permitted by the course and competition rules. Keep your agent archive, model files and detailed private logs within your Kaggle team. The notebook does not submit to Kaggle. Incomplete runs are flagged and receive no overall comparison score. Native engine randomness is not fully controlled, and these simple controls do not establish an overall best agent.
+
+Preparation was checked with standard library tests and a synthetic simulator. The notebook is unexecuted; run it in Colab to obtain real evaluation results.
+
 | Member | Responsibility | Assigned models |
 | --- | --- | --- |
 | Rishitha Gogineni | Simulator, baseline, response adapter, packages and Team A uploads | A-R1, A-R2 |
