@@ -1,16 +1,14 @@
-"""A-J1: Linear contextual masked policy. NOT IMPLEMENTED."""
-
-from ...contracts import FeatureVector
+from .policy import CandidatePolicy, DIMENSION, finite_vector
 
 MODEL_ID = "A-J1"
 ARCHITECTURE = "Linear contextual masked policy"
 
 
-class Model:
-    """Implement training/artifact loading separately; do not fabricate fitted weights."""
+class Model(CandidatePolicy):
+    MODEL_ID = MODEL_ID
 
-    def score_options(
-        self, state: FeatureVector, options: list[FeatureVector]
-    ) -> list[float]:
-        """Return finite scores mapped to the current option list."""
-        raise NotImplementedError("A-J1 requires implementation and actual training.")
+    def _load_weights(self, parameters):
+        self.weights = finite_vector(parameters.get("weights"), DIMENSION, "weights")
+
+    def _score(self, candidate):
+        return sum(value * weight for value, weight in zip(candidate, self.weights))

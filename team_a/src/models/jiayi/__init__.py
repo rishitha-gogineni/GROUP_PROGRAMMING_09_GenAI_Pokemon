@@ -1,1 +1,1 @@
-"""Jiayi Liang: planned pair A-J1 / A-J2."""
+"""Jiayi Liang: A-J1 / A-J2 policy inference; training artifacts supplied separately."""
