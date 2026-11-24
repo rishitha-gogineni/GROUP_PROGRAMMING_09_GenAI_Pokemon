@@ -1,7 +1,7 @@
 {
   "member": "Jiayi Liang",
   "team": "A",
-  "status": "trained_and_evaluated_offline",
+  "status": "trained_evaluated_and_packaged",
   "models": [
     {
       "id": "A-J1",
@@ -33,7 +33,7 @@
   "data_contract": "../../../notebooks/AJ1_AJ2_Policy_Training.ipynb",
   "evaluation": {
     "notebook": "../../../notebooks/AJ1_AJ2_Policy_Evaluation.ipynb",
-    "status": "prepared_for_colab_execution",
+    "status": "executed_in_colab",
     "opponent": "Team A heuristic",
     "unit": "individual_battle",
     "games_per_policy": 40,
@@ -43,5 +43,15 @@
     },
     "staging_function": "agents.stage_policy",
     "results": "evaluation_results.csv"
+  },
+  "standalone_packaging": {
+    "builder": "package_submissions.py",
+    "test": "test_packaging.py",
+    "archives": {
+      "A-J1": "A-J1_Linear_Policy.tar.gz",
+      "A-J2": "A-J2_MLP_Policy.tar.gz"
+    },
+    "common_evaluation_unit": "best-of-three match",
+    "common_evaluation_matches_per_opponent": 40
   }
 }

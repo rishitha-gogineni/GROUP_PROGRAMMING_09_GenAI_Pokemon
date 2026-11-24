@@ -2,13 +2,14 @@ from pathlib import Path
 import shutil
 
 from ... import features, heuristic
-from ...common_runtime import stage_agent
 
 
 POLICIES = {"A-J1": ("aj1", "aj1_bc.json"), "A-J2": ("aj2", "aj2_bc.json")}
 
 
 def stage_policy(model_id, destination, deck_file):
+    from ...common_runtime import stage_agent
+
     folder = Path(__file__).resolve().parent
     entry, artifact = POLICIES[model_id]
     metadata = stage_agent({"label": model_id, "entrypoint": folder / entry / "main.py",

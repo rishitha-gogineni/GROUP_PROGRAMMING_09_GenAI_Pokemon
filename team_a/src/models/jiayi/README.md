@@ -45,7 +45,7 @@ Open [AJ1_AJ2_Policy_Evaluation.ipynb](../../../notebooks/AJ1_AJ2_Policy_Evaluat
 
 The notebook reuses Team A's evaluator for 40 individual battles per policy against the fixed heuristic, with seeds 60000–60039, alternating player seats, and the same deck and limits. These are not BO3 matches. Native-engine randomness is not proven controllable by Python seeds. It displays outcomes, failures, timing, and plots, and saves one `evaluation_results.csv` in this folder. Win rates use valid completed battles; failed games are reported separately. This comparison is distinct from the existing self-play experiment.
 
-[agents.py](agents.py) stages [aj1/main.py](aj1/main.py) or [aj2/main.py](aj2/main.py) with its existing fitted weights as `model.json` and the supplied `deck.csv`. The entry points support the evaluator's `__raw_path__` contract without `__file__` or a particular working directory. They require this repository's Python modules, which the existing evaluation worker makes importable; these are not standalone Kaggle archives. No weights or feature encoders are copied into new tracked packages.
+[agents.py](agents.py) stages [aj1/main.py](aj1/main.py) or [aj2/main.py](aj2/main.py) with its existing fitted weights as `model.json` and the supplied `deck.csv`. The entry points support the evaluator's `__raw_path__` contract without `__file__` or a particular working directory.
 
 For direct integration, call `stage_policy("A-J1", destination, deck_file)` (or `"A-J2"`) from `team_a.src.models.jiayi.agents`, then pass the staged directory to the existing evaluator. The destination must not already exist. Shared-runner bookkeeping remains temporary in the notebook; no new integrity bookkeeping is implemented here.
 
@@ -54,3 +54,21 @@ Run non-native integration tests with:
 ```bash
 PYTHONDONTWRITEBYTECODE=1 python -m unittest team_a.src.models.jiayi.test_agents team_a.src.models.jiayi.test_inference team_a.src.models.jiayi.test_training -v
 ```
+
+## Build standalone agent archives
+
+[package_submissions.py](package_submissions.py) builds separate A-J1 and A-J2 archives with the official sample deck. Each archive contains a top-level `main.py`, `deck.csv`, the selected fitted weights as `model.json`, and only the inference modules needed by the policy, frozen feature encoder, and heuristic fallback.
+
+```bash
+python -m team_a.src.models.jiayi.package_submissions \
+  --deck-file /path/to/official/sample_submission/deck.csv \
+  --output-dir /path/to/output
+```
+
+The outputs are `A-J1_Linear_Policy.tar.gz` and `A-J2_MLP_Policy.tar.gz`. They run without a repository checkout and satisfy the Common Agent Evaluation callback contract: `agent` is the final callable, `__file__` is not required, the fixed deck is returned initially, and gameplay responses are legal option indices. Run the focused packaging test locally without the native SDK:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python -m unittest team_a.src.models.jiayi.test_packaging -v
+```
+
+Run `team_a/notebooks/06_Common_Agent_Evaluation.ipynb` in a fresh Colab CPU session once per archive. Each run compares one policy with three reference policies using 40 best-of-three matches per opponent. Save the executed notebook and its downloaded `comparison_summary.csv` and `comparison_summary.json` under distinct A-J1 and A-J2 names so the second run does not replace the first.
