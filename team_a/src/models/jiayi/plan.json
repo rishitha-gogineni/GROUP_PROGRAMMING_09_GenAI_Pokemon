@@ -30,5 +30,18 @@
     }
   ],
   "input_schema_version": "ar1-visible-v1",
-  "data_contract": "../../../notebooks/AJ1_AJ2_Policy_Training.ipynb"
+  "data_contract": "../../../notebooks/AJ1_AJ2_Policy_Training.ipynb",
+  "evaluation": {
+    "notebook": "../../../notebooks/AJ1_AJ2_Policy_Evaluation.ipynb",
+    "status": "prepared_for_colab_execution",
+    "opponent": "Team A heuristic",
+    "unit": "individual_battle",
+    "games_per_policy": 40,
+    "entrypoints": {
+      "A-J1": "aj1/main.py",
+      "A-J2": "aj2/main.py"
+    },
+    "staging_function": "agents.stage_policy",
+    "results": "evaluation_results.csv"
+  }
 }

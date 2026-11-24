@@ -8,7 +8,7 @@ Jiayi trained and evaluated two policies offline using Team A's Day 4 heuristic 
 | A-J2 32-unit tanh MLP chosen-action BC | [aj2_bc.json](aj2_bc.json) | 0.648977 | 0.652052 | 98.46% |
 | A-J1 linear outcome-weighted BC, β = 0.5 | [aj1_weighted_bc.json](aj1_weighted_bc.json) | 0.681863 | 0.676058 | 96.92% |
 
-The MLP had the highest held-out imitation accuracy. Outcome weighting slightly reduced held-out cross entropy for the linear model, while validation cross entropy rose and held-out accuracy fell by one decision. These metrics measure imitation on recorded decisions. Gameplay evaluation is pending.
+The MLP had the highest held-out imitation accuracy. Outcome weighting slightly reduced held-out cross entropy for the linear model, while validation cross entropy rose and held-out accuracy fell by one decision. These metrics measure imitation on recorded decisions. Evaluation against the fixed Team A heuristic is prepared for Colab; no results from that comparison are claimed here.
 
 ## Reproduce training
 
@@ -31,10 +31,26 @@ weighted_linear = LinearPolicy(models / "aj1_weighted_bc.json")
 mlp = MLPPolicy(models / "aj2_bc.json")
 ```
 
-Use `score_options([], options)` for logits and `policy_probabilities([], options)` for probabilities over supplied legal candidates. The `score_observation` and `probabilities_observation` helpers use the shared encoder, which supports MAIN decisions with exactly one required choice and at least two candidates. Standalone agent integration and fallback handling are pending.
+Use `score_options([], options)` for logits and `policy_probabilities([], options)` for probabilities over supplied legal candidates. The `score_observation` and `probabilities_observation` helpers use the shared encoder, which supports MAIN decisions with exactly one required choice and at least two candidates. The callable agents use deterministic highest-score selection for supported decisions and Team A’s heuristic for unsupported decisions.
 
 Run the inference and training tests from the repository root.
 
 ```bash
 PYTHONDONTWRITEBYTECODE=1 python -m unittest team_a.src.models.jiayi.test_inference team_a.src.models.jiayi.test_training -v
+```
+
+## Evaluate callable agents in Colab
+
+Open [AJ1_AJ2_Policy_Evaluation.ipynb](../../../notebooks/AJ1_AJ2_Policy_Evaluation.ipynb) in a Linux Colab runtime with the repository and official SDK available. Set `REPO_DIR` and `SDK_DIR` in its first code cell (or the `PTCG_REPO_DIR` and `PTCG_SDK_DIR` environment variables). The SDK directory must contain `cg/` and the official `deck.csv`. Run all cells and save the executed notebook. Native evaluation is intentionally blocked on macOS.
+
+The notebook reuses Team A's evaluator for 40 individual battles per policy against the fixed heuristic, with seeds 60000–60039, alternating player seats, and the same deck and limits. These are not BO3 matches. Native-engine randomness is not proven controllable by Python seeds. It displays outcomes, failures, timing, and plots, and saves one `evaluation_results.csv` in this folder. Win rates use valid completed battles; failed games are reported separately. This comparison is distinct from the existing self-play experiment.
+
+[agents.py](agents.py) stages [aj1/main.py](aj1/main.py) or [aj2/main.py](aj2/main.py) with its existing fitted weights as `model.json` and the supplied `deck.csv`. The entry points support the evaluator's `__raw_path__` contract without `__file__` or a particular working directory. They require this repository's Python modules, which the existing evaluation worker makes importable; these are not standalone Kaggle archives. No weights or feature encoders are copied into new tracked packages.
+
+For direct integration, call `stage_policy("A-J1", destination, deck_file)` (or `"A-J2"`) from `team_a.src.models.jiayi.agents`, then pass the staged directory to the existing evaluator. The destination must not already exist. Shared-runner bookkeeping remains temporary in the notebook; no new integrity bookkeeping is implemented here.
+
+Run non-native integration tests with:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python -m unittest team_a.src.models.jiayi.test_agents team_a.src.models.jiayi.test_inference team_a.src.models.jiayi.test_training -v
 ```
