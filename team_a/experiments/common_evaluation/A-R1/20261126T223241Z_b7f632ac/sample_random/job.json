@@ -1,0 +1,9 @@
+{
+  "sdk_dir": "/content/ptcg_common_evaluation/20261126T223241Z_b7f632ac/official_sample",
+  "candidate_dir": "/content/ptcg_common_evaluation/20261126T223241Z_b7f632ac/own_agent",
+  "output_dir": "/content/ptcg_common_evaluation/20261126T223241Z_b7f632ac/private_results/sample_random",
+  "opponent": "sample_random",
+  "matches_per_opponent": 40,
+  "seed_base": 91000,
+  "max_steps": 10000
+}

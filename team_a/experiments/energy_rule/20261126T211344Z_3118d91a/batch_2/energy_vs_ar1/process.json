@@ -1,0 +1,9 @@
+{
+  "batch": 1,
+  "comparison": "energy_vs_ar1",
+  "output_dir": "/content/ptcg_energy_experiment/20261126T211344Z_3118d91a/outputs/batch_2/energy_vs_ar1",
+  "returncode": 0,
+  "timed_out": false,
+  "interrupted": false,
+  "error": null
+}

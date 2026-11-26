@@ -1,0 +1,7 @@
+batch,comparison,requested,valid,failed_or_unfinished,wins,losses,draws,win_rate,score_rate,win_rate_wilson_95,invalid_responses,engine_rejections,rule_eligible,rule_changes,complete_and_valid
+0,original_vs_ar1,40,40,0,20,20,0,0.5,0.5,"[0.35199526933465386, 0.6480047306653461]",0,0,0,0,True
+0,energy_vs_original,40,40,0,17,23,0,0.425,0.425,"[0.28509392559950375, 0.5780493145800892]",0,0,143,3,True
+0,energy_vs_ar1,40,40,0,22,18,0,0.55,0.55,"[0.39829091798932054, 0.6929469218909508]",0,0,134,0,True
+1,original_vs_ar1,40,40,0,20,20,0,0.5,0.5,"[0.35199526933465386, 0.6480047306653461]",0,0,0,0,True
+1,energy_vs_original,40,40,0,26,14,0,0.65,0.65,"[0.49505880837257693, 0.7786547112682372]",0,0,127,4,True
+1,energy_vs_ar1,40,40,0,20,20,0,0.5,0.5,"[0.35199526933465386, 0.6480047306653461]",0,0,138,5,True

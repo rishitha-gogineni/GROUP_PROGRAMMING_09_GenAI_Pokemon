@@ -1,0 +1,18 @@
+test_active_needs_energy (__main__.EnergyRuleChecks.test_active_needs_energy) ... ok
+test_all_active_attacks_must_be_ready (__main__.EnergyRuleChecks.test_all_active_attacks_must_be_ready) ... ok
+test_assessment_requires_changes_and_consistency (__main__.EnergyRuleChecks.test_assessment_requires_changes_and_consistency) ... ok
+test_cost_matching (__main__.EnergyRuleChecks.test_cost_matching) ... ok
+test_energy_effect_guards (__main__.EnergyRuleChecks.test_energy_effect_guards) ... ok
+test_health_breaks_equal_deficit_tie (__main__.EnergyRuleChecks.test_health_breaks_equal_deficit_tie) ... ok
+test_other_choices_and_selection_types_unchanged (__main__.EnergyRuleChecks.test_other_choices_and_selection_types_unchanged) ... ok
+test_ready_active_prepares_bench (__main__.EnergyRuleChecks.test_ready_active_prepares_bench) ... ok
+test_same_energy_card_is_preserved (__main__.EnergyRuleChecks.test_same_energy_card_is_preserved) ... ok
+test_special_energy_unchanged (__main__.EnergyRuleChecks.test_special_energy_unchanged) ... ok
+test_summary_rejects_missing_or_failed_games (__main__.EnergyRuleChecks.test_summary_rejects_missing_or_failed_games) ... ok
+test_unknown_metadata_unchanged (__main__.EnergyRuleChecks.test_unknown_metadata_unchanged) ... ok
+test_wrong_energy_and_already_ready_bench_unchanged (__main__.EnergyRuleChecks.test_wrong_energy_and_already_ready_bench_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.003s
+
+OK

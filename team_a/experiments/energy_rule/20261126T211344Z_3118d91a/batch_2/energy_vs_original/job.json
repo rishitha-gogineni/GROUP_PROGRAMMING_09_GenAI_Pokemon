@@ -1,0 +1,15 @@
+{
+  "sdk_dir": "/content/ptcg_energy_experiment/20261126T211344Z_3118d91a/official_sample",
+  "agent_dirs": {
+    "original": "/content/ptcg_energy_experiment/20261126T211344Z_3118d91a/original",
+    "energy": "/content/ptcg_energy_experiment/20261126T211344Z_3118d91a/energy",
+    "ar1": "/content/ptcg_energy_experiment/20261126T211344Z_3118d91a/ar1"
+  },
+  "candidate": "energy",
+  "opponent": "original",
+  "output_dir": "/content/ptcg_energy_experiment/20261126T211344Z_3118d91a/outputs/batch_2/energy_vs_original",
+  "games": 40,
+  "seed_start": 130000,
+  "max_steps": 10000,
+  "max_diagnostic_rows": 50000
+}

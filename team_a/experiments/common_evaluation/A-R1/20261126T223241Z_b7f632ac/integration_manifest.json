@@ -1,0 +1,192 @@
+{
+  "run_id": "20261126T223241Z_b7f632ac",
+  "kind": "common_evaluation",
+  "model": "A-R1",
+  "original_output_zip_sha256": "a92d1722d1b0ad0141ce2bc1e57f2fd2baee0c57db29a5903c458be152cbc517",
+  "original_notebook_sha256": "9b7c0be5ab017a2d7c585e60a4fbebebe956f3bdf95bc9ba1988fe930f48c74a",
+  "notebook_sha256": "32b0baf9c77e41962b0b102440bea659ca34fe1c0c5d8a98e58bed5a4c9fd9da",
+  "original_archive": "archive/run_archives/common_evaluation/Common_Evaluation_20261126T223241Z_b7f632ac_private_results.zip",
+  "original_notebook": "archive/notebook_originals/20261126/06_Common_Agent_Evaluation_Colab.ipynb",
+  "executed_notebook": "team_a/notebooks/06_Common_Evaluation_A-R1.ipynb",
+  "browser_control_outputs_removed": 8,
+  "source_execution_counts_streams_and_plots_preserved": true,
+  "local_result_directory": "results/20261126T223241Z_b7f632ac",
+  "files": [
+    {
+      "path": "run_info.json",
+      "bytes": 2162,
+      "sha256": "d374dd63f60704fbac877bd95aea9c875143f08814e363b31df1b640fe67ff35",
+      "repository": "included"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 2255,
+      "sha256": "4c3b7ad8c8ec55077b6c90d0f64948b0c32cf701533d42bfe307442a948ad6e5",
+      "repository": "included"
+    },
+    {
+      "path": "completion.json",
+      "bytes": 207,
+      "sha256": "d5d5d602d89de92726c4b9194889b1213ee79b3c24637d64e3633b1914341bcc",
+      "repository": "included"
+    },
+    {
+      "path": "comparison_summary.json",
+      "bytes": 4050,
+      "sha256": "2978ed0de1a4c2f353f8c40dc18f16452590bbf0179db5abc760fd8b71fc5a32",
+      "repository": "included"
+    },
+    {
+      "path": "comparison_summary.csv",
+      "bytes": 1624,
+      "sha256": "f56b269af338ad1a2090fb1f2ce546aebb81fa32090975a031010ca5b281fcea",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/stdout.txt",
+      "bytes": 711,
+      "sha256": "a8b59282de4fea4632bc863b3ca63ad54cbb0539e1ce625e2ca44683d7203330",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/process.json",
+      "bytes": 85,
+      "sha256": "3c58b65539dae7bc64cc40e7fdf944cc7d01f1ff94c51354dae5d43d25982710",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/summary.json",
+      "bytes": 960,
+      "sha256": "763ee1604cc096371c8bae22f0a6893d9d66b193c706f8659d22d5a90b07a45f",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/report.json",
+      "bytes": 53382,
+      "sha256": "5ab260cb1956f7380473e3508f4d5f2237e2862681b8bb729dc35075c360fd59",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/games.csv",
+      "bytes": 8326,
+      "sha256": "e89acc680ba6e3626cc046114ef052a582a5cde767fd3797e8e1b1b90d73da66",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/job.json",
+      "bytes": 393,
+      "sha256": "7879aec2965154556f8653ea6b43a0a7e5d6e7111fd948f762baebd702327e34",
+      "repository": "included"
+    },
+    {
+      "path": "source/common_benchmark_core.py",
+      "bytes": 8678,
+      "sha256": "1ef1dbbe7215c7da3eaf008909c6aaed852884893a0fe5ed650440f6217bddd3",
+      "repository": "included"
+    },
+    {
+      "path": "source/common_benchmark_worker.py",
+      "bytes": 7558,
+      "sha256": "8a5e36f31a165b850f538de89b49bee8b401f75026483c4e94c8ff4125c893e6",
+      "repository": "included"
+    },
+    {
+      "path": "source/__pycache__/common_benchmark_core.cpython-313.pyc",
+      "bytes": 16456,
+      "sha256": "53c28919ad483780a469fb8985f8e31246b4200925d34c2525819f11f224448b",
+      "repository": "excluded_generated_cache",
+      "local_copy": "omitted_generated_cache; exact original bytes remain in archived output ZIP"
+    },
+    {
+      "path": "sample_random/stdout.txt",
+      "bytes": 712,
+      "sha256": "82b839899887e951f1a1ab8cee14e104adc7147a64c4f5b8ae2877f8999d06fd",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/process.json",
+      "bytes": 85,
+      "sha256": "3c58b65539dae7bc64cc40e7fdf944cc7d01f1ff94c51354dae5d43d25982710",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/summary.json",
+      "bytes": 980,
+      "sha256": "889d6c3cc5c26d1bcdeb590144840f13f714bf2bc9e4e66567142c0f2b47baa3",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/report.json",
+      "bytes": 59012,
+      "sha256": "2d607b1faf1b4aea969756359bdbfeab50fc6389a73f8a7233c5181ed990941c",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/games.csv",
+      "bytes": 9248,
+      "sha256": "7a833031c3dcbd88db01b8c6bbf198e8bc4d4fc93856af7fd46364b418f63ab2",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/job.json",
+      "bytes": 395,
+      "sha256": "764597542fd9c2e81dfbca2b37819df3615bf2ba789ae138b712628ce72a7a87",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/stdout.txt",
+      "bytes": 730,
+      "sha256": "857b79a6987f679787193e75bb72d658725e927320facccbb267cbebd14e3b46",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/process.json",
+      "bytes": 85,
+      "sha256": "3c58b65539dae7bc64cc40e7fdf944cc7d01f1ff94c51354dae5d43d25982710",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/summary.json",
+      "bytes": 995,
+      "sha256": "8a79b27990b997222c5a67ec43343652ea8984d274386fcb315499e2a493a6c6",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/report.json",
+      "bytes": 67190,
+      "sha256": "edc3925f3b31ef6221ad51dd6ba2d4147c881a2bb0a1d5f715063ff7ada282bc",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/games.csv",
+      "bytes": 10609,
+      "sha256": "2d7c88aaffac59c68bda31ed78ef7c98be61031ffd17004d15be482f063dd104",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/job.json",
+      "bytes": 395,
+      "sha256": "217505bd97b5558aeeab508c4f0349f49bac9163de5ee834fe293c343f044332",
+      "repository": "included"
+    }
+  ],
+  "notes": "Official card metadata remains local. Generated Python bytecode caches are omitted from working copies and Git. The archived original ZIP preserves every original byte. Native SDK files and competition/transfer archives are not added to Git."
+}

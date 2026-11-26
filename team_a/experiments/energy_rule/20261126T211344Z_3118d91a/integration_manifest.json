@@ -1,0 +1,428 @@
+{
+  "run_id": "20261126T211344Z_3118d91a",
+  "kind": "energy_rule",
+  "model": null,
+  "original_output_zip_sha256": "1778bcd0a93ef8ce0d7aa2f18f0ac216f08d019633f8027ac1787e92162f484d",
+  "original_notebook_sha256": "7d5e77dd6a56b9738a71fe38947c7e3cb55fec78578c16fab56129e77caa7064",
+  "notebook_sha256": "58bfcf97913239db495b113c23864e9c6dedfe76c7bd3d36a8bd020f4c7867a7",
+  "original_archive": "archive/run_archives/energy_rule/Energy_Rule_20261126T211344Z_3118d91a_outputs.zip",
+  "original_notebook": "archive/notebook_originals/20261126/07_Energy_Attachment_Experiment_Colab (1).ipynb",
+  "executed_notebook": "team_a/notebooks/07_Energy_Attachment_Experiment.ipynb",
+  "browser_control_outputs_removed": 7,
+  "source_execution_counts_streams_and_plots_preserved": true,
+  "local_result_directory": "results/20261126T211344Z_3118d91a",
+  "files": [
+    {
+      "path": "battle_comparison.png",
+      "bytes": 54046,
+      "sha256": "7f0051c4158d64c529a06354065016b97e3c6c652c9a7f04770455650514ad76",
+      "repository": "included"
+    },
+    {
+      "path": "completion.json",
+      "bytes": 216,
+      "sha256": "81684c453504d2ae72699623ea84fbb8ecec0e5a67958ac7c44731e2cd65fb52",
+      "repository": "included"
+    },
+    {
+      "path": "evaluation_summary.json",
+      "bytes": 5221,
+      "sha256": "9ef88e6034962204ee118eec21249cf80f2ae2a369af07dbf561af5ad9263c69",
+      "repository": "included"
+    },
+    {
+      "path": "batch_results.csv",
+      "bytes": 805,
+      "sha256": "80d7c2251c2fdf4d4ac568809994ed93f4d9d9ec27a8fa753dbd102c07b4cd87",
+      "repository": "included"
+    },
+    {
+      "path": "rule_checks.json",
+      "bytes": 40,
+      "sha256": "08997a0ac3ac9a84a63be21ed29ac8fb82ab994aa9c15a35a7cd31022f0c5d21",
+      "repository": "included"
+    },
+    {
+      "path": "run_info.json",
+      "bytes": 1388,
+      "sha256": "39ae8a7c0ba5b7adad1aeb5f06431215e834c6c9f2ae99249f3305710c5dbbf2",
+      "repository": "included"
+    },
+    {
+      "path": "comparison_results.csv",
+      "bytes": 492,
+      "sha256": "5fadbb68b315d1c999c05bd4bcc7f7119d37ecfeace41c2987b82390fc04f37a",
+      "repository": "included"
+    },
+    {
+      "path": "rule_checks.txt",
+      "bytes": 1494,
+      "sha256": "6afb4577f627ef53402e914fcd1dc27b7477e6d957c9e470e8b8f4fb5e2a9e64",
+      "repository": "included"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 2132,
+      "sha256": "76895bd12c129148bdd551698574023ff8bd11bd6d5b8fb15c40c6c3c29f334f",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_original/report.json",
+      "bytes": 254786,
+      "sha256": "4a734adf426b2efcfc774747ad8d2c4626b0f8b07d373cf50bb900688dd4fea8",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_original/decisions.jsonl",
+      "bytes": 1048999,
+      "sha256": "5211c46313446a2c289b4dcb1c28c7ebb09b5ca40314a5d0ac8feb51ad7c9787",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_original/energy_metadata.json",
+      "bytes": 1141100,
+      "sha256": "c7860504a3cda4f1db45ceafb43f12ed3dbb9018864453759522ad63a512b91d",
+      "repository": "local_only_official_card_metadata"
+    },
+    {
+      "path": "batch_2/energy_vs_original/stdout.txt",
+      "bytes": 1405,
+      "sha256": "847a209fba4abc907195f45f26836c93e18bcc7a56f4f69de3cc0374471450dd",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_original/games.csv",
+      "bytes": 4379,
+      "sha256": "a7f0d2786e8bcdc99f129b853efd6469ceb8f5255a22259c5728d17ec0392dfd",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_original/job.json",
+      "bytes": 615,
+      "sha256": "3367dc8400a8fd600a7f1636def448c7af5981b992760908e6a63f1659260eb7",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_original/process.json",
+      "bytes": 249,
+      "sha256": "2d3aab9e28ef7dff9eed3500fe89abaa3e52df21ca13e5d08e442a539a436c36",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_original/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/original_vs_ar1/report.json",
+      "bytes": 255013,
+      "sha256": "9eaee8f4827414d8275c429a86bd25263b2691081fc66961636a5e1311341a62",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/original_vs_ar1/decisions.jsonl",
+      "bytes": 1096718,
+      "sha256": "c5497c6cbb7350eb6eb3e202588fc9e2eea8e1f0e81578df97d7fc48f14e7905",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/original_vs_ar1/energy_metadata.json",
+      "bytes": 1141100,
+      "sha256": "c7860504a3cda4f1db45ceafb43f12ed3dbb9018864453759522ad63a512b91d",
+      "repository": "local_only_official_card_metadata"
+    },
+    {
+      "path": "batch_2/original_vs_ar1/stdout.txt",
+      "bytes": 1411,
+      "sha256": "fd90d93d8cd0fe4e9a876c2b3b81364e7a41a48e467b2783290e0f30989d8b81",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/original_vs_ar1/games.csv",
+      "bytes": 4395,
+      "sha256": "137aa9ccac9b257cfe3e2ddc9bb5798e8df94a9078a6edc5dc03079fca765f7f",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/original_vs_ar1/job.json",
+      "bytes": 609,
+      "sha256": "e2de22b0808371d03561f66beae92c0aee82acaa14edc2f29f1933e125d6b781",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/original_vs_ar1/process.json",
+      "bytes": 243,
+      "sha256": "d9828b69e66746eb1da27b600b0e9fc687d1227da8431e9fc24029492f343bd1",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/original_vs_ar1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_ar1/report.json",
+      "bytes": 257367,
+      "sha256": "24e4061858c8b3655026e410f060c7518193d9f0964070e185b28fd0cc5342af",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_ar1/decisions.jsonl",
+      "bytes": 1124544,
+      "sha256": "cd0e7ec862f40557b3a3ad190db2c48dc5fcdeb87c664d92041314a65a862567",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_ar1/energy_metadata.json",
+      "bytes": 1141100,
+      "sha256": "c7860504a3cda4f1db45ceafb43f12ed3dbb9018864453759522ad63a512b91d",
+      "repository": "local_only_official_card_metadata"
+    },
+    {
+      "path": "batch_2/energy_vs_ar1/stdout.txt",
+      "bytes": 1411,
+      "sha256": "42fa5a53a30fefb4ca9014e9ddd4fc7988da7ba4a280a4614b781a0227c90e49",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_ar1/games.csv",
+      "bytes": 4387,
+      "sha256": "444a9534cc020481c437e13dbfa43bd09a82b742c152ce39c4a296165cf5be04",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_ar1/job.json",
+      "bytes": 605,
+      "sha256": "0bf65b6cc296754dc37ff064a3fef821038219c5ac6cc40dea1f29425f7cc7c4",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_ar1/process.json",
+      "bytes": 239,
+      "sha256": "4b604f4c863208d77b13a6ae9e242ffeeb7581f1c46aaeacc667f82fbdd62e3e",
+      "repository": "included"
+    },
+    {
+      "path": "batch_2/energy_vs_ar1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "source/test_energy_rule.py",
+      "bytes": 6981,
+      "sha256": "29e669dd6fddedeff78e4c9bb8bce79def43941b3fd713d3b04dbac2c2decbc5",
+      "repository": "included"
+    },
+    {
+      "path": "source/heuristic_main.py",
+      "bytes": 36574,
+      "sha256": "ac7664d10039163305a3d16f39365dd8aea94980c49508c70df85f111ff07911",
+      "repository": "included"
+    },
+    {
+      "path": "source/ar1_main.py",
+      "bytes": 44645,
+      "sha256": "ed0ec1c36566d69d11818b63406960ee7288bf2a1b72a1db8bf29ab9525bbaaf",
+      "repository": "included"
+    },
+    {
+      "path": "source/common_benchmark_core.py",
+      "bytes": 8678,
+      "sha256": "1ef1dbbe7215c7da3eaf008909c6aaed852884893a0fe5ed650440f6217bddd3",
+      "repository": "included"
+    },
+    {
+      "path": "source/energy_main.py",
+      "bytes": 44117,
+      "sha256": "9d9b0f4cf68e1030028028f5494d1ac49a237528e6ef2044da24e051846b25fe",
+      "repository": "included"
+    },
+    {
+      "path": "source/energy_rule.py",
+      "bytes": 6302,
+      "sha256": "033d7b9f23122ab6e7230ba2c29e749201ab5274ab2beaccea0d4e73ec661b52",
+      "repository": "included"
+    },
+    {
+      "path": "source/energy_experiment_worker.py",
+      "bytes": 9713,
+      "sha256": "06354c02dd117b0af9a4e0a786945d4afcc892446abe3ee3c28ff328a88b342b",
+      "repository": "included"
+    },
+    {
+      "path": "source/energy_summary.py",
+      "bytes": 3146,
+      "sha256": "882549700d58e7a79d4eb0a65bf75d26bc70b983cdbd8f617b1496f4b264b3ce",
+      "repository": "included"
+    },
+    {
+      "path": "source/__pycache__/energy_summary.cpython-313.pyc",
+      "bytes": 6423,
+      "sha256": "f6f198b1a33b600359cc5fb37d059c5d75382f2a0291939d0624ff71622b7796",
+      "repository": "excluded_generated_cache",
+      "local_copy": "omitted_generated_cache; exact original bytes remain in archived output ZIP"
+    },
+    {
+      "path": "source/__pycache__/common_benchmark_core.cpython-313.pyc",
+      "bytes": 16448,
+      "sha256": "365cc2fb2432ccbadd116b99d2d04fa4d2aa4566f508a5bf1ffea2a33a83dec5",
+      "repository": "excluded_generated_cache",
+      "local_copy": "omitted_generated_cache; exact original bytes remain in archived output ZIP"
+    },
+    {
+      "path": "source/__pycache__/energy_rule.cpython-313.pyc",
+      "bytes": 10247,
+      "sha256": "b9322e4e308f320499372beb1882fcf00e79fca55562f24519c0ea2db1a4cf44",
+      "repository": "excluded_generated_cache",
+      "local_copy": "omitted_generated_cache; exact original bytes remain in archived output ZIP"
+    },
+    {
+      "path": "batch_1/energy_vs_original/report.json",
+      "bytes": 263091,
+      "sha256": "0c41ecd82e2560ce7af7d5d8bc15e7cf54bd66857ce1c6bca058f7ba3be4f39e",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_original/decisions.jsonl",
+      "bytes": 1200979,
+      "sha256": "ba9cb2dadd3fbc79ffdef88c855f741aeac423e6ea2d0a9e3a864b7aedaa0193",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_original/energy_metadata.json",
+      "bytes": 1141100,
+      "sha256": "c7860504a3cda4f1db45ceafb43f12ed3dbb9018864453759522ad63a512b91d",
+      "repository": "local_only_official_card_metadata"
+    },
+    {
+      "path": "batch_1/energy_vs_original/stdout.txt",
+      "bytes": 1414,
+      "sha256": "3c208722c7cd708a2f6aba7e04e70bff1f90b1840e0375a4dd02b54c5c437a77",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_original/games.csv",
+      "bytes": 4398,
+      "sha256": "32a4913b3bfcfbd784e17a92e59be11ba411b764765df1c6baeaa50a6462bd83",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_original/job.json",
+      "bytes": 615,
+      "sha256": "46f17662e3658583ae2130088b815f6b02ad03ec422947abbcb386e11df74f04",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_original/process.json",
+      "bytes": 249,
+      "sha256": "b60c40e921a2244f9aab36ff7c98924f5cb5c05a4146ced2b55316db576f88b6",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_original/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/original_vs_ar1/report.json",
+      "bytes": 257985,
+      "sha256": "8a93e594754567fb33b557cedbf83554a0dd7f2c0882ef9ef61c9676cd64996f",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/original_vs_ar1/decisions.jsonl",
+      "bytes": 1113995,
+      "sha256": "69d3dab09b7c9b5a1739201d9c2081a073ad54d9a4af6c448876306c5cd80e40",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/original_vs_ar1/energy_metadata.json",
+      "bytes": 1141100,
+      "sha256": "c7860504a3cda4f1db45ceafb43f12ed3dbb9018864453759522ad63a512b91d",
+      "repository": "local_only_official_card_metadata"
+    },
+    {
+      "path": "batch_1/original_vs_ar1/stdout.txt",
+      "bytes": 1411,
+      "sha256": "91d62dcfcddaab7e0debf9212260577c59249df561b65914ee7c3ac9db83c458",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/original_vs_ar1/games.csv",
+      "bytes": 4408,
+      "sha256": "ee96bdf7ad0fae04024e96a4b9dfcd8422f410970cb8e71ad12250f4089888c1",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/original_vs_ar1/job.json",
+      "bytes": 609,
+      "sha256": "c1f26d4da294d9c06a54cd417769af0e236a4c37d26d09132a22aa624f5c41b0",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/original_vs_ar1/process.json",
+      "bytes": 243,
+      "sha256": "a901659574aeb90aff6fe0c64943f136813763529d7b58f2a9de3c21e6418afe",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/original_vs_ar1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_ar1/report.json",
+      "bytes": 238677,
+      "sha256": "a3849fbc28c3fe893ee71d9d7b49a75913f916d4b719b8eec43ee2b5f14c66a3",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_ar1/decisions.jsonl",
+      "bytes": 1004310,
+      "sha256": "a930a8abc817b1d4ac993a574a3c07f3053a8ace33826044ce535a2ceefe3a20",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_ar1/energy_metadata.json",
+      "bytes": 1141100,
+      "sha256": "c7860504a3cda4f1db45ceafb43f12ed3dbb9018864453759522ad63a512b91d",
+      "repository": "local_only_official_card_metadata"
+    },
+    {
+      "path": "batch_1/energy_vs_ar1/stdout.txt",
+      "bytes": 1409,
+      "sha256": "413c1f54f6e5a962aaafb6f944fb5eb616c0dc0edae4126e1f56642e63fdc41d",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_ar1/games.csv",
+      "bytes": 4361,
+      "sha256": "5d0b055733a6ee8a3513d06c0e5ddec0e5941d49ae7161c123bc4aa1d85a088a",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_ar1/job.json",
+      "bytes": 605,
+      "sha256": "57b80cc58e0d46a571c8b942cb91c8d2b025c708c949a2150eef023ee1711116",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_ar1/process.json",
+      "bytes": 239,
+      "sha256": "ae272329a36a0fa93d58cc1fabe6ec9622546e0416b4543dabea78df3d1d31c9",
+      "repository": "included"
+    },
+    {
+      "path": "batch_1/energy_vs_ar1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    }
+  ],
+  "notes": "Official card metadata remains local. Generated Python bytecode caches are omitted from working copies and Git. The archived original ZIP preserves every original byte. Native SDK files and competition/transfer archives are not added to Git."
+}

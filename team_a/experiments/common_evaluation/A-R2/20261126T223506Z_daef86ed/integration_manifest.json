@@ -1,0 +1,192 @@
+{
+  "run_id": "20261126T223506Z_daef86ed",
+  "kind": "common_evaluation",
+  "model": "A-R2",
+  "original_output_zip_sha256": "88b3d4c56a328dde0ba07831af77de684bb7b1432c9e291e93a8aeae74d949fc",
+  "original_notebook_sha256": "00f962a3f41550cf0a9714230180c78fd601e64bd11395f7b632aa591b4bfeeb",
+  "notebook_sha256": "4b1433162f0ef76fc6f7d2336a70a790eae6c0750bca214b29c64bf40f677433",
+  "original_archive": "archive/run_archives/common_evaluation/Common_Evaluation_20261126T223506Z_daef86ed_private_results.zip",
+  "original_notebook": "archive/notebook_originals/20261126/06_Common_Agent_Evaluation_Colab (1).ipynb",
+  "executed_notebook": "team_a/notebooks/06_Common_Evaluation_A-R2.ipynb",
+  "browser_control_outputs_removed": 8,
+  "source_execution_counts_streams_and_plots_preserved": true,
+  "local_result_directory": "results/20261126T223506Z_daef86ed",
+  "files": [
+    {
+      "path": "comparison_summary.csv",
+      "bytes": 1600,
+      "sha256": "ebcee9d83fb1bafacfee95437e6b3889fbc0b720b5cf25899c49d05576b44f16",
+      "repository": "included"
+    },
+    {
+      "path": "comparison_summary.json",
+      "bytes": 4012,
+      "sha256": "d96805fe41a5395cd950f9d1e9ce662e17c35a36153b99ae8b1771e0d039b00c",
+      "repository": "included"
+    },
+    {
+      "path": "completion.json",
+      "bytes": 193,
+      "sha256": "6921826a99dc3cd22e8636ea05c92ba084036e8e1fd77540bf7c0d636607b930",
+      "repository": "included"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 2255,
+      "sha256": "4c3b7ad8c8ec55077b6c90d0f64948b0c32cf701533d42bfe307442a948ad6e5",
+      "repository": "included"
+    },
+    {
+      "path": "run_info.json",
+      "bytes": 2163,
+      "sha256": "8a0df5a084fe6656dd8610b13e13681fb1319e7a8d16577be9ce820e087aef67",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/report.json",
+      "bytes": 57698,
+      "sha256": "cbd872b84dabfaa78d16e0e73b09fb09c3a18f06dca4b2a39188c10ee4a5a9b3",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/stdout.txt",
+      "bytes": 711,
+      "sha256": "a8b59282de4fea4632bc863b3ca63ad54cbb0539e1ce625e2ca44683d7203330",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/summary.json",
+      "bytes": 958,
+      "sha256": "c08a3df10662f6338d5f2fe71c8b1143851dc79a627ab30938827a77c7b5cd5f",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/job.json",
+      "bytes": 395,
+      "sha256": "d7610c58b0a2c88f9ee428ae7b6b0e51a5878a04e4bf1dfaa9ed6ccb8cd9f671",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/games.csv",
+      "bytes": 8981,
+      "sha256": "fbf7bf9b3db7d16986c5c6c8c34ccd186f1233212d1a8f318941306b486dafc2",
+      "repository": "included"
+    },
+    {
+      "path": "sample_random/process.json",
+      "bytes": 85,
+      "sha256": "3c58b65539dae7bc64cc40e7fdf944cc7d01f1ff94c51354dae5d43d25982710",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/report.json",
+      "bytes": 64582,
+      "sha256": "bbf444ca7f2d56ad4c4463ae11bc8fb6af75dac0b9be48df196501a8164a5236",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/stdout.txt",
+      "bytes": 729,
+      "sha256": "26975eedd7c27d7bd0de011207caec3ccf38dabb00395028ede35c8749616097",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/summary.json",
+      "bytes": 993,
+      "sha256": "3f35d04d254da37550727113b015792c7136ff5c37fc3a59a10c26b85c4d6bcc",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/job.json",
+      "bytes": 395,
+      "sha256": "c6bc194114482d3ad1e1873393ef418d6bc6352aa0e94aa46257be83a49fbafa",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/games.csv",
+      "bytes": 10094,
+      "sha256": "c9515f2850052ae7fb0af8637455a1ef00ee9b293814164563c7cd7036674107",
+      "repository": "included"
+    },
+    {
+      "path": "first_options/process.json",
+      "bytes": 85,
+      "sha256": "3c58b65539dae7bc64cc40e7fdf944cc7d01f1ff94c51354dae5d43d25982710",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/report.json",
+      "bytes": 53339,
+      "sha256": "3c81ddb15fbf8e5a71131c22642c6492d81b1817eeb18322da3e89b52ae949a6",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/stdout.txt",
+      "bytes": 711,
+      "sha256": "a8b59282de4fea4632bc863b3ca63ad54cbb0539e1ce625e2ca44683d7203330",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/summary.json",
+      "bytes": 960,
+      "sha256": "d2b106836973516ed8f3e0630d3687a667bb15045c2b4e0e633da1714b2828a7",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/job.json",
+      "bytes": 393,
+      "sha256": "2d99c138f345e389bec27ea5b1c5e9c1e0e52072c275ca3df7a6e64881f07519",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/games.csv",
+      "bytes": 8283,
+      "sha256": "958bc0a3d01f28a012b2c965c5e3f44e206e0e95e09d4bb42510b329b3965496",
+      "repository": "included"
+    },
+    {
+      "path": "last_options/process.json",
+      "bytes": 85,
+      "sha256": "3c58b65539dae7bc64cc40e7fdf944cc7d01f1ff94c51354dae5d43d25982710",
+      "repository": "included"
+    },
+    {
+      "path": "source/common_benchmark_worker.py",
+      "bytes": 7558,
+      "sha256": "8a5e36f31a165b850f538de89b49bee8b401f75026483c4e94c8ff4125c893e6",
+      "repository": "included"
+    },
+    {
+      "path": "source/common_benchmark_core.py",
+      "bytes": 8678,
+      "sha256": "1ef1dbbe7215c7da3eaf008909c6aaed852884893a0fe5ed650440f6217bddd3",
+      "repository": "included"
+    },
+    {
+      "path": "source/__pycache__/common_benchmark_core.cpython-313.pyc",
+      "bytes": 16456,
+      "sha256": "b510c62bd5d9ab76bdf2358705a76339163c04c25fe2cd369c64f9e1e6ff751e",
+      "repository": "excluded_generated_cache",
+      "local_copy": "omitted_generated_cache; exact original bytes remain in archived output ZIP"
+    }
+  ],
+  "notes": "Official card metadata remains local. Generated Python bytecode caches are omitted from working copies and Git. The archived original ZIP preserves every original byte. Native SDK files and competition/transfer archives are not added to Git."
+}

@@ -1,0 +1,207 @@
+{
+  "run_id": "20261126T211344Z_3118d91a",
+  "protocol_id": "f33693b3416b1251ee8a387319738c65c8768bb815ab3079e01bfc3afabe9f89",
+  "all_checks_passed": true,
+  "assessment": "no_consistent_gain_across_both_batches",
+  "metadata_sha256": [
+    "dc2e1a9dd464aece1f82f310c79bdc028484375ad00ff79f34884fabc1bcc401"
+  ],
+  "batch_results": [
+    {
+      "batch": 0,
+      "comparison": "original_vs_ar1",
+      "requested": 40,
+      "valid": 40,
+      "failed_or_unfinished": 0,
+      "wins": 20,
+      "losses": 20,
+      "draws": 0,
+      "win_rate": 0.5,
+      "score_rate": 0.5,
+      "win_rate_wilson_95": [
+        0.35199526933465386,
+        0.6480047306653461
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "rule_eligible": 0,
+      "rule_changes": 0,
+      "complete_and_valid": true
+    },
+    {
+      "batch": 0,
+      "comparison": "energy_vs_original",
+      "requested": 40,
+      "valid": 40,
+      "failed_or_unfinished": 0,
+      "wins": 17,
+      "losses": 23,
+      "draws": 0,
+      "win_rate": 0.425,
+      "score_rate": 0.425,
+      "win_rate_wilson_95": [
+        0.28509392559950375,
+        0.5780493145800892
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "rule_eligible": 143,
+      "rule_changes": 3,
+      "complete_and_valid": true
+    },
+    {
+      "batch": 0,
+      "comparison": "energy_vs_ar1",
+      "requested": 40,
+      "valid": 40,
+      "failed_or_unfinished": 0,
+      "wins": 22,
+      "losses": 18,
+      "draws": 0,
+      "win_rate": 0.55,
+      "score_rate": 0.55,
+      "win_rate_wilson_95": [
+        0.39829091798932054,
+        0.6929469218909508
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "rule_eligible": 134,
+      "rule_changes": 0,
+      "complete_and_valid": true
+    },
+    {
+      "batch": 1,
+      "comparison": "original_vs_ar1",
+      "requested": 40,
+      "valid": 40,
+      "failed_or_unfinished": 0,
+      "wins": 20,
+      "losses": 20,
+      "draws": 0,
+      "win_rate": 0.5,
+      "score_rate": 0.5,
+      "win_rate_wilson_95": [
+        0.35199526933465386,
+        0.6480047306653461
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "rule_eligible": 0,
+      "rule_changes": 0,
+      "complete_and_valid": true
+    },
+    {
+      "batch": 1,
+      "comparison": "energy_vs_original",
+      "requested": 40,
+      "valid": 40,
+      "failed_or_unfinished": 0,
+      "wins": 26,
+      "losses": 14,
+      "draws": 0,
+      "win_rate": 0.65,
+      "score_rate": 0.65,
+      "win_rate_wilson_95": [
+        0.49505880837257693,
+        0.7786547112682372
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "rule_eligible": 127,
+      "rule_changes": 4,
+      "complete_and_valid": true
+    },
+    {
+      "batch": 1,
+      "comparison": "energy_vs_ar1",
+      "requested": 40,
+      "valid": 40,
+      "failed_or_unfinished": 0,
+      "wins": 20,
+      "losses": 20,
+      "draws": 0,
+      "win_rate": 0.5,
+      "score_rate": 0.5,
+      "win_rate_wilson_95": [
+        0.35199526933465386,
+        0.6480047306653461
+      ],
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "rule_eligible": 138,
+      "rule_changes": 5,
+      "complete_and_valid": true
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "original_vs_ar1",
+      "requested": 80,
+      "valid": 80,
+      "failed_or_unfinished": 0,
+      "wins": 40,
+      "losses": 40,
+      "draws": 0,
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "rule_eligible": 0,
+      "rule_changes": 0,
+      "win_rate": 0.5,
+      "score_rate": 0.5,
+      "win_rate_wilson_95": [
+        0.3929741508611972,
+        0.6070258491388028
+      ],
+      "complete_and_valid": true
+    },
+    {
+      "comparison": "energy_vs_original",
+      "requested": 80,
+      "valid": 80,
+      "failed_or_unfinished": 0,
+      "wins": 43,
+      "losses": 37,
+      "draws": 0,
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "rule_eligible": 270,
+      "rule_changes": 7,
+      "win_rate": 0.5375,
+      "score_rate": 0.5375,
+      "win_rate_wilson_95": [
+        0.42904357591268794,
+        0.6425200643721475
+      ],
+      "complete_and_valid": true
+    },
+    {
+      "comparison": "energy_vs_ar1",
+      "requested": 80,
+      "valid": 80,
+      "failed_or_unfinished": 0,
+      "wins": 42,
+      "losses": 38,
+      "draws": 0,
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "rule_eligible": 272,
+      "rule_changes": 5,
+      "win_rate": 0.525,
+      "score_rate": 0.525,
+      "win_rate_wilson_95": [
+        0.41695642649729936,
+        0.6307526670259243
+      ],
+      "complete_and_valid": true
+    }
+  ],
+  "assessment_rule": "Both batches: energy score against original > 0.5 and energy score against A-R1 > original score against A-R1. Descriptive pilot only.",
+  "limitations": [
+    "Individual games on the fixed sample deck.",
+    "Native randomness is not seeded.",
+    "Printed energy cost is an approximation to strategic readiness.",
+    "Frozen encoder, heuristic outside target selection, and A-R1 weights are unchanged.",
+    "No training or Kaggle submission is performed."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "run_id": "20261126T223506Z_daef86ed",
+  "team": "GROUP_PROGRAMMING_09_a",
+  "agent": "A-R2",
+  "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+  "runtime_id": "9f51ad198a2a293ea5615df6a38654767c52eafbba358f8a671277eada6ffb73",
+  "candidate_archive_sha256": "c420603d62a97462f135f1b5579ed91dcfb573138960bdad138dd5af3b108c64",
+  "opponent": "first_options",
+  "requested_matches": 40,
+  "valid_matches": 40,
+  "error_matches": 0,
+  "unfinished_or_unstarted_matches": 0,
+  "wins": 22,
+  "losses": 18,
+  "draws": 0,
+  "win_rate": 0.55,
+  "score_rate": 0.55,
+  "win_rate_wilson_95": [
+    0.39829091798932054,
+    0.6929469218909508
+  ],
+  "score_rate_hoeffding_95": [
+    0.3352652958266312,
+    0.7647347041733689
+  ],
+  "games_played": 98,
+  "invalid_responses": 0,
+  "engine_rejections": 0,
+  "candidate_decisions": 1804,
+  "candidate_mean_decision_ms": 2.080656304877488,
+  "candidate_max_decision_ms": 77.36725000000888,
+  "complete_and_valid": true
+}

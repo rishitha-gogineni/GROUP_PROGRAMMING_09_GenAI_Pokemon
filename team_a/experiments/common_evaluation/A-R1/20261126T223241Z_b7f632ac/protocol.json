@@ -1,0 +1,38 @@
+{
+  "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+  "settings": {
+    "name": "group9_common_bo3_v1",
+    "unit": "externally_controlled_match",
+    "matches_per_opponent": 40,
+    "opponents": [
+      "sample_random",
+      "first_options",
+      "last_options"
+    ],
+    "reference_policy": "Choose maxCount indices uniformly without replacement, in prefix order, or in suffix order.",
+    "deck_policy": "Both players return the official 60 sample card IDs in the same order.",
+    "canonical_deck_sha256": "c3d72ecd696951d73dbb99a1b575e2bd185b43b0f2da02f3e25be664bc68d34c",
+    "official_zip_sha256": "6fe557e77ca21b86dea9056d7f4531cbeb328abc1b25aecf9c3a4e2b7d5b2c87",
+    "match_rule": "At most three games; stop at two wins. At the cap, more game wins takes the match; equal wins is a draw.",
+    "match_score": "Win=1, draw=0.5, loss=0. Aggregate is the unweighted mean of the three opponent score rates.",
+    "seed_base": 91000,
+    "seed_schedule": "seed_base + 3*match_index + game_index; zero based; identical for each opponent.",
+    "candidate_seat": "(match_index + game_index) % 2",
+    "reverse_player": "bool((match_index//2 + game_index//2) % 2)",
+    "maximum_selections_per_game": 10000,
+    "process_timeout_seconds_per_opponent": 1800,
+    "process_policy": "One fresh Python process per reference; agent module persists within that process across matches.",
+    "callback_policy": "No __file__ in entry namespace; package working directory and sys.path; one or two callback arguments.",
+    "randomness": "Seed Python random at each game; reference uses a separate random.Random. Native and framework RNG control is unverified.",
+    "hardware": "Linux x86_64 CPU; CUDA hidden; numerical library thread limits set to one.",
+    "archive_budget": {
+      "maximum_unpacked_bytes": 536870912,
+      "maximum_files": 5000
+    },
+    "eligibility": "All 120 matches complete, no invalid responses or engine errors, and all three worker processes succeed.",
+    "source_sha256": {
+      "common_benchmark_core.py": "1ef1dbbe7215c7da3eaf008909c6aaed852884893a0fe5ed650440f6217bddd3",
+      "common_benchmark_worker.py": "8a5e36f31a165b850f538de89b49bee8b401f75026483c4e94c8ff4125c893e6"
+    }
+  }
+}

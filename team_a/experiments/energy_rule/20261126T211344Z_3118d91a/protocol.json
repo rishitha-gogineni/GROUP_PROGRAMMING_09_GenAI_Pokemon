@@ -1,0 +1,54 @@
+{
+  "protocol_id": "f33693b3416b1251ee8a387319738c65c8768bb815ab3079e01bfc3afabe9f89",
+  "settings": {
+    "experiment": "energy-target-v1",
+    "unit": "individual_battle",
+    "batches": 2,
+    "games_per_comparison_per_batch": 40,
+    "comparisons": [
+      [
+        "original_vs_ar1",
+        "original",
+        "ar1"
+      ],
+      [
+        "energy_vs_original",
+        "energy",
+        "original"
+      ],
+      [
+        "energy_vs_ar1",
+        "energy",
+        "ar1"
+      ]
+    ],
+    "seed_starts": [
+      120000,
+      130000
+    ],
+    "candidate_seat": "game_index % 2",
+    "reverse_player": "bool((game_index//2)%2)",
+    "max_steps": 10000,
+    "phase_timeout_seconds": 900,
+    "max_diagnostic_rows": 50000,
+    "official_zip_sha256": "6fe557e77ca21b86dea9056d7f4531cbeb328abc1b25aecf9c3a4e2b7d5b2c87",
+    "canonical_deck_sha256": "c3d72ecd696951d73dbb99a1b575e2bd185b43b0f2da02f3e25be664bc68d34c",
+    "references": {
+      "heuristic_main.py": "ac7664d10039163305a3d16f39365dd8aea94980c49508c70df85f111ff07911",
+      "ar1_main.py": "ed0ec1c36566d69d11818b63406960ee7288bf2a1b72a1db8bf29ab9525bbaaf",
+      "ar1_model.json": "ff58cc8edfc730d4f3529568a880c1d49cd05b1ea4588875b14a0a57a11ebd4c"
+    },
+    "source_sha256": {
+      "common_benchmark_core.py": "1ef1dbbe7215c7da3eaf008909c6aaed852884893a0fe5ed650440f6217bddd3",
+      "energy_rule.py": "033d7b9f23122ab6e7230ba2c29e749201ab5274ab2beaccea0d4e73ec661b52",
+      "energy_experiment_worker.py": "06354c02dd117b0af9a4e0a786945d4afcc892446abe3ee3c28ff328a88b342b",
+      "energy_summary.py": "882549700d58e7a79d4eb0a65bf75d26bc70b983cdbd8f617b1496f4b264b3ce",
+      "test_energy_rule.py": "29e669dd6fddedeff78e4c9bb8bce79def43941b3fd713d3b04dbac2c2decbc5",
+      "heuristic_main.py": "ac7664d10039163305a3d16f39365dd8aea94980c49508c70df85f111ff07911",
+      "ar1_main.py": "ed0ec1c36566d69d11818b63406960ee7288bf2a1b72a1db8bf29ab9525bbaaf",
+      "energy_main.py": "9d9b0f4cf68e1030028028f5494d1ac49a237528e6ef2044da24e051846b25fe"
+    },
+    "native_seed_verified": false,
+    "scope": "Direct local SDK calls; no hosted Kaggle evaluation."
+  }
+}

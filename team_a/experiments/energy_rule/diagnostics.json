@@ -1,0 +1,133 @@
+{
+  "run_id": "20261126T211344Z_3118d91a",
+  "checked_attachment_decisions": 542,
+  "rule_changes": 12,
+  "games_with_rule_changes": 10,
+  "games_with_experimental_rule": 160,
+  "reason_counts": {
+    "keep_active_for_energy_effect": 199,
+    "outside_supported_attachment": 1092,
+    "unsupported_energy_card": 37,
+    "active_still_needs_energy": 277,
+    "active_ready_prepare_bench": 12,
+    "no_supported_bench_target_benefits": 17
+  },
+  "readiness_and_effect_breakdown": {
+    "keep_active_for_energy_effect": {
+      "decisions": 199,
+      "active_card_721": 199,
+      "active_energy_count_0": 87,
+      "has_legal_attack_option": 112,
+      "some_printed_attack_cost_ready": 112,
+      "all_printed_attack_costs_ready": 0,
+      "has_bench_pokemon": 114,
+      "has_legal_bench_attachment": 114,
+      "bench_minimum_deficit_reduced": 114,
+      "bench_any_deficit_reduced": 114,
+      "bench_new_attack_cost_ready": 99,
+      "kyogre_at_least_five_energy": 0,
+      "kyogre_five_energy_and_bench_benefit": 0,
+      "active_energy_count_1": 76,
+      "active_energy_count_2": 36
+    },
+    "active_still_needs_energy": {
+      "decisions": 277,
+      "active_card_722": 172,
+      "active_energy_count_0": 151,
+      "has_legal_attack_option": 82,
+      "some_printed_attack_cost_ready": 82,
+      "all_printed_attack_costs_ready": 0,
+      "has_bench_pokemon": 97,
+      "has_legal_bench_attachment": 97,
+      "bench_minimum_deficit_reduced": 97,
+      "bench_any_deficit_reduced": 97,
+      "bench_new_attack_cost_ready": 91,
+      "active_energy_count_1": 96,
+      "active_card_723": 105,
+      "active_energy_count_2": 30
+    },
+    "active_ready_prepare_bench": {
+      "decisions": 12,
+      "active_card_722": 4,
+      "active_energy_count_2": 4,
+      "has_legal_attack_option": 12,
+      "some_printed_attack_cost_ready": 12,
+      "all_printed_attack_costs_ready": 12,
+      "has_bench_pokemon": 12,
+      "has_legal_bench_attachment": 12,
+      "bench_minimum_deficit_reduced": 12,
+      "bench_any_deficit_reduced": 12,
+      "bench_new_attack_cost_ready": 11,
+      "active_card_723": 8,
+      "active_energy_count_3": 8
+    },
+    "no_supported_bench_target_benefits": {
+      "decisions": 17,
+      "active_card_723": 13,
+      "active_energy_count_3": 11,
+      "has_legal_attack_option": 17,
+      "some_printed_attack_cost_ready": 17,
+      "all_printed_attack_costs_ready": 17,
+      "has_bench_pokemon": 1,
+      "has_legal_bench_attachment": 1,
+      "bench_minimum_deficit_reduced": 0,
+      "bench_any_deficit_reduced": 1,
+      "bench_new_attack_cost_ready": 1,
+      "active_card_722": 4,
+      "active_energy_count_2": 3,
+      "active_energy_count_4": 3
+    },
+    "unsupported_energy_card": {
+      "decisions": 37,
+      "active_card_722": 13,
+      "active_energy_count_1": 25,
+      "has_legal_attack_option": 16,
+      "some_printed_attack_cost_ready": 25,
+      "all_printed_attack_costs_ready": 0,
+      "has_bench_pokemon": 12,
+      "has_legal_bench_attachment": 0,
+      "bench_minimum_deficit_reduced": 0,
+      "bench_any_deficit_reduced": 0,
+      "bench_new_attack_cost_ready": 0,
+      "active_energy_count_0": 7,
+      "active_card_723": 7,
+      "active_card_721": 17,
+      "kyogre_at_least_five_energy": 0,
+      "kyogre_five_energy_and_bench_benefit": 0,
+      "active_energy_count_2": 5
+    }
+  },
+  "interpretation": "All 199 energy-effect blocks also failed full attack-cost readiness. Removing only that guard would not change these saved actions. The Bench minimum-deficit test overlooked one additional attack upgrade.",
+  "counterexample": {
+    "phase": "batch_2/energy_vs_original",
+    "game_id": 6,
+    "step": 52,
+    "active_card_id": 723,
+    "active_energy_count": 3,
+    "bench_card_id": 723,
+    "bench_energy_count": 2,
+    "bench_cost_deficits_before": [
+      0,
+      1
+    ],
+    "bench_cost_deficits_after": [
+      0,
+      0
+    ],
+    "original_action": [
+      0
+    ],
+    "possible_bench_action": [
+      1
+    ]
+  },
+  "offline_candidate_check": {
+    "checked_states": 542,
+    "original_interventions": 12,
+    "candidate_interventions": 13,
+    "additional_choices": 1,
+    "performance_established": false,
+    "deployed": false
+  },
+  "caveat": "Observed states are not counterfactual games. No new native games or model fitting were run for the diagnostics. No baseline encoder, weight or deployed policy was changed."
+}

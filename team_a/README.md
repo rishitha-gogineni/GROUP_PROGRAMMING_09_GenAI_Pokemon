@@ -16,7 +16,7 @@ Keep all evaluation settings unchanged. Each agent faces the same three simple r
 
 Share the comparison CSV and JSON as permitted by the course and competition rules. Keep your agent archive, model files and detailed private logs within your Kaggle team. The notebook does not submit to Kaggle. Incomplete runs are flagged and receive no overall comparison score. Native engine randomness is not fully controlled, and these simple controls do not establish an overall best agent.
 
-Preparation was checked with standard library tests and a synthetic simulator. The notebook is unexecuted; run it in Colab to obtain real evaluation results.
+This link remains the reusable template. Completed A-R1 and A-R2 copies and their verified results are listed below. Both Colab runs passed; no Kaggle submission was made by the notebook.
 
 | Member | Responsibility | Assigned models |
 | --- | --- | --- |
@@ -32,8 +32,26 @@ Preparation was checked with standard library tests and a synthetic simulator. T
 3. [Day 3 heuristic](notebooks/03_heuristic_baseline.ipynb): 24 wins in 30 evaluation battles and 176 separate demonstration decisions.
 4. [A-R1 linear scorer](notebooks/04_AR1_Linear_Scorer.ipynb): fresh collection, linear fitting and submission checks.
 5. [A-R2 small MLP](notebooks/05_AR2_MLP_Scorer.ipynb): matched data, MLP fitting, paired model analysis and archive checks.
+6. [A-R1 common evaluation](notebooks/06_Common_Evaluation_A-R1.ipynb): 120 completed matches and 271 individual games.
+7. [A-R2 common evaluation](notebooks/06_Common_Evaluation_A-R2.ipynb): 120 completed matches and 265 individual games.
+8. [Energy attachment experiment](notebooks/07_Energy_Attachment_Experiment.ipynb): 13 rule checks and 240 individual games; no established improvement.
 
 Notebook prose uses simple lab notes. Code, execution counts, figures and computational outputs are preserved. Colab browser controls were removed from the saved display. The saved notebook computations were not rerun. Shared-tool tests exercised standard-library inference on three saved observations and temporary synthetic SDK fixtures; no native engine or training was run.
+
+## Common evaluation results from 26 November 2026
+
+| Opponent | A-R1 match wins | A-R2 match wins |
+| --- | ---: | ---: |
+| Sample random | 39/40 | 40/40 |
+| First options | 21/40 | 22/40 |
+| Last options | 40/40 | 40/40 |
+| Overall match score | 83.33% | 85.00% |
+
+Both agents used matching protocol and recorded runtime fingerprints, the fixed sample deck and their original tested submission archives. All 240 matches and 536 individual games completed with zero invalid actions or engine rejections. A-R2's lead is two match wins; the small samples and simple controls do not establish a reliable overall winner. Native randomness is not seeded. These are Colab benchmark scores, not Kaggle ratings or new submissions. See the [common evaluation records](experiments/common_evaluation/) and [combined comparison](experiments/common_evaluation/comparison.json).
+
+## Energy attachment pilot
+
+The new rule won 43/80 individual games against the original heuristic and 42/80 against A-R1; the fresh original-heuristic control won 40/80 against A-R1. All 13 checks and 240 games passed. Results varied between batches, and the rule changed only 12 attachment targets across 10 of its 160 games. The pilot did not establish a reliable improvement and was not adopted into A-R1 or A-R2. Keep it as an ineffective approach in the report. See the [experiment, figure and diagnostics](experiments/energy_rule/).
 
 ## Matched model comparison
 
@@ -98,7 +116,7 @@ Official competition inputs, SDK binaries, decks and generated archives remain l
 
 Missing IDs, absolute timestamps, uncertainty and actual Kaggle team name remain blank. GROUP_PROGRAMMING_09_a is the intended team. Original Colab not_submitted flags were saved before manual uploads and remain unchanged. Local hashes identify tested files; a user report or screenshot cannot verify uploaded archive bytes.
 
-Rishitha's two planned models are trained and evaluated. Remaining work includes A-R2 hosted result evidence, the final paired analysis, assigned report sections and presentation preparation. See the [model registry](experiments/model_registry.csv), [experiment log](experiments/results.csv), [submission register](submissions/register.csv) and [contribution table](../docs/contributions.csv).
+Rishitha's two planned models are trained and evaluated. Remaining work includes A-R2 hosted result evidence, comparison with teammates' final candidates under the same protocol, assigned report sections and presentation preparation. The new pilot and common comparisons are complete. See the [model registry](experiments/model_registry.csv), [experiment log](experiments/results.csv), [submission register](submissions/register.csv) and [contribution table](../docs/contributions.csv).
 
 Earlier records remain under [Day 1](experiments/day1/), [Day 2](experiments/day2/) and [Day 3](experiments/day3/). The 79 Day 1 observations are debugging examples, not expert demonstrations or complete reinforcement learning trajectories.
 

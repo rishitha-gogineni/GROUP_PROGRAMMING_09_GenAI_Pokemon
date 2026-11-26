@@ -1,0 +1,4 @@
+comparison,requested,valid,failed_or_unfinished,wins,losses,draws,invalid_responses,engine_rejections,rule_eligible,rule_changes,win_rate,score_rate,win_rate_wilson_95,complete_and_valid
+original_vs_ar1,80,80,0,40,40,0,0,0,0,0,0.5,0.5,"[0.3929741508611972, 0.6070258491388028]",True
+energy_vs_original,80,80,0,43,37,0,0,0,270,7,0.5375,0.5375,"[0.42904357591268794, 0.6425200643721475]",True
+energy_vs_ar1,80,80,0,42,38,0,0,0,272,5,0.525,0.525,"[0.41695642649729936, 0.6307526670259243]",True
