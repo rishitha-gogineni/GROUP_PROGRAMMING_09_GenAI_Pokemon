@@ -1,9 +1,59 @@
-
 """Legal-action selection for Bhavya's PPO agents."""
+
+from itertools import permutations
 
 import torch
 
 from .state_encoder import encode_state, encode_options
+
+
+def _unordered_response_log_probability(logits, response):
+    """
+    Calculate the probability of an unordered response selected without
+    replacement.
+
+    torch.multinomial samples an ordered sequence, but the game response
+    is treated as an unordered sorted list of option indices.
+    """
+    selected = [int(index) for index in response]
+    number_of_options = logits.numel()
+
+    # Selecting every available option has probability exactly 1.
+    if len(selected) == 0 or len(selected) == number_of_options:
+        return logits.new_tensor(0.0)
+
+    log_probabilities = torch.log_softmax(logits, dim=-1)
+    ordered_log_probabilities = []
+
+    for order in permutations(selected):
+        available = torch.ones(
+            number_of_options,
+            dtype=torch.bool,
+            device=logits.device,
+        )
+
+        order_log_probability = logits.new_tensor(0.0)
+
+        for index in order:
+            denominator = torch.logsumexp(
+                log_probabilities[available],
+                dim=0,
+            )
+
+            order_log_probability += (
+                log_probabilities[index] - denominator
+            )
+
+            available = available.clone()
+            available[index] = False
+
+        ordered_log_probabilities.append(order_log_probability)
+
+    # Add probabilities of all possible sampling orders.
+    return torch.logsumexp(
+        torch.stack(ordered_log_probabilities),
+        dim=0,
+    )
 
 
 def choose_action(model, observation, deterministic=False):
@@ -41,7 +91,6 @@ def choose_action(model, observation, deterministic=False):
     logits = logits.squeeze(0)
     value = value.squeeze(0)
 
-    log_probabilities = torch.log_softmax(logits, dim=-1)
     probabilities = torch.softmax(logits, dim=-1)
 
     minimum = int(select.get("minCount", 1))
@@ -66,9 +115,14 @@ def choose_action(model, observation, deterministic=False):
             replacement=False,
         )
 
-    selected_indices = sorted(int(index) for index in selected.tolist())
+    selected_indices = sorted(
+        int(index) for index in selected.tolist()
+    )
 
-    selected_log_probability = log_probabilities[selected].sum()
+    selected_log_probability = _unordered_response_log_probability(
+        logits,
+        selected_indices,
+    )
 
     return (
         selected_indices,

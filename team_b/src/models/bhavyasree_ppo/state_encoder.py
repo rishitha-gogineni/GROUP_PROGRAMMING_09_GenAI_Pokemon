@@ -14,6 +14,17 @@ def _number(value, default=0.0):
     return default
 
 
+def _option_type_number(value):
+    if isinstance(value, str):
+        labels = {
+            "yes": 1.0,
+            "no": -1.0,
+        }
+        return labels.get(value.strip().lower(), 0.0)
+
+    return _number(value)
+
+
 def _length(value):
     if value is None:
         return 0.0
@@ -89,7 +100,7 @@ def encode_options(observation):
         option = option if isinstance(option, dict) else {}
 
         values = [
-            _number(option.get("type")) / 20.0,
+            _option_type_number(option.get("type")) / 20.0,
             _number(option.get("context")) / 100.0,
             _number(option.get("contextCard")) / 100000.0,
             _number(option.get("deck")) / 60.0,
