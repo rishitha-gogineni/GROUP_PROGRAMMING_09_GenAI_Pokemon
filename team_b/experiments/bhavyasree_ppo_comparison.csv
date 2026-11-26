@@ -1,0 +1,6 @@
+agent,opponent,win_rate,matches
+heuristic,first,0.8,20
+shared_ppo,first,0.5,20
+separate_ppo,first,0.35,20
+shared_ppo,random,0.9,20
+separate_ppo,random,0.95,20
