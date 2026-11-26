@@ -1,0 +1,118 @@
+{
+  "run_id": "20261124T034339Z_8aa29cf1",
+  "team": "GROUP_PROGRAMMING_09_b",
+  "agent": "B-SA1",
+  "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+  "runtime_id": "9f51ad198a2a293ea5615df6a38654767c52eafbba358f8a671277eada6ffb73",
+  "candidate_archive_sha256": "fc96314ee19916989008827a8a097804c392ad206f63e14d0a65094d6a8a9902",
+  "selection_eligible": true,
+  "macro_match_score_rate": 0.8416666666666667,
+  "opponents": [
+    {
+      "run_id": "20261124T034339Z_8aa29cf1",
+      "team": "GROUP_PROGRAMMING_09_b",
+      "agent": "B-SA1",
+      "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+      "runtime_id": "9f51ad198a2a293ea5615df6a38654767c52eafbba358f8a671277eada6ffb73",
+      "candidate_archive_sha256": "fc96314ee19916989008827a8a097804c392ad206f63e14d0a65094d6a8a9902",
+      "opponent": "sample_random",
+      "requested_matches": 40,
+      "valid_matches": 40,
+      "error_matches": 0,
+      "unfinished_or_unstarted_matches": 0,
+      "wins": 38,
+      "losses": 2,
+      "draws": 0,
+      "win_rate": 0.95,
+      "score_rate": 0.95,
+      "win_rate_wilson_95": [
+        0.8349612263085903,
+        0.9861793326138516
+      ],
+      "score_rate_hoeffding_95": [
+        0.7352652958266311,
+        1.0
+      ],
+      "games_played": 87,
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "candidate_decisions": 1638,
+      "candidate_mean_decision_ms": 0.24436593590314756,
+      "candidate_max_decision_ms": 75.83320100002311,
+      "complete_and_valid": true
+    },
+    {
+      "run_id": "20261124T034339Z_8aa29cf1",
+      "team": "GROUP_PROGRAMMING_09_b",
+      "agent": "B-SA1",
+      "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+      "runtime_id": "9f51ad198a2a293ea5615df6a38654767c52eafbba358f8a671277eada6ffb73",
+      "candidate_archive_sha256": "fc96314ee19916989008827a8a097804c392ad206f63e14d0a65094d6a8a9902",
+      "opponent": "first_options",
+      "requested_matches": 40,
+      "valid_matches": 40,
+      "error_matches": 0,
+      "unfinished_or_unstarted_matches": 0,
+      "wins": 23,
+      "losses": 17,
+      "draws": 0,
+      "win_rate": 0.575,
+      "score_rate": 0.575,
+      "win_rate_wilson_95": [
+        0.42195068541991065,
+        0.7149060744004962
+      ],
+      "score_rate_hoeffding_95": [
+        0.36026529582663114,
+        0.7897347041733688
+      ],
+      "games_played": 105,
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "candidate_decisions": 1666,
+      "candidate_mean_decision_ms": 0.20159230792264904,
+      "candidate_max_decision_ms": 71.5272580000601,
+      "complete_and_valid": true
+    },
+    {
+      "run_id": "20261124T034339Z_8aa29cf1",
+      "team": "GROUP_PROGRAMMING_09_b",
+      "agent": "B-SA1",
+      "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+      "runtime_id": "9f51ad198a2a293ea5615df6a38654767c52eafbba358f8a671277eada6ffb73",
+      "candidate_archive_sha256": "fc96314ee19916989008827a8a097804c392ad206f63e14d0a65094d6a8a9902",
+      "opponent": "last_options",
+      "requested_matches": 40,
+      "valid_matches": 40,
+      "error_matches": 0,
+      "unfinished_or_unstarted_matches": 0,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "win_rate": 1.0,
+      "score_rate": 1.0,
+      "win_rate_wilson_95": [
+        0.9123783988027135,
+        1.0
+      ],
+      "score_rate_hoeffding_95": [
+        0.7852652958266312,
+        1.0
+      ],
+      "games_played": 80,
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "candidate_decisions": 1353,
+      "candidate_mean_decision_ms": 0.2629499859619425,
+      "candidate_max_decision_ms": 126.45176800015179,
+      "complete_and_valid": true
+    }
+  ],
+  "limitations": [
+    "Three simple controls only.",
+    "Native RNG is not seeded.",
+    "No hosted Kaggle acceptance check.",
+    "Uncertainty assumes independent matches.",
+    "Compare identical protocol IDs and review runtime differences."
+  ]
+}
