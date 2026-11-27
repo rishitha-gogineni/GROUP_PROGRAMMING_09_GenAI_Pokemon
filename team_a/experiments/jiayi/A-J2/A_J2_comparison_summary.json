@@ -1,0 +1,118 @@
+{
+  "run_id": "20261124T040209Z_b4e403e7",
+  "team": "GROUP_PROGRAMMING_09_a",
+  "agent": "A-J2_MLP_Policy",
+  "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+  "runtime_id": "9f51ad198a2a293ea5615df6a38654767c52eafbba358f8a671277eada6ffb73",
+  "candidate_archive_sha256": "a1b0f307ea2da29c9b306724e550637abbba1a567efb10b3cb8853781cebc56a",
+  "selection_eligible": true,
+  "macro_match_score_rate": 0.8583333333333334,
+  "opponents": [
+    {
+      "run_id": "20261124T040209Z_b4e403e7",
+      "team": "GROUP_PROGRAMMING_09_a",
+      "agent": "A-J2_MLP_Policy",
+      "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+      "runtime_id": "9f51ad198a2a293ea5615df6a38654767c52eafbba358f8a671277eada6ffb73",
+      "candidate_archive_sha256": "a1b0f307ea2da29c9b306724e550637abbba1a567efb10b3cb8853781cebc56a",
+      "opponent": "sample_random",
+      "requested_matches": 40,
+      "valid_matches": 40,
+      "error_matches": 0,
+      "unfinished_or_unstarted_matches": 0,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "win_rate": 1.0,
+      "score_rate": 1.0,
+      "win_rate_wilson_95": [
+        0.9123783988027135,
+        1.0
+      ],
+      "score_rate_hoeffding_95": [
+        0.7852652958266312,
+        1.0
+      ],
+      "games_played": 85,
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "candidate_decisions": 1594,
+      "candidate_mean_decision_ms": 5.396083722082805,
+      "candidate_max_decision_ms": 51.32358399998793,
+      "complete_and_valid": true
+    },
+    {
+      "run_id": "20261124T040209Z_b4e403e7",
+      "team": "GROUP_PROGRAMMING_09_a",
+      "agent": "A-J2_MLP_Policy",
+      "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+      "runtime_id": "9f51ad198a2a293ea5615df6a38654767c52eafbba358f8a671277eada6ffb73",
+      "candidate_archive_sha256": "a1b0f307ea2da29c9b306724e550637abbba1a567efb10b3cb8853781cebc56a",
+      "opponent": "first_options",
+      "requested_matches": 40,
+      "valid_matches": 40,
+      "error_matches": 0,
+      "unfinished_or_unstarted_matches": 0,
+      "wins": 23,
+      "losses": 17,
+      "draws": 0,
+      "win_rate": 0.575,
+      "score_rate": 0.575,
+      "win_rate_wilson_95": [
+        0.42195068541991065,
+        0.7149060744004962
+      ],
+      "score_rate_hoeffding_95": [
+        0.36026529582663114,
+        0.7897347041733688
+      ],
+      "games_played": 98,
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "candidate_decisions": 1700,
+      "candidate_mean_decision_ms": 4.996617906470065,
+      "candidate_max_decision_ms": 57.930370000008224,
+      "complete_and_valid": true
+    },
+    {
+      "run_id": "20261124T040209Z_b4e403e7",
+      "team": "GROUP_PROGRAMMING_09_a",
+      "agent": "A-J2_MLP_Policy",
+      "protocol_id": "b5071f213a05c0f8ee5327291a90c82f7b7099d637cce01fb5452758cfaf2f8e",
+      "runtime_id": "9f51ad198a2a293ea5615df6a38654767c52eafbba358f8a671277eada6ffb73",
+      "candidate_archive_sha256": "a1b0f307ea2da29c9b306724e550637abbba1a567efb10b3cb8853781cebc56a",
+      "opponent": "last_options",
+      "requested_matches": 40,
+      "valid_matches": 40,
+      "error_matches": 0,
+      "unfinished_or_unstarted_matches": 0,
+      "wins": 40,
+      "losses": 0,
+      "draws": 0,
+      "win_rate": 1.0,
+      "score_rate": 1.0,
+      "win_rate_wilson_95": [
+        0.9123783988027135,
+        1.0
+      ],
+      "score_rate_hoeffding_95": [
+        0.7852652958266312,
+        1.0
+      ],
+      "games_played": 80,
+      "invalid_responses": 0,
+      "engine_rejections": 0,
+      "candidate_decisions": 1372,
+      "candidate_mean_decision_ms": 4.1526436268220195,
+      "candidate_max_decision_ms": 37.760026000000835,
+      "complete_and_valid": true
+    }
+  ],
+  "limitations": [
+    "Three simple controls only.",
+    "Native RNG is not seeded.",
+    "No hosted Kaggle acceptance check.",
+    "Uncertainty assumes independent matches.",
+    "Compare identical protocol IDs and review runtime differences."
+  ]
+}

@@ -6,7 +6,7 @@ Find experiments by owner. Start with each member's README rather than individua
 | --- | --- | --- |
 | Rishitha | [Baselines, model training, common evaluation and energy experiment](rishitha/) | [A-R1 and A-R2](../src/models/rishitha/) |
 | Kavya | [Saved checkpoints](kavya/) | [A-K1 and A-K2](../src/models/kavya/) |
-| Jiayi | [Existing policy evaluation CSV](../src/models/jiayi/evaluation_results.csv) | [A-J1 and A-J2](../src/models/jiayi/) |
+| Jiayi | [Common evaluation index](jiayi/), [A-J1 records](jiayi/A-J1/), [A-J2 records](jiayi/A-J2/), [heuristic battle CSV](../src/models/jiayi/evaluation_results.csv) | [A-J1 and A-J2](../src/models/jiayi/) |
 | Shashira | Add completed results under `shashira/` when available | [Model work folder](../src/models/shashira/) |
 
 [results.csv](results.csv) is the shared experiment log and [model_registry.csv](model_registry.csv) links model identities to artifacts. Member rows may lag behind work in model folders; reconcile them against evidence before the report. A planned row does not prove a model is unfinished.

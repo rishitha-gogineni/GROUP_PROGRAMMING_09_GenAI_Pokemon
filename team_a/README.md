@@ -9,7 +9,7 @@ Team A is part of Group 9's shared DATA 266 project. This page links to the code
 | Rishitha Gogineni | A-R1 linear scorer; A-R2 MLP scorer | [Models](src/models/rishitha/) | [Notebook index](notebooks/rishitha/) |
 | Kavya Ayyappan | A-K1 concatenated MLP; A-K2 separate encoders | [Models](src/models/kavya/) | See member documentation |
 | Shashira Guntuka | A-S1 and A-S2 value-style candidates | [Work folder](src/models/shashira/) | Add completed notebooks when available |
-| Jiayi Liang | A-J1 linear policy; A-J2 MLP policy | [Models](src/models/jiayi/) | [Training](notebooks/AJ1_AJ2_Policy_Training.ipynb), [heuristic evaluation](notebooks/AJ1_AJ2_Policy_Evaluation.ipynb), [self-play](notebooks/AJ1_AJ2_Policy_Self_Play.ipynb) |
+| Jiayi Liang | A-J1 linear policy; A-J2 MLP policy | [Models](src/models/jiayi/) | [Training](notebooks/jiayi/AJ1_AJ2_Policy_Training.ipynb), [heuristic evaluation](notebooks/jiayi/AJ1_AJ2_Policy_Evaluation.ipynb), [self-play](notebooks/jiayi/AJ1_AJ2_Policy_Self_Play.ipynb) |
 
 ## Common evaluation
 
@@ -20,10 +20,11 @@ These are completed Colab benchmark scores, not Kaggle skill ratings. Each model
 | A-R1 | 39/40 | 21/40 | 40/40 | 83.33% | [Executed notebook](notebooks/rishitha/06_Common_Evaluation_A-R1.ipynb) |
 | A-R2 | 40/40 | 22/40 | 40/40 | 85.00% | [Executed notebook](notebooks/rishitha/06_Common_Evaluation_A-R2.ipynb) |
 | A-K1 and A-K2 | | | | Summary not uploaded | Add completed common evaluation evidence |
-| A-J1 and A-J2 | | | | Summary not uploaded | Existing heuristic evaluations use a different protocol |
+| A-J1 | 34/40 | 21/40 | 40/40 | 79.17% | [Executed notebook](notebooks/jiayi/06_Common_Evaluation_A_J1.ipynb), [CSV](experiments/jiayi/A-J1/A_J1_comparison_summary.csv), [JSON](experiments/jiayi/A-J1/A_J1_comparison_summary.json) |
+| A-J2 | 40/40 | 23/40 | 40/40 | 85.83% | [Executed notebook](notebooks/jiayi/06_Common_Evaluation_A_J2.ipynb), [CSV](experiments/jiayi/A-J2/A_J2_comparison_summary.csv), [JSON](experiments/jiayi/A-J2/A_J2_comparison_summary.json) |
 | A-S1 and A-S2 | | | | Not verified | Add completed evidence when available |
 
-The two recorded runs used matching protocol and runtime fingerprints. All 240 matches and 536 games completed with zero invalid actions or engine rejections. A-R2 won two more matches; this small difference against simple controls does not establish an overall winner. Native engine randomness is not fully controlled. [Detailed comparison and run records](experiments/rishitha/common_evaluation/).
+The two A-R1 and A-R2 runs used matching protocol and runtime fingerprints. All 240 matches and 536 games completed with zero invalid actions or engine rejections. A-R2 won two more matches; this small difference against simple controls does not establish an overall winner. Native engine randomness is not fully controlled. [Detailed comparison and run records](experiments/rishitha/common_evaluation/).
 
 To evaluate another candidate:
 
@@ -38,7 +39,7 @@ To evaluate another candidate:
 * [Experiment index](experiments/): find results by member and purpose.
 * [Rishitha's experiments](experiments/rishitha/): simulator, random and heuristic baselines, A-R1, A-R2, common evaluation and energy-rule pilot.
 * [Kavya's saved checkpoints](experiments/kavya/) and [model explanation](src/models/kavya/).
-* [Jiayi's measured results and methods](src/models/jiayi/).
+* [Jiayi's common evaluation records](experiments/jiayi/) and [model methods](src/models/jiayi/).
 
 The energy attachment pilot passed its execution checks but did not establish a reliable improvement and was not adopted. The earlier A-R2 experiment improved teacher imitation without establishing stronger gameplay. Both remain documented ineffective approaches; keep individual-game results separate from common match scores.
 
@@ -46,7 +47,7 @@ The energy attachment pilot passed its execution checks but did not establish a 
 
 [Submission index and register](submissions/) separate official evidence from local evaluation. The supplied screenshot received on 27 November shows Rishitha's A-R1 Complete at 268.3, A-R2 at 242.6, heuristic at 251.9 and random at 11.5. Earlier observations, including A-R1 at 828.8, remain in the dated history. These are snapshots, not current ratings. Submission IDs and exact observation times are unavailable in the image.
 
-The same supplied screenshot shows Complete entries for Kavya and Jiayi; their full histories and member records still need to be maintained by their owners. A screenshot does not verify uploaded archive bytes. [Preserved screenshot](submissions/rishitha/evidence/team_a_submissions_received_20261127.png).
+The same supplied screenshot shows Complete entries for Kavya and Jiayi. Jiayi's evidence shows A-J1 at 271.7 and A-J2 at 313.5. [Jiayi's Kaggle screenshot](submissions/jiayi/A-J1-J2/Kaggle_AJ1_AJ2.png). A screenshot does not verify uploaded archive bytes. [Preserved Team A screenshot](submissions/rishitha/evidence/team_a_submissions_received_20261127.png).
 
 ## Reproduce the work
 
