@@ -48,7 +48,7 @@ class SelfPlayTests(unittest.TestCase):
 
     def test_fitted_models_sample_saved_legal_candidates(self):
         folder = Path(__file__).resolve().parent
-        with (folder.parents[2] / "experiments/day4/training/train.jsonl").open() as handle:
+        with (folder.parents[2] / "experiments/rishitha/ar1_linear/training/train.jsonl").open() as handle:
             observation = json.loads(next(handle))["observation"]
         for loader, artifact in [(Linear, "aj1_bc.json"), (MLP, "aj2_bc.json")]:
             model = loader(folder / artifact)

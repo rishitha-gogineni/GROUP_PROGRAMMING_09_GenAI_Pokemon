@@ -1,16 +1,16 @@
-# Experiment records
+# Team A experiment index
 
-results.csv records measured runs. Day 3 preserves the initial heuristic comparison. Day 4 preserves A-R1 fitting and three local comparisons. Day 5 preserves A-R2 fitting and six new comparisons, including frozen A-R1 controls. Do not overwrite the older results when a fresh sample differs. Historical Day 3 through Day 5 rows report individual battles and leave matches blank. The energy pilot also uses individual games. The common_evaluation rows use externally controlled best of three matches and populate matches; these are separate from the hosted Kaggle harness.
+Find experiments by owner. Start with each member's README rather than individual log files.
 
-model_registry.csv records A-R1 as trained and submitted with screenshot evidence, and A-R2 as trained with a user-reported upload awaiting hosted evidence. Other members' statuses remain unchanged. The handcrafted heuristic does not count as a learned architecture.
+| Member | Results | Model explanation |
+| --- | --- | --- |
+| Rishitha | [Baselines, model training, common evaluation and energy experiment](rishitha/) | [A-R1 and A-R2](../src/models/rishitha/) |
+| Kavya | [Saved checkpoints](kavya/) | [A-K1 and A-K2](../src/models/kavya/) |
+| Jiayi | [Existing policy evaluation CSV](../src/models/jiayi/evaluation_results.csv) | [A-J1 and A-J2](../src/models/jiayi/) |
+| Shashira | Add completed results under `shashira/` when available | [Model work folder](../src/models/shashira/) |
 
-Both learned models use the same features, normalization, targets and game groups. A-R2 improved teacher top-set agreement but did not establish stronger play in its battle samples. Keep this ineffective improvement attempt and the weaker comparisons in the report. Training and packaging succeeded; distinguish those execution checks from playing strength and Kaggle acceptance.
+[results.csv](results.csv) is the shared experiment log and [model_registry.csv](model_registry.csv) links model identities to artifacts. Member rows may lag behind work in model folders; reconcile them against evidence before the report. A planned row does not prove a model is unfinished.
 
-Preserve data and schema versions, source hashes, controls, uncertainty and the separation of fitting, validation, test and battle evaluation. Reused test groups support the planned comparison, not a fresh unseen benchmark. Policy usage counters include callback contract checks. Missing measurements remain blank.
+New common evaluation exports should go under the owner's folder with separate model IDs and run IDs. Retain executed notebooks and comparison CSV/JSON. Record protocol and runtime fingerprints, denominators, errors and uncertainty. Keep individual battles, externally controlled matches and hosted Kaggle ratings separate. Do not mix their percentages or overwrite earlier observations.
 
-## Completed evaluation additions
-
-* [Energy rule pilot](energy_rule/): 240 individual games, 13 checks and saved-state diagnostics. No reliable improvement was established; reference agents and shared encoder remain unchanged.
-* [Common evaluation](common_evaluation/): A-R1 and A-R2 each completed 120 matches with the same protocol/runtime. Overall scores were 83.33% and 85.00%; the small difference does not establish a reliable winner.
-
-Original run records are immutable. Integration manifests record every source file and the local-only official metadata. No Kaggle submission status is inferred from these Colab results. Statuses belonging to other members were not revised by this integration.
+Original reports and source snapshots retain their historical runtime paths. Rishitha's [cleanup manifest](rishitha/cleanup_manifest.json) maps the repository moves and verified duplicate removal. Original source, measured outcomes, training data and failed experiments remain traceable.

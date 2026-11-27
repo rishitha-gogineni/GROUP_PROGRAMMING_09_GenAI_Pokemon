@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[4]
 class AgentTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        with (ROOT / "team_a/experiments/day4/training/train.jsonl").open() as handle:
+        with (ROOT / "team_a/experiments/rishitha/ar1_linear/training/train.jsonl").open() as handle:
             cls.observation = json.loads(next(handle))["observation"]
 
     def test_staged_entries_load_real_weights_without_file_or_working_directory(self):

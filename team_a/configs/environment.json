@@ -5,15 +5,15 @@
   "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
   "machine": "x86_64",
   "sdk_version": null,
-  "sdk_identity": "Official sample SDK; exact file hashes in experiments/day2/environment.json",
+  "sdk_identity": "Official sample SDK; exact file hashes in experiments/rishitha/random_baseline/environment.json",
   "kaggle_environments_version": null,
-  "verified_example_command": "Colab execution of team_a/notebooks/02_baseline_Day2.ipynb",
+  "verified_example_command": "Colab execution of team_a/notebooks/rishitha/02_baseline_Day2.ipynb",
   "complete_game_verified": true,
   "unit": "individual_battle",
   "seconds_per_match": null,
   "local_battles_passed": 10,
   "archive_battles_passed": 2,
   "run_id": "20261121T224116Z_1e244d62",
-  "evidence_path": "team_a/experiments/day2/environment.json",
+  "evidence_path": "team_a/experiments/rishitha/random_baseline/environment.json",
   "notes": "The runner calls the bundled SDK directly. No BO3 timing or deterministic engine seed has been established. The portable repository checker changes import paths only and was statically checked, not rerun against the native engine here."
 }

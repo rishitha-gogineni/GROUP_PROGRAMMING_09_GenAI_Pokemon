@@ -1,0 +1,373 @@
+{
+  "date_local": "2026-11-27",
+  "timezone": "America/Los_Angeles",
+  "purpose": "Group Rishitha work by member and purpose; retain reproducibility and original results.",
+  "path_moves": {
+    "team_a/experiments/day1": "team_a/experiments/rishitha/simulator",
+    "team_a/experiments/day2": "team_a/experiments/rishitha/random_baseline",
+    "team_a/experiments/day3": "team_a/experiments/rishitha/heuristic",
+    "team_a/experiments/day4": "team_a/experiments/rishitha/ar1_linear",
+    "team_a/experiments/day5": "team_a/experiments/rishitha/ar2_mlp",
+    "team_a/experiments/common_evaluation": "team_a/experiments/rishitha/common_evaluation",
+    "team_a/experiments/energy_rule": "team_a/experiments/rishitha/energy_attachment",
+    "team_a/submissions/A-BASE": "team_a/submissions/rishitha/A-BASE",
+    "team_a/submissions/A-HEUR-01": "team_a/submissions/rishitha/A-HEUR-01",
+    "team_a/submissions/A-R1": "team_a/submissions/rishitha/A-R1",
+    "team_a/submissions/A-R2": "team_a/submissions/rishitha/A-R2",
+    "team_a/notebooks/01_simulator_Day1.ipynb": "team_a/notebooks/rishitha/01_simulator_Day1.ipynb",
+    "team_a/notebooks/02_baseline_Day2.ipynb": "team_a/notebooks/rishitha/02_baseline_Day2.ipynb",
+    "team_a/notebooks/03_heuristic_baseline.ipynb": "team_a/notebooks/rishitha/03_heuristic_baseline.ipynb",
+    "team_a/notebooks/04_AR1_Linear_Scorer.ipynb": "team_a/notebooks/rishitha/04_AR1_Linear_Scorer.ipynb",
+    "team_a/notebooks/05_AR2_MLP_Scorer.ipynb": "team_a/notebooks/rishitha/05_AR2_MLP_Scorer.ipynb",
+    "team_a/notebooks/06_Common_Evaluation_A-R1.ipynb": "team_a/notebooks/rishitha/06_Common_Evaluation_A-R1.ipynb",
+    "team_a/notebooks/06_Common_Evaluation_A-R2.ipynb": "team_a/notebooks/rishitha/06_Common_Evaluation_A-R2.ipynb",
+    "team_a/notebooks/07_Energy_Attachment_Experiment.ipynb": "team_a/notebooks/rishitha/07_Energy_Attachment_Experiment.ipynb"
+  },
+  "removed_files": [
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/source/ar1_features.py",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "43a27980b809956721e21627a54fd9f96932106e503bc233af90634dffc86157",
+      "bytes": 35594,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/source/ar1_features.py"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/source/ar1_main.py",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "ed0ec1c36566d69d11818b63406960ee7288bf2a1b72a1db8bf29ab9525bbaaf",
+      "bytes": 44645,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/source/ar1_main.py"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/source/heuristic_frozen.py",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "ac7664d10039163305a3d16f39365dd8aea94980c49508c70df85f111ff07911",
+      "bytes": 36574,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/source/heuristic_frozen.py"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/source/random_frozen.py",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "9f447d9252f659659df0748c11734a188ce8e306a517a8ec842f1a79d950a4ff",
+      "bytes": 1442,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/source/random_frozen.py"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/training/dataset_manifest.json",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "76af62bd2a6fd3298c34f808a2a6b9cd5628f2e77dda6beed0b2fd5dab084998",
+      "bytes": 15961,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/training/dataset_manifest.json"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/training/feature_contract.json",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "257c53abb397e43514fdaa04c82f23d4a36f2c2381be677ded136162ee9d88bc",
+      "bytes": 14671,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/training/feature_contract.json"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/training/held_out.jsonl",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "bae45d1c69044248df1e825dffed3cd555691dbe544863350cf6ccdd3799facd",
+      "bytes": 1244775,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/training/held_out.jsonl"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/training/metrics.json",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "df9ff47470be42042b347bf5b93bfddab49a952a220ed5379022bc0b16e5be01",
+      "bytes": 1721,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/training/metrics.json"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/training/model.json",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "ff58cc8edfc730d4f3529568a880c1d49cd05b1ea4588875b14a0a57a11ebd4c",
+      "bytes": 31047,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/training/model.json"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/training/train.jsonl",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "b1115a6203cc9cb3632c1156bf64ecf48ff1a6cb47223aa2cd749d85f69b8703",
+      "bytes": 7191563,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/training/train.jsonl"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/reference_ar1/training/validation.jsonl",
+      "reason": "byte_identical_parent_copy",
+      "sha256": "6ded55a3182b541c82284d3e627945b65ce0e1988726e3360b71ef895baaca91",
+      "bytes": 1846906,
+      "canonical": "team_a/experiments/rishitha/ar1_linear/training/validation.jsonl"
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar1_linear/ar1_vs_heuristic/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar1_linear/ar1_vs_random/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar1_linear/archive_vs_heuristic/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar1_linear/archive_vs_random/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar1_linear/collection/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar1_linear/export_checks/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar1_linear/heuristic_vs_random/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar1_linear/training/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/ar1_vs_heuristic/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/ar1_vs_random/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/ar2_vs_ar1/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/ar2_vs_heuristic/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/ar2_vs_random/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/archive_vs_ar1/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/archive_vs_heuristic/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/archive_vs_random/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/export_checks/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/heuristic_vs_random/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/training/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/common_evaluation/A-R1/20261126T223241Z_b7f632ac/first_options/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/common_evaluation/A-R1/20261126T223241Z_b7f632ac/last_options/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/common_evaluation/A-R1/20261126T223241Z_b7f632ac/sample_random/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/common_evaluation/A-R2/20261126T223506Z_daef86ed/first_options/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/common_evaluation/A-R2/20261126T223506Z_daef86ed/last_options/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/common_evaluation/A-R2/20261126T223506Z_daef86ed/sample_random/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/energy_attachment/20261126T211344Z_3118d91a/batch_1/energy_vs_ar1/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/energy_attachment/20261126T211344Z_3118d91a/batch_1/energy_vs_original/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/energy_attachment/20261126T211344Z_3118d91a/batch_1/original_vs_ar1/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/energy_attachment/20261126T211344Z_3118d91a/batch_2/energy_vs_ar1/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/energy_attachment/20261126T211344Z_3118d91a/batch_2/energy_vs_original/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/energy_attachment/20261126T211344Z_3118d91a/batch_2/original_vs_ar1/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/heuristic/archive_checks/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/heuristic/demonstrations/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/heuristic/evaluation/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/heuristic/metadata_process/stderr.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/heuristic/metadata_process/stdout.txt",
+      "reason": "empty_log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "team_a/experiments/rishitha/heuristic/README.txt",
+      "reason": "superseded_export_readme",
+      "sha256": "13ea3ec54bc8a2615eed54ab30def42633e4254b212dce1c7ee7d6be253c84eb",
+      "bytes": 709
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar1_linear/README.txt",
+      "reason": "superseded_export_readme",
+      "sha256": "69e5c8e038194b58f6fd393b98bdf48af34ccdf96c7b6097131de3b45f3b6766",
+      "bytes": 573
+    },
+    {
+      "path": "team_a/experiments/rishitha/ar2_mlp/README.txt",
+      "reason": "superseded_export_readme",
+      "sha256": "300c94e51237e9e684dafeea6041a5883f64921c9347b5e02af883cd8bb99167",
+      "bytes": 598
+    },
+    {
+      "path": "team_a/scripts/train.py",
+      "reason": "unused_training_placeholder",
+      "sha256": "433dc8b61b601ff7ffb9934b2d50ed4322319ac13862926475fbc4cdba190ebd",
+      "bytes": 249
+    }
+  ],
+  "notebook_path_updates": [
+    {
+      "notebook": "team_a/notebooks/AJ1_AJ2_Policy_Training.ipynb",
+      "cell": 0,
+      "cell_type": "code",
+      "reason": "repository_path_update_only"
+    },
+    {
+      "notebook": "team_a/notebooks/rishitha/03_heuristic_baseline.ipynb",
+      "cell": 21,
+      "cell_type": "markdown",
+      "reason": "repository_path_update_only"
+    }
+  ],
+  "original_records": "Run JSON, CSV, JSONL and source snapshots retain their original bytes and historical runtime paths except maintained submission records updated from supplied evidence.",
+  "preserved": "All training decisions, original collection records, model weights, computations, execution counts, computational outputs and measured battle outcomes.",
+  "backup": "Full pre-cleanup Team A copy and original group docs retained in the local project archive under cleanup_20261127_team_a.",
+  "shared_paths_retained": [
+    "team_a/src/features.py",
+    "team_a/notebooks/06_Common_Agent_Evaluation.ipynb"
+  ],
+  "execution_scope": "File management and static verification only; no training, installation or native simulator execution.",
+  "previous_empty_folder_cleanup": [
+    "team_a/artifacts/.gitkeep",
+    "team_a/outputs/.gitkeep",
+    "team_a/data/raw/.gitkeep",
+    "team_a/data/processed/.gitkeep"
+  ]
+}

@@ -13,7 +13,7 @@ from team_a.src.models.kavya.features import encode_state, encode_options
 from team_a.src.models.kavya.model_1 import Model as Model1
 from team_a.src.models.kavya.model_2 import Model as Model2
 
-DATA_DIR = Path("team_a/experiments/day4/training")
+DATA_DIR = Path("team_a/experiments/rishitha/ar1_linear/training")
 OUTPUT_DIR = Path("team_a/experiments/kavya")
 
 
