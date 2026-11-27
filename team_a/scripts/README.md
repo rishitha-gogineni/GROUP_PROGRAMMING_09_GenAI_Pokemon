@@ -87,4 +87,4 @@ encoded['state'] is intentionally empty, matching the fitted scorer interfaces. 
 
 The shared commands passed 11 standard-library tests covering saved observations, both fitted scorer interfaces, temporary fake agents, archive selection, failure gates, changed package assets, worker exits, configuration and seat schedules. The synthetic SDK is pure Python and loads no native library. Native SDK execution, model training and package installation were not run during this shared-tool verification. Original executed Colab notebooks remain the native gameplay evidence.
 
-check_baseline.py remains available for the original Day 2 checks. train.py remains a generic placeholder; use the model-specific executed notebooks for actual fitting. These common commands do not implement reinforcement learning, replay collection or the full hosted Kaggle harness.
+check_baseline.py remains available for the original Day 2 checks. Use the model-specific executed notebooks or member training modules for fitting. The unused generic training placeholder was removed. These common commands do not implement reinforcement learning, replay collection or the full hosted Kaggle harness.

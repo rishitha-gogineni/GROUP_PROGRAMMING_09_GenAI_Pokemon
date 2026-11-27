@@ -1,0 +1,2 @@
+sequence,rating,phase,recorded_date_local,timezone,observed_at_utc,submission_id,evidence,notes
+1,242.6,later_supplied_screenshot,2026-11-27,America/Los_Angeles,,,../evidence/team_a_submissions_received_20261127.png,"Complete in screenshot received 27 November; exact capture time and submission ID unavailable. Historical observation, not a live rating."

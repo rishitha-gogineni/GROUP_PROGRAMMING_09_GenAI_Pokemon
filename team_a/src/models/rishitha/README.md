@@ -1,11 +1,11 @@
 # Rishitha Gogineni
 
-Both assigned architectures are trained and locally evaluated. A-R1 has Kaggle screenshot evidence. A-R2's manual upload is user-reported; official status and rating remain unverified. Assigned report and presentation work remains.
+Both assigned architectures are trained and locally evaluated. A-R1 has Kaggle screenshot evidence. The screenshot received on 27 November confirms A-R2 Complete at 242.6; earlier rating evidence remains preserved. Assigned report and presentation work remains.
 
 | Model | Architecture | Status |
 | --- | --- | --- |
-| A-R1 | Linear contextual scorer | Trained; supplied Kaggle image shows Complete at 828.8 |
-| A-R2 | MLP with 32 tanh hidden units | Trained; upload reported, hosted evidence pending |
+| A-R1 | Linear contextual scorer | Trained; historical 828.8 snapshot, later supplied snapshot 268.3 |
+| A-R2 | MLP with 32 tanh hidden units | Trained; supplied screenshot received 27 November shows Complete at 242.6 |
 
 ## Fitted files and interfaces
 
@@ -25,6 +25,8 @@ The same test groups were used for the planned architecture comparison and are n
 
 ## Evidence and remaining tasks
 
-[A-R1 notebook](../../../notebooks/04_AR1_Linear_Scorer.ipynb), [A-R2 notebook](../../../notebooks/05_AR2_MLP_Scorer.ipynb), [A-R1 records](../../../experiments/day4/), [A-R2 records](../../../experiments/day5/), [shared manifest](../../../experiments/day5/training/dataset_manifest.json), [A-R1 Kaggle evidence](../../../submissions/A-R1/) and [A-R2 upload record](../../../submissions/A-R2/) preserve the completed work.
+[A-R1 notebook](../../../notebooks/rishitha/04_AR1_Linear_Scorer.ipynb), [A-R2 notebook](../../../notebooks/rishitha/05_AR2_MLP_Scorer.ipynb), [A-R1 records](../../../experiments/rishitha/ar1_linear/), [A-R2 records](../../../experiments/rishitha/ar2_mlp/), [shared manifest](../../../experiments/rishitha/ar2_mlp/training/dataset_manifest.json), [A-R1 Kaggle evidence](../../../submissions/rishitha/A-R1/) and [A-R2 upload record](../../../submissions/rishitha/A-R2/) preserve the completed work.
 
-Retain the weaker MLP comparisons as a lesson that improved imitation did not establish stronger play. Add official A-R2 acceptance and rating evidence when available. Complete the assigned report sections and slides, present the work and help with final group checks. Planned day numbers in plan.json are the original schedule, not completion timestamps.
+Retain the weaker MLP comparisons as a lesson that improved imitation did not establish stronger play. Complete missing submission IDs, exact timestamps and cutoff evidence when available. Complete the assigned report sections and slides, present the work and help with final group checks. Planned day numbers in plan.json are the original schedule, not completion timestamps.
+
+Common evaluation on 26 November: A-R1 scored 83.33% and A-R2 85.00% over 120 matches each against the same three controls. [Full records](../../../experiments/rishitha/common_evaluation/). The two-match lead does not establish a reliable overall winner.

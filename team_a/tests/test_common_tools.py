@@ -23,7 +23,7 @@ from team_a.src.models.rishitha.model_2 import Model as MLP
 
 class FeatureTests(unittest.TestCase):
     def test_frozen_features_and_fitted_model_interfaces(self):
-        rows = (REPO / 'team_a/experiments/day4/training/train.jsonl').read_text().splitlines()[:3]
+        rows = (REPO / 'team_a/experiments/rishitha/ar1_linear/training/train.jsonl').read_text().splitlines()[:3]
         models = [Linear(), MLP()]
         for line in rows:
             observation = json.loads(line)['observation']
@@ -45,7 +45,7 @@ class FeatureTests(unittest.TestCase):
             self.assertFalse(features.supports_observation(observation))
             with self.assertRaises(ValueError):
                 features.encode_options(observation)
-        original = json.loads((REPO / 'team_a/experiments/day4/training/train.jsonl').read_text().splitlines()[0])['observation']
+        original = json.loads((REPO / 'team_a/experiments/rishitha/ar1_linear/training/train.jsonl').read_text().splitlines()[0])['observation']
         for selection in [{'type': 1}, {'maxCount': 2}, {'option': [{}]}]:
             changed = copy.deepcopy(original)
             changed['select'].update(selection)

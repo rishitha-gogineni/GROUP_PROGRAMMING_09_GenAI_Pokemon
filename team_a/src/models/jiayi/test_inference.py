@@ -178,7 +178,7 @@ class InferenceTests(unittest.TestCase):
 
     def test_saved_observation_uses_shared_encoder(self):
         root = Path(__file__).resolve().parents[3]
-        path = root / "experiments/day4/training/train.jsonl"
+        path = root / "experiments/rishitha/ar1_linear/training/train.jsonl"
         with path.open() as handle:
             observation = json.loads(next(handle))["observation"]
         options = features.encode_options(observation)

@@ -1,0 +1,20 @@
+{
+  "source": "User-supplied Kaggle Team A Submissions screenshot",
+  "received_date_local": "2026-11-27",
+  "timezone": "America/Los_Angeles",
+  "captured_at": null,
+  "observed_at_utc": null,
+  "sha256": "a78745cd225f1d2a43dd0190104e566c1382f0cadc334abb1006e2b5a04314b8",
+  "ratings_shown": {
+    "A-BASE": 11.5,
+    "A-HEUR-01": 251.9,
+    "A-R1": 268.3,
+    "A-R2": 242.6,
+    "A-K1": 295.8,
+    "A-K2": 289.9,
+    "A-J1": 272.8,
+    "A-J2": 313.5
+  },
+  "status_shown": "Complete",
+  "limitations": "Historical screenshot. No submission IDs, absolute capture time, uncertainty or remote archive hashes. The Kaggle team name is not visible in this image."
+}
