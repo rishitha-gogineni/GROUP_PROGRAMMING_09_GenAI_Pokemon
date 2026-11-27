@@ -30,9 +30,9 @@
     }
   ],
   "input_schema_version": "ar1-visible-v1",
-  "data_contract": "../../../notebooks/AJ1_AJ2_Policy_Training.ipynb",
+  "data_contract": "../../../notebooks/jiayi/AJ1_AJ2_Policy_Training.ipynb",
   "evaluation": {
-    "notebook": "../../../notebooks/AJ1_AJ2_Policy_Evaluation.ipynb",
+    "notebook": "../../../notebooks/jiayi/AJ1_AJ2_Policy_Evaluation.ipynb",
     "status": "executed_in_colab",
     "opponent": "Team A heuristic",
     "unit": "individual_battle",

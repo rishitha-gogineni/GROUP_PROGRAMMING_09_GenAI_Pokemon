@@ -12,7 +12,7 @@ The MLP had the highest held-out imitation accuracy. Outcome weighting lowered h
 
 ## Reproduce training
 
-Open the [executed training notebook](../../../notebooks/AJ1_AJ2_Policy_Training.ipynb) to review the training outputs, comparison table, and validation learning curves. For a new run, use a Python kernel with NumPy, pandas, and Matplotlib, started from the repository root or `team_a/notebooks/`. For the recorded CPU setup, set `OPENBLAS_NUM_THREADS`, `OMP_NUM_THREADS`, and `MKL_NUM_THREADS` to `1` before starting the kernel.
+Open the [executed training notebook](../../../notebooks/jiayi/AJ1_AJ2_Policy_Training.ipynb) to review the training outputs, comparison table, and validation learning curves. For a new run, use a Python kernel with NumPy, pandas, and Matplotlib, started from the repository root or `team_a/notebooks/jiayi/`. For the recorded CPU setup, set `OPENBLAS_NUM_THREADS`, `OMP_NUM_THREADS`, and `MKL_NUM_THREADS` to `1` before starting the kernel.
 
 The notebook calls [train.py](train.py) and uses seed 42 with the existing 210/45/45 game splits. Scaling is fitted on training candidates, and checkpoints are selected by validation cross entropy before scoring the held-out split. The notebook writes the three JSON artifacts and [results.csv](results.csv) to `team_a/src/models/jiayi/` when executed. The CSV includes training, validation, and held-out metrics.
 
@@ -43,13 +43,13 @@ PYTHONDONTWRITEBYTECODE=1 python -m unittest team_a.src.models.jiayi.test_infere
 
 ## Rewards and self-play
 
-[self_play.py](self_play.py) assigns terminal rewards from the acting player's seat (+1 for a win, −1 for a loss, and 0 for a draw). The shaping diagnostic adds the change in normalized visible prize lead scaled by 0.25, with zero terminal potential. The [executed self-play notebook](../../../notebooks/AJ1_AJ2_Policy_Self_Play.ipynb) uses seeds 61000–61003 and 10% uniform legal exploration mixed with policy sampling. It completed four battles per architecture with zero invalid responses or engine rejections. Both reward schemes were applied to the same trajectories, so the experiment measures how the reward signal changes without testing the effect of shaping on trained playing strength.
+[self_play.py](self_play.py) assigns terminal rewards from the acting player's seat (+1 for a win, −1 for a loss, and 0 for a draw). The shaping diagnostic adds the change in normalized visible prize lead scaled by 0.25, with zero terminal potential. The [executed self-play notebook](../../../notebooks/jiayi/AJ1_AJ2_Policy_Self_Play.ipynb) uses seeds 61000–61003 and 10% uniform legal exploration mixed with policy sampling. It completed four battles per architecture with zero invalid responses or engine rejections. Both reward schemes were applied to the same trajectories, so the experiment measures how the reward signal changes without testing the effect of shaping on trained playing strength.
 
 Run the self-play notebook from the repository in a Linux environment with `PTCG_SDK_DIR` pointing to the official SDK and sample deck.
 
 ## Evaluate callable agents in Colab
 
-Open [AJ1_AJ2_Policy_Evaluation.ipynb](../../../notebooks/AJ1_AJ2_Policy_Evaluation.ipynb) in a Linux Colab runtime with the repository and official SDK available. Set `REPO_DIR` and `SDK_DIR` in its first code cell (or the `PTCG_REPO_DIR` and `PTCG_SDK_DIR` environment variables). The SDK directory must contain `cg/` and the official `deck.csv`. Run all cells and save the executed notebook. Native evaluation is intentionally blocked on macOS.
+Open [AJ1_AJ2_Policy_Evaluation.ipynb](../../../notebooks/jiayi/AJ1_AJ2_Policy_Evaluation.ipynb) in a Linux Colab runtime with the repository and official SDK available. Set `REPO_DIR` and `SDK_DIR` in its first code cell (or the `PTCG_REPO_DIR` and `PTCG_SDK_DIR` environment variables). The SDK directory must contain `cg/` and the official `deck.csv`. Run all cells and save the executed notebook. Native evaluation is intentionally blocked on macOS.
 
 The notebook reuses Team A's evaluator for 40 individual battles per policy against the fixed heuristic, with seeds 60000–60039, alternating player seats, and the same deck and limits. A-J1 won 19 and lost 21 (47.5%). A-J2 won 20 and lost 20 (50.0%). Both completed all battles with zero draws, invalid responses, or engine rejections. The [battle CSV](evaluation_results.csv) records outcomes, errors, and timings. Win rates use valid completed battles. Python seeds provide a consistent schedule, but native-engine randomness was not verified as controllable.
 
@@ -88,10 +88,10 @@ Both archives completed the same common benchmark in Colab under matching protoc
 | A-J1 | 34/40 | 21/40 | 40/40 | 95–25–0 | 79.17% |
 | A-J2 | 40/40 | 23/40 | 40/40 | 103–17–0 | 85.83% |
 
-Both runs reported zero invalid responses and zero engine rejections. The original local Colab summaries have run IDs `20261124T035857Z_5f9c3b29` and `20261124T040209Z_b4e403e7`. Per-opponent results are in the [shared experiment log](../../../experiments/results.csv). The scores describe these reference opponents and do not establish a statistically significant improvement or predict hosted ratings. Both agents rely on the existing heuristic outside the supported MAIN decision scope.
+Both runs reported zero invalid responses and zero engine rejections. The [common evaluation index](../../../experiments/jiayi/) links the executed notebooks and original Colab summaries by run ID. Per-opponent results are in the [shared experiment log](../../../experiments/results.csv). The scores describe these reference opponents and do not establish a statistically significant improvement or predict hosted ratings. Both agents rely on the existing heuristic outside the supported MAIN decision scope.
 
 To reproduce the benchmark, run [06_Common_Agent_Evaluation.ipynb](../../../notebooks/06_Common_Agent_Evaluation.ipynb) in a fresh Colab CPU session once per archive. Save each run's `comparison_summary.csv` and `comparison_summary.json` under distinct policy names.
 
 ## Kaggle submission status
 
-Jiayi confirms that both A-J1 and A-J2 were officially uploaded. Submission IDs, timestamps, hosted validation status, Skill Ratings, and official evidence links were unavailable for independent verification and are blank in the [submission register](../../../submissions/register.csv). The Colab results above are local evaluation results.
+The Kaggle screenshot shows both submissions as Complete, with Skill Ratings of 271.7 for A-J1 and 313.5 for A-J2. The [submission register](../../../submissions/register.csv) records these observations. [Kaggle screenshot](../../../submissions/jiayi/A-J1-J2/Kaggle_AJ1_AJ2.png).

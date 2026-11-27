@@ -5,7 +5,8 @@
 | Owner | Evidence |
 | --- | --- |
 | Rishitha | [Baseline, heuristic, A-R1 and A-R2](rishitha/) |
-| Kavya, Jiayi and Shashira | Maintain member evidence folders and update their register rows as evidence is uploaded |
+| Jiayi | [A-J1 and A-J2 evidence](jiayi/A-J1-J2/) |
+| Kavya and Shashira | Maintain member evidence folders and update their register rows as evidence is uploaded |
 
 The supplied screenshot received on 27 November also shows Complete entries for Kavya's A-K1/A-K2 and Jiayi's A-J1/A-J2. Their existing registry rows have not been treated as a verified full submission history. Members should reconcile those rows with their actual IDs, timestamps, histories and best evidence.
 
