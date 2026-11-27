@@ -2,9 +2,9 @@ team,member,model_id,planned_day,commit,artifact_hash,submission_id,submitted_at
 B,Chelsi Shulamit Elthuri,B-BASE,2,c3b5bb4,sha256:633d89ae92d780df39df4a5a02d5336f9922ba934c6a38f43ea0d90d050661b9,,2026-11-22T18:57Z (approx.),complete,600.0,2026-11-22T18:59Z,,evidence/team_b/baseline/,,"heuristic-v1 + sample deck; Kaggle user Chelsi512; 600.0 is the initial rating shown 2 min after upload, not a settled score; submission ID to be filled from Kaggle"
 B,Chelsi Shulamit Elthuri,B-C1,3,,,,,planned,,,,,,
 B,Chelsi Shulamit Elthuri,B-C2,4,,,,,planned,,,,,,
-B,Sadaf Fatima Syeda,B-SA1,3,,,,,planned,,,,,,
-B,Sadaf Fatima Syeda,B-SA2,5,,,,,planned,,,,,,
+B,Sadaf Fatima Syeda,B-SA1,3,,,,,packaged_not_uploaded,,,,,,Archive built and smoke-tested (team_b/outputs/B-SA1.tar.gz); common evaluation complete and valid (team_b/experiments/sadaf/common_eval/); not uploaded while Team B's two active slots hold B-SR1 and B-SR2 (as of 2026-11-26)
+B,Sadaf Fatima Syeda,B-SA2,5,,,,,packaged_not_uploaded,,,,,,Archive built and smoke-tested (team_b/outputs/B-SA2.tar.gz); common evaluation complete and valid (team_b/experiments/sadaf/common_eval/); not uploaded while Team B's two active slots hold B-SR1 and B-SR2 (as of 2026-11-26)
 B,Bhavyasree Kondi,B-B1,4,,,,,planned,,,,,,
 B,Bhavyasree Kondi,B-B2,5,,,,,planned,,,,,,
-B,Srinidhi Jaya Revanth Srirangarajapally,B-SR1,4,,,,,planned,,,,,,
-B,Srinidhi Jaya Revanth Srirangarajapally,B-SR2,5,,,,,planned,,,,,,
+B,Srinidhi Jaya Revanth Srirangarajapally,B-SR1,4,,,58980886,2026-11-26,complete,600.0,2026-11-26,,,,"Passed Kaggle validation (reported by Revanth in the team chat); 600.0 is the first observed public score (initial rating), not a settled score; commit and artifact hash to be filled by owner"
+B,Srinidhi Jaya Revanth Srirangarajapally,B-SR2,5,,,,,complete,409.8,2026-11-25,,,,"B-SR2.tar.gz shown as Complete on the Team B submissions page (screenshot shared by Revanth in the team chat); submission ID, commit and artifact hash to be filled by owner"
