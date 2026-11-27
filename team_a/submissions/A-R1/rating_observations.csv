@@ -1,2 +1,0 @@
-sequence,rating,phase,recorded_date_local,timezone,observed_at_utc,submission_id,evidence,notes
-1,828.8,post_submission_snapshot,2026-11-21,America/Los_Angeles,,,kaggle_ar1_828_8_heuristic_257_6_random_11_5.png,Complete in supplied screenshot; heuristic 257.6 and random 11.5 in the same image.

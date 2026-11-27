@@ -1,0 +1,23 @@
+{
+  "errors": [],
+  "broken_links": [],
+  "counts": {
+    "unchanged_original_run_files": 622,
+    "notebooks_preserved": 12,
+    "relative_markdown_links_checked": 186,
+    "old_active_references": []
+  },
+  "removed_files": 51,
+  "removed_bytes": 10467028,
+  "scope": "Static parse, byte hashes, path checks and saved results only. No notebook, native SDK or training execution.",
+  "date_local": "2026-11-27",
+  "timezone": "America/Los_Angeles",
+  "standard_library_regression_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest team_a.tests.test_common_tools -v",
+    "passed": 11,
+    "failed": 0,
+    "fixtures": "Saved observations, fitted standard-library scorers and a temporary pure-Python synthetic SDK. No native engine or training."
+  },
+  "team_b_files_changed": 0,
+  "peer_code_changes": "Repository data paths only; model architectures, weights, objectives and saved outputs are preserved."
+}

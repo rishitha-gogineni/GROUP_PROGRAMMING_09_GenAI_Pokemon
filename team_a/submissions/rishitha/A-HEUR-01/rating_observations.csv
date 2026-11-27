@@ -1,0 +1,4 @@
+sequence,rating,phase,recorded_date_local,timezone,observed_at_utc,submission_id,evidence,notes
+1,489.7,post_submission_snapshot,2026-11-21,America/Los_Angeles,,,kaggle_heuristic_489_7_random_103_0.png,Complete in supplied screenshot; random baseline is 103.0 in the same image.
+2,257.6,ar1_comparison_snapshot,2026-11-21,America/Los_Angeles,,,../A-R1/kaggle_ar1_828_8_heuristic_257_6_random_11_5.png,Complete in the A-R1 comparison image; exact observation timestamp unavailable.
+3,251.9,later_supplied_screenshot,2026-11-27,America/Los_Angeles,,,../evidence/team_a_submissions_received_20261127.png,"Complete in screenshot received 27 November; exact capture time and submission ID unavailable. Historical observation, not a live rating."

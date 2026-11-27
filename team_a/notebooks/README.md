@@ -1,13 +1,12 @@
 # Team A notebooks
 
-The original five executed simulator and model notebooks remain in this folder. The new executed copies are:
+| Owner or purpose | Notebooks |
+| --- | --- |
+| Common evaluation template | [06_Common_Agent_Evaluation.ipynb](06_Common_Agent_Evaluation.ipynb); fresh Colab CPU session, official ZIP and one agent `.tar.gz` |
+| Rishitha | [Eight executed notebooks and input requirements](rishitha/) |
+| Jiayi | [Training](AJ1_AJ2_Policy_Training.ipynb), [individual-battle heuristic evaluation](AJ1_AJ2_Policy_Evaluation.ipynb), [self-play](AJ1_AJ2_Policy_Self_Play.ipynb) |
+| Kavya and Shashira | Add completed notebooks or links through the member's model README when available |
 
-* [A-R1 common evaluation](06_Common_Evaluation_A-R1.ipynb).
-* [A-R2 common evaluation](06_Common_Evaluation_A-R2.ipynb).
-* [Energy attachment pilot](07_Energy_Attachment_Experiment.ipynb).
+Keep the shared common template at its existing path so team links continue to work. Its output is 120 matches per model against three simple controls. Jiayi's existing heuristic evaluation uses 40 individual battles per policy and is a different experiment.
 
-[06_Common_Agent_Evaluation.ipynb](06_Common_Agent_Evaluation.ipynb) is the reusable template and stays at the existing shared link. The A-R1 and A-R2 copies have real completed outputs. The energy pilot is a separate individual-game experiment and is not deployed in either model.
-
-For the three new executed notebooks, cell source, execution counts, stream output and plotted images were preserved. Colab file picker/download display controls and session-only metadata were removed from the saved display. The original downloaded notebooks remain in the local project archive. No notebook was rerun during integration.
-
-Jiayi's AJ1_AJ2 notebooks remain owned and maintained with her model work. See [Team A](../README.md) and [experiment records](../experiments/) for model-specific evidence and remaining work.
+Executed notebooks retain their saved code, execution counts, outputs and figures. The repository organization changes paths only; it does not rerun notebook computations. Jiayi's training notebook has one input-path update to the canonical A-R1 experiment; the original downloaded version is retained in the local cleanup backup.

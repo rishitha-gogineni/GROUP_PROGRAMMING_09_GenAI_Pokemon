@@ -1,127 +1,61 @@
 # Team A: GROUP_PROGRAMMING_09_a
 
-The simulator, random baseline, heuristic, A-R1 linear scorer and A-R2 MLP are integrated. Both of Rishitha's assigned model architectures are trained and locally evaluated. A-R2's manual Kaggle upload is reported by the submitter; its hosted status and rating are not yet evidenced. The last supplied screenshot shows A-R1 Complete at 828.8, heuristic at 257.6 and random at 11.5. These remain rating snapshots, not live scores.
+Team A is part of Group 9's shared DATA 266 project. This page links to the code, executed notebooks, measured results and Kaggle evidence. Both Kaggle teams contribute to one final report and presentation.
 
-## Common Colab evaluation
+## Members and models
 
-Use [06_Common_Agent_Evaluation.ipynb](notebooks/06_Common_Agent_Evaluation.ipynb) for the common comparison between both teams. This copy is preset to `GROUP_PROGRAMMING_09_a`. The agent label comes from your uploaded archive filename. No code edits are needed.
+| Member | Models | Code and model notes | Executed notebooks |
+| --- | --- | --- | --- |
+| Rishitha Gogineni | A-R1 linear scorer; A-R2 MLP scorer | [Models](src/models/rishitha/) | [Notebook index](notebooks/rishitha/) |
+| Kavya Ayyappan | A-K1 concatenated MLP; A-K2 separate encoders | [Models](src/models/kavya/) | See member documentation |
+| Shashira Guntuka | A-S1 and A-S2 value-style candidates | [Work folder](src/models/shashira/) | Add completed notebooks when available |
+| Jiayi Liang | A-J1 linear policy; A-J2 MLP policy | [Models](src/models/jiayi/) | [Training](notebooks/AJ1_AJ2_Policy_Training.ipynb), [heuristic evaluation](notebooks/AJ1_AJ2_Policy_Evaluation.ipynb), [self-play](notebooks/AJ1_AJ2_Policy_Self_Play.ipynb) |
 
-1. Download the notebook from GitHub and open it in Google Colab.
-2. Use a fresh CPU session and select **Runtime > Run all**.
-3. At the first upload prompt, upload `the-pokemon-company-ptcg-ai-battle-challenge-playground.zip` from the official competition download used for this project.
-4. At the second prompt, upload your own agent submission `.tar.gz`. It must contain `main.py`, `deck.csv` and all required assets at the archive root. Use the official sample deck for this benchmark.
-5. Let all comparisons finish. Download `comparison_summary.csv`, `comparison_summary.json` and the private results ZIP. Also save the executed notebook using **File > Download > Download .ipynb**.
+## Common evaluation
 
-Keep all evaluation settings unchanged. Each agent faces the same three simple reference policies for 40 matches each, with at most three games per match. Compare only completed runs with the same protocol fingerprint, and review runtime differences. Earlier individual game results and other evaluation commands use different protocols.
+These are completed Colab benchmark scores, not Kaggle skill ratings. Each model plays 40 externally controlled matches against each of three simple reference policies using the official sample deck. Wins score 1, draws 0.5 and losses 0. A match stops at two game wins or after three games; more wins at the cap takes the match, otherwise it is a draw.
 
-Share the comparison CSV and JSON as permitted by the course and competition rules. Keep your agent archive, model files and detailed private logs within your Kaggle team. The notebook does not submit to Kaggle. Incomplete runs are flagged and receive no overall comparison score. Native engine randomness is not fully controlled, and these simple controls do not establish an overall best agent.
+| Model | Random wins | First-option wins | Last-option wins | Overall match score | Evidence |
+| --- | ---: | ---: | ---: | ---: | --- |
+| A-R1 | 39/40 | 21/40 | 40/40 | 83.33% | [Executed notebook](notebooks/rishitha/06_Common_Evaluation_A-R1.ipynb) |
+| A-R2 | 40/40 | 22/40 | 40/40 | 85.00% | [Executed notebook](notebooks/rishitha/06_Common_Evaluation_A-R2.ipynb) |
+| A-K1 and A-K2 | | | | Summary not uploaded | Add completed common evaluation evidence |
+| A-J1 and A-J2 | | | | Summary not uploaded | Existing heuristic evaluations use a different protocol |
+| A-S1 and A-S2 | | | | Not verified | Add completed evidence when available |
 
-This link remains the reusable template. Completed A-R1 and A-R2 copies and their verified results are listed below. Both Colab runs passed; no Kaggle submission was made by the notebook.
+The two recorded runs used matching protocol and runtime fingerprints. All 240 matches and 536 games completed with zero invalid actions or engine rejections. A-R2 won two more matches; this small difference against simple controls does not establish an overall winner. Native engine randomness is not fully controlled. [Detailed comparison and run records](experiments/rishitha/common_evaluation/).
 
-| Member | Responsibility | Assigned models |
-| --- | --- | --- |
-| Rishitha Gogineni | Simulator, baseline, response adapter, packages and Team A uploads | A-R1, A-R2 |
-| Kavya Ayyappan | State/action features and Team A evaluation | A-K1, A-K2 |
-| Shashira Guntuka | Value architecture pair and conditional DQN experiment | A-S1, A-S2 |
-| Jiayi Liang | Policies, rewards, outcome logging and combined slide assembly | A-J1, A-J2 |
+To evaluate another candidate:
 
-## Executed notebooks
+1. Download [06_Common_Agent_Evaluation.ipynb](notebooks/06_Common_Agent_Evaluation.ipynb) and open it in a fresh Colab CPU session.
+2. Run all cells. Upload the original official competition ZIP first, then one model's standalone submission `.tar.gz`.
+3. Keep the settings and official sample deck unchanged. Use a new session for the next model.
+4. Save the executed notebook, comparison CSV and JSON, and output ZIP. Add a member folder under `experiments/` for the results.
+5. Compare completed runs with matching protocol fingerprints and review runtime differences. The notebook makes no Kaggle submissions.
 
-1. [Day 1 simulator](notebooks/01_simulator_Day1.ipynb): four completed battles and 79 observation examples.
-2. [Day 2 random baseline](notebooks/02_baseline_Day2.ipynb): ten local battles and two successful archive tests.
-3. [Day 3 heuristic](notebooks/03_heuristic_baseline.ipynb): 24 wins in 30 evaluation battles and 176 separate demonstration decisions.
-4. [A-R1 linear scorer](notebooks/04_AR1_Linear_Scorer.ipynb): fresh collection, linear fitting and submission checks.
-5. [A-R2 small MLP](notebooks/05_AR2_MLP_Scorer.ipynb): matched data, MLP fitting, paired model analysis and archive checks.
-6. [A-R1 common evaluation](notebooks/06_Common_Evaluation_A-R1.ipynb): 120 completed matches and 271 individual games.
-7. [A-R2 common evaluation](notebooks/06_Common_Evaluation_A-R2.ipynb): 120 completed matches and 265 individual games.
-8. [Energy attachment experiment](notebooks/07_Energy_Attachment_Experiment.ipynb): 13 rule checks and 240 individual games; no established improvement.
+## Experiment evidence
 
-Notebook prose uses simple lab notes. Code, execution counts, figures and computational outputs are preserved. Colab browser controls were removed from the saved display. The saved notebook computations were not rerun. Shared-tool tests exercised standard-library inference on three saved observations and temporary synthetic SDK fixtures; no native engine or training was run.
+* [Experiment index](experiments/): find results by member and purpose.
+* [Rishitha's experiments](experiments/rishitha/): simulator, random and heuristic baselines, A-R1, A-R2, common evaluation and energy-rule pilot.
+* [Kavya's saved checkpoints](experiments/kavya/) and [model explanation](src/models/kavya/).
+* [Jiayi's measured results and methods](src/models/jiayi/).
 
-## Common evaluation results from 26 November 2026
+The energy attachment pilot passed its execution checks but did not establish a reliable improvement and was not adopted. The earlier A-R2 experiment improved teacher imitation without establishing stronger gameplay. Both remain documented ineffective approaches; keep individual-game results separate from common match scores.
 
-| Opponent | A-R1 match wins | A-R2 match wins |
-| --- | ---: | ---: |
-| Sample random | 39/40 | 40/40 |
-| First options | 21/40 | 22/40 |
-| Last options | 40/40 | 40/40 |
-| Overall match score | 83.33% | 85.00% |
+## Kaggle evidence
 
-Both agents used matching protocol and recorded runtime fingerprints, the fixed sample deck and their original tested submission archives. All 240 matches and 536 individual games completed with zero invalid actions or engine rejections. A-R2's lead is two match wins; the small samples and simple controls do not establish a reliable overall winner. Native randomness is not seeded. These are Colab benchmark scores, not Kaggle ratings or new submissions. See the [common evaluation records](experiments/common_evaluation/) and [combined comparison](experiments/common_evaluation/comparison.json).
+[Submission index and register](submissions/) separate official evidence from local evaluation. The supplied screenshot received on 27 November shows Rishitha's A-R1 Complete at 268.3, A-R2 at 242.6, heuristic at 251.9 and random at 11.5. Earlier observations, including A-R1 at 828.8, remain in the dated history. These are snapshots, not current ratings. Submission IDs and exact observation times are unavailable in the image.
 
-## Energy attachment pilot
+The same supplied screenshot shows Complete entries for Kavya and Jiayi; their full histories and member records still need to be maintained by their owners. A screenshot does not verify uploaded archive bytes. [Preserved screenshot](submissions/rishitha/evidence/team_a_submissions_received_20261127.png).
 
-The new rule won 43/80 individual games against the original heuristic and 42/80 against A-R1; the fresh original-heuristic control won 40/80 against A-R1. All 13 checks and 240 games passed. Results varied between batches, and the rule changed only 12 attachment targets across 10 of its 160 games. The pilot did not establish a reliable improvement and was not adopted into A-R1 or A-R2. Keep it as an ineffective approach in the report. See the [experiment, figure and diagnostics](experiments/energy_rule/).
+## Reproduce the work
 
-## Matched model comparison
+Use the [notebook index](notebooks/) for inputs and completed outputs. [Shared command instructions](scripts/) explain feature encoding, individual-battle evaluation and packaging. The reusable common notebook is the comparison protocol above; `scripts/evaluate.py` uses individual battles and produces different metrics.
 
-The A-R2 run is 20261122T052210Z_0c2ec591 and reuses parent A-R1 run 20261122T002608Z_bd91a79d. Both were executed on local project date 21 November 2026 in America/Los_Angeles; UTC run IDs fall on 22 November.
+[Shared features](src/features.py) expose the frozen `ar1-visible-v1` encoder: 375 candidate features for MAIN selections requiring exactly one choice and offering at least two options. Other contexts need a valid fallback. Each member retains the encoder used to train their own models. [Feature contract](configs/feature_schema.json), [runtime](configs/environment.json), [individual-battle settings](configs/evaluation.json) and [training dependencies](requirements.txt).
 
-Both models use the same 375 ar1-visible-v1 candidate features, acting player perspective, teacher labels and training only normalization. The game groups are unchanged: 210 training games with 2,161 decisions, 45 validation games with 539 decisions and 45 test games with 390 decisions. A-R1 originally collected 3,346 decisions from 300 games and excluded 256 forced choices. The earlier Day 3 games were not reused.
+Official input ZIPs, SDK binaries, decks and generated submission archives stay local. Original run reports preserve their recorded runtime paths and filenames. [Cleanup record](experiments/rishitha/cleanup_manifest.json) maps relocated paths and removed duplicate files to retained evidence.
 
-| Item | A-R1 | A-R2 |
-| --- | --- | --- |
-| Architecture | Shared linear candidate scorer | One hidden layer, 32 tanh units |
-| Parameter count, excluding normalization | 375 | 12,064 |
-| Selected L2 | 0.0 | 0.0001 |
-| Selected checkpoint | Epoch 14 | Epoch 60 |
-| Learning rate | 0.03 | 0.003 |
-| Test cross entropy | 0.71579 | 0.67886 |
-| Test agreement with any teacher maximum | 98.72 percent | 99.49 percent |
-| Exact teacher choice agreement | 96.15 percent | 95.13 percent |
+## Remaining group work
 
-The objective is cross entropy over each current legal candidate set, distributing the target equally among teacher maximum score options. Both runs use Adam, batch size 64, seed 42, a maximum of 60 epochs, patience 10 and the same three L2 values. Learning rates differ as recorded. Validation selects checkpoints; test results are calculated afterward. The MLP selected the last checkpoint in its fixed budget, not a demonstrated convergence point. Input weight rows with no training variation stay zero.
-
-The test groups were already inspected for A-R1. They support the planned architecture comparison, not a new unseen benchmark. Ties in the teacher scores allow top-set agreement to improve while exact choice agreement falls. These are descriptive decision metrics; decisions within each game are dependent.
-
-## New battle results from the A-R2 run
-
-| Candidate | Opponent | Wins | Losses |
-| --- | --- | ---: | ---: |
-| Heuristic | Random | 37 | 3 |
-| A-R1 | Random | 37 | 3 |
-| A-R1 | Heuristic | 25 | 15 |
-| A-R2 | Random | 36 | 4 |
-| A-R2 | Heuristic | 15 | 25 |
-| A-R2 | A-R1 | 17 | 23 |
-
-All 240 evaluation battles and six archive tests passed without invalid responses or engine rejections. Gradient checks and NumPy versus exported policy checks also passed. The archive tests are execution checks and are not added to the evaluation win rates. The earlier A-R1 run recorded 40/40 against random and 19/40 against heuristic; those original results remain separate under day4/.
-
-The MLP reduced test cross entropy and improved teacher top-set agreement, but did not establish stronger gameplay in these samples. This is an ineffective improvement attempt to discuss honestly in the report. It is not evidence that the training or package failed. The small battle samples and approximate intervals do not establish a conclusive ranking. Native randomness is not verified as seeded, and matching Python seeds does not produce controlled identical native games.
-
-Both deployed agents use the learned scorer only for MAIN selections requiring one option and offering at least two. Other selections use the frozen heuristic. Battle results therefore describe the combined deployed policies. Usage counters include callback contract checks; no exact gameplay fallback fraction is inferred.
-
-## Source, weights and evidence
-
-* [A-R1 model](src/models/rishitha/ar1/) and [A-R2 model](src/models/rishitha/ar2/) contain the exact tested entry points, fitted JSON weights and feature definitions.
-* [Repository scorers](src/models/rishitha/README.md) document the model_1.py and model_2.py interfaces. The wrappers passed feature-interface checks on three saved observations; the deployed entry points still match Colab byte for byte.
-* [Day 4 records](experiments/day4/) preserve A-R1 collection, source, fitting and original evaluation.
-* [Day 5 records](experiments/day5/) preserve the MLP source, checkpoints, gradient checks, comparison CSVs, figures, battle logs and original parent data.
-* [Shared game manifest](experiments/day5/training/dataset_manifest.json), [feature contract](experiments/day5/training/feature_contract.json) and [model metrics](experiments/day5/training/metrics.json) define the matched comparison.
-* [A-R1 Kaggle evidence](submissions/A-R1/) has the supplied screenshot. [A-R2 upload record](submissions/A-R2/) records the submitter's report, with hosted status and rating pending evidence.
-
-These workflows are self contained and require no other member's files or review. The shared feature entry point delegates to the frozen encoder. The accepted random entry point, baseline adapter and existing model code and weights remain unchanged. Other members' actual progress is not changed by this integration.
-
-## Reproduce and package
-
-Run the executed notebooks in fresh Colab CPU sessions. A-R1 needs the official competition ZIP. A-R2 needs that ZIP and AR1_20261122T002608Z_bd91a79d_outputs.zip; it reuses the saved data rather than collecting or splitting again. Input hashes and source hashes are recorded. The saved runtime is Python 3.13.18, NumPy 2.4.6 and Matplotlib 3.10.0 on Linux x86_64. No package installation is performed.
-
-A-R2 checks gradients using training examples, trains three regularization settings, verifies the exported policy and runs the six comparisons above. It packages main.py, model.json and deck.csv only after all required checks pass, then tests a fresh extraction against three opponents. The tested A-R2 archive is 75,537 bytes. Local checks establish execution, not hosted acceptance or strength across other decks.
-
-Official competition inputs, SDK binaries, decks and generated archives remain local. Selected experiment outputs and fitted JSON weights are deliberately included in Git. Shared evaluation and packaging commands are implemented; only the generic train.py remains a placeholder. The new commands were checked with synthetic fixtures, not a new native SDK run.
-
-## Submission history and remaining work
-
-[Random history](submissions/A-BASE/rating_observations.csv): initialization 600.0, then 490.5, 103.0 and 11.5. [Heuristic history](submissions/A-HEUR-01/rating_observations.csv): 489.7, then 257.6. [A-R1 observation](submissions/A-R1/rating_observations.csv): 828.8. No A-R2 rating is recorded yet. These histories have not been updated from an unobserved live leaderboard.
-
-Missing IDs, absolute timestamps, uncertainty and actual Kaggle team name remain blank. GROUP_PROGRAMMING_09_a is the intended team. Original Colab not_submitted flags were saved before manual uploads and remain unchanged. Local hashes identify tested files; a user report or screenshot cannot verify uploaded archive bytes.
-
-Rishitha's two planned models are trained and evaluated. Remaining work includes A-R2 hosted result evidence, comparison with teammates' final candidates under the same protocol, assigned report sections and presentation preparation. The new pilot and common comparisons are complete. See the [model registry](experiments/model_registry.csv), [experiment log](experiments/results.csv), [submission register](submissions/register.csv) and [contribution table](../docs/contributions.csv).
-
-Earlier records remain under [Day 1](experiments/day1/), [Day 2](experiments/day2/) and [Day 3](experiments/day3/). The 79 Day 1 observations are debugging examples, not expert demonstrations or complete reinforcement learning trajectories.
-
-## Shared Team A tools
-
-[src/features.py](src/features.py) provides the tested encoder's public entry point and explicit supported context. [scripts/evaluate.py](scripts/evaluate.py) compares configured or custom standalone agents. [scripts/package_agent.py](scripts/package_agent.py) checks a fresh archive before publishing a ready submission. [configs/evaluation.json](configs/evaluation.json) records individual battles, opponents, deck/source hashes, seed schedules, draw handling and native RNG limits. [requirements.txt](requirements.txt) pins the recorded NumPy and Matplotlib training versions.
-
-Use the [shared command instructions](scripts/README.md) for exact examples. Eleven standard-library tests passed, including both fitted model interfaces and temporary packaging/evaluation fixtures. No package was installed and no native engine or training was run. These tests validate shared-tool plumbing, not new Pokemon playing strength. Earlier models, executed notebooks and historical results are unchanged.
+Complete pending models and common comparisons, reconcile member registers with evidence, select finalists, capture course-cutoff results, and finish the combined report, presentation and individual peer reviews. [Actual contributions](../docs/contributions.csv), [report outline](../docs/report/) and [slide requirements](../docs/slides/).

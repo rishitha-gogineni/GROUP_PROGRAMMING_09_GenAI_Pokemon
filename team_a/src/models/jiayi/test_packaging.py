@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[4]
 class PackagingTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        with (ROOT / "team_a/experiments/day4/training/train.jsonl").open() as handle:
+        with (ROOT / "team_a/experiments/rishitha/ar1_linear/training/train.jsonl").open() as handle:
             cls.observation = json.loads(next(handle))["observation"]
 
     def test_archives_are_minimal_and_run_without_repository_access(self):
