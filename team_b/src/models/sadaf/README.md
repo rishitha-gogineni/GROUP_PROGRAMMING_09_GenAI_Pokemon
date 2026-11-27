@@ -4,7 +4,7 @@
 
 **Status (25 Nov 2026):** both models trained, evaluated locally and passed the Group 9 common
 evaluation; Kaggle packages built and smoke-tested; official uploads pending the team's decision
-on active slots (Team B's two active slots hold B-SR2 and the heuristic-v1 baseline).
+on active slots (as of 26 Nov, Team B's two active slots hold B-SR1 and B-SR2).
 
 | ID | Architecture | vs heuristic-v1 (100 BO3) | vs random (100 BO3) | ms / decision |
 | --- | --- | --- | --- | --- |
